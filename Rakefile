@@ -155,6 +155,7 @@ class Builder
 
         env.append_path(ROOT)
         env.append_path(COMMON)
+        env.append_path(ROOT.join('images'))
 
         env.context_class.class_eval do
           def asset_path(path, options = {})
