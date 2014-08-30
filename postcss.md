@@ -17,7 +17,7 @@
 * **3 года** на CSS 3;
 * **5 лет** на ECMAScript 6.
 
-## Скорость разработки и рендера
+## 1. Скорость разработки и рендера
 !type with-2-sides
 
 Быстро разрабатывать:
@@ -38,3 +38,12 @@ a {
     color: #c00;
 }
 ```
+
+## 2. Всем нужно договориться
+!type is-browsers
+
+!image chrome.png
+!image ie.png
+!image firefox.png
+!image safari.png
+!image opera.png
