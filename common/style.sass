@@ -1,0 +1,22 @@
+@import "shower-bright"
+@import "evil-front"
+
+.caption
+  color: black
+
+.caption a, .slide a
+  background: none
+  border-bottom: 2px solid rgba(#52a2df, 0.4)
+  &:hover
+    border-bottom-color: #52a2df
+
+.caption a
+  display: inline-block
+  line-height: 1.2
+
+.slide::after
+  display: none
+
+.slide > div
+  padding-top: 80px
+  height: 560px
