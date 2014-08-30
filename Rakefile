@@ -50,7 +50,6 @@ class Slide
   end
 
   def image(name)
-
     url = if @builder.development?
       name
     else
