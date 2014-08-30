@@ -119,6 +119,11 @@ class Highlighter < Redcarpet::Render::HTML
         .gsub(/(\(|\[|,|^|\s|=)(\d+(px|deg|%|m?s|))(\)|,|$|\s|;)/,
           '\\1<mark>\\2</mark>\\4')
   end
+
+  def css(code)
+    code.gsub(/^([^\s].*){/,'<mark>\\1</mark>{')
+        .gsub(/^    ([^\s:]*):/,'    <mark>\\1</mark>:')
+  end
 end
 
 class Builder
