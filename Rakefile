@@ -45,7 +45,7 @@ class Slide
   end
 
   def cover=(name)
-    @html += image(name)
+    @html += image('covers/' + name)
     @types << 'cover h'
   end
 
