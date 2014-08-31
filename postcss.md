@@ -181,10 +181,22 @@ var fixed = coloner.process(css).css;
 
 ```css
 a::after {
+    content: "→"
 }
 ```
 
 ```mark_fix
 a::after, a:after {
+    content: "→"
 }
 ```
+
+## Карты кода
+
+```js
+var map = coloner.process(css, {
+    map: { prev: sassMap }
+}).map;
+```
+
+!image map.png
