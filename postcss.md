@@ -58,6 +58,9 @@ a {
 2. Сравнение в реальном мире
 3. Отбор
 
+## Машины должны страдать
+!type shout
+
 ## *Часть 2* Препроцессоры
 !cover sass.jpg
 
@@ -101,3 +104,8 @@ a {
   .arrow
     +triangle
 ```
+
+## *Часть 3* Постпроцессоры
+!cover postcss.jpg
+!type  is-bottom
+!type  is-black
