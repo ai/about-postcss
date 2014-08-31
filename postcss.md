@@ -230,3 +230,20 @@ var map = coloner.process(css, {
         <div class="map">Новая карта</div>
     </div>
 </div>
+
+## *Часть 4* Используем
+!cover usage.jpg
+!type  is-bottom
+
+## `gulp-postcss`
+
+```mark_postcss
+gulp.task('css', function () {
+    var processors = [
+        require('autoprefixer'),
+        require('csswring') ];
+    return gulp.src('./src/style.css')
+        .pipe( postcss(processors) )
+        .pipe( gulp.dest('./dest') );
+});
+```
