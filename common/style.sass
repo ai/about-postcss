@@ -1,6 +1,18 @@
 @import "shower-bright"
 @import "evil-front"
 
+$color: #52a2df
+
+mark
+  color: $color
+  background: transparent
+mark.important
+  padding: 3px 7px 0
+  background: $color
+  color: white
+  mark
+    color: white
+
 .caption
   color: black
 
@@ -30,9 +42,11 @@
   color: white
   +stroke-text(black)
   font-size: 60px
+  position: relative
+  top: -45px
   em
     display: block
     font-size: 35px
     font-style: normal
     font-weight: normal
-    padding-bottom: 10px
+    padding-bottom: 6px

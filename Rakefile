@@ -121,8 +121,13 @@ class Highlighter < Redcarpet::Render::HTML
   end
 
   def css(code)
-    code.gsub(/^([^\s].*){/,'<mark>\\1</mark>{')
-        .gsub(/^    ([^\s:]*):/,'    <mark>\\1</mark>:')
+    code.gsub(/^([^\s].*){/,     '<mark>\\1</mark>{')
+        .gsub(/^    ([^\s:]*):/, '    <mark>\\1</mark>:')
+  end
+
+  def sass(code)
+    code.gsub(/\..*/,  '<mark>\\0</mark>')
+        .gsub(/\+.*/, '<mark class="important">\\0</mark>')
   end
 end
 

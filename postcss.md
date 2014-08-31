@@ -14,8 +14,8 @@
 ## Стандарты развиваются медленно
 
 * **15 лет** на HTML 5;
-* **3 года** на CSS 3;
-* **5 лет** на ECMAScript 6.
+* **5 лет** на ECMAScript 6;
+* **3 года** на CSS 3.
 
 ## 1. Скорость разработки и рендера
 !type with-2-sides
@@ -47,3 +47,27 @@ a {
 !image firefox.png
 !image safari.png
 !image opera.png
+
+## 3. Обратная совместимость
+
+Нестандартный `<blink>` поддерживали **19 лет**
+
+## Эволюция
+
+1. <mark>Случайные идеи</makr>
+2. Сравнение в реальном мире
+3. Отбор
+
+## *Часть 2* Препроцессоры
+!cover sass.jpg
+
+## Хороший Sass
+
+```sass
+.quote
+  position: relative
+  top: 100px
+  +size(100px, 50px)
+  .arrow
+    +triangle
+```
