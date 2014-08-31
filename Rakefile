@@ -63,6 +63,12 @@ class Slide
 
     "<img src=\"#{ url }\" alt=\"#{ name }\">"
   end
+
+  def gem(path)
+    name, path = path.split('/', 2)
+    root = Gem::Specification.find_by_name(name).gem_dir
+    Pathname(root).join(path).read
+  end
 end
 
 module Helpers
@@ -126,8 +132,9 @@ class Highlighter < Redcarpet::Render::HTML
   end
 
   def sass(code)
-    code.gsub(/\..*/,  '<mark>\\0</mark>')
-        .gsub(/\+.*/, '<mark class="important">\\0</mark>')
+    code.gsub(/\..*/,         '<mark>\\0</mark>')
+        .gsub(/\+.*/,         '<mark class="important">\\0</mark>')
+        .gsub(/(@|\$)[\w-]*/, '<mark class="important">\\0</mark>')
   end
 
   def rem(code)

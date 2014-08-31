@@ -61,17 +61,6 @@ a {
 ## *Часть 2* Препроцессоры
 !cover sass.jpg
 
-## Хороший Sass
-
-```sass
-.quote
-  position: relative
-  top: 100px
-  +size(100px, 50px)
-  .arrow
-    +triangle
-```
-
 ## Синтаксические возможности
 
 - Переменные
@@ -84,4 +73,31 @@ a {
 a {
     width: 20rem
 }
+```
+
+## *Проблема 2* Даже JS лучше Sass
+!type with-huge-code
+
+```sass
+!gem compass-core/stylesheets/compass/css3/_transition.scss
+```
+
+## *Проблема 3* Скорость
+
+- Libsass и Автопрефиксер: **0,5 секунд**
+- Ruby Sass и Compass: **5 секунд**
+
+<div class="source">
+Источник: <a href="https://twitter.com/jegtnes/status/495142807494205440">Alex Jegtnes</a>
+</div>
+
+## Хороший Sass
+
+```sass
+.quote
+  position: relative
+  top: 100px
+  +size(100px, 50px)
+  .arrow
+    +triangle
 ```
