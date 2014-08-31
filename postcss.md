@@ -141,7 +141,7 @@ a {
     <div class="css">Новый CSS</div>
 </div>
 
-## Пример
+## Проблема
 
 Современные браузеры:
 
@@ -160,10 +160,9 @@ a:after { }
 ```js
 var coloner = postcss(function (css) {
     css.eachRule(function (rule) {
-        if ( rule.selector.match(/::after/) ) {
-            rule.selector += ',' +
-                rule.selector.replace('::after', ':after');
-        }
+        if ( rule.selector.match(/::/) )
+            rule.selector += ', ' +
+                rule.selector.replace('::', ':');
     });
 });
 ```
