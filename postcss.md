@@ -118,6 +118,7 @@ a {
 2. **PostCSS**:
   - более умный парсер;
   - лучше поддержка карт кода;
+  - сохранияет форматирование;
   - удобнее API.
 
 ## Постпроцессор
@@ -246,4 +247,32 @@ gulp.task('css', function () {
         .pipe( postcss(processors) )
         .pipe( gulp.dest('./dest') );
 });
+```
+
+## Автопрефиксер
+!type with-2-sides
+!type with-small-code
+!type with-bigger-right
+
+```css
+:fullscreen a {
+    transition: transform 1s
+}
+```
+
+```css
+:-webkit-full-screen a {
+    -webkit-transition: -webkit-transform 1s;
+            transition: transform 1s;
+}
+:-moz-full-screen a {
+    transition: transform 1s;
+}
+:-ms-fullscreen a {
+    transition: transform 1s;
+}
+:fullscreen a {
+    -webkit-transition: -webkit-transform 1s;
+            transition: transform 1s;
+}
 ```
