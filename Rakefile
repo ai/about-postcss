@@ -129,6 +129,10 @@ class Highlighter < Redcarpet::Render::HTML
     code.gsub(/\..*/,  '<mark>\\0</mark>')
         .gsub(/\+.*/, '<mark class="important">\\0</mark>')
   end
+
+  def rem(code)
+    css(code).gsub(/\d+rem/, '<mark class="important">\\0</mark>')
+  end
 end
 
 class Builder
