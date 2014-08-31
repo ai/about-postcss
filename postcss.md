@@ -140,3 +140,51 @@ a {
     <div class="arrow">→</div>
     <div class="css">Новый CSS</div>
 </div>
+
+## Пример
+
+Современные браузеры:
+
+```colon
+a::after { }
+```
+
+Для IE 8:
+
+```colon
+a:after { }
+```
+
+## Пример постпроцессора
+
+```js
+var coloner = postcss(function (css) {
+    css.eachRule(function (rule) {
+        if ( rule.selector.match(/::after/) ) {
+            rule.selector += ',' +
+                rule.selector.replace('::after', ':after');
+        }
+    });
+});
+```
+
+## Результат
+!type with-js-inout
+
+```js
+var fixed = coloner.process(css).css;
+```
+
+Вход:
+
+Выход:
+
+```css
+a::after {
+}
+```
+
+```mark_fix
+a::after, a:after {
+}
+```
