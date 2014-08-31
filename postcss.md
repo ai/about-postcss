@@ -96,7 +96,7 @@ a {
 
 ## Хороший Sass
 
-```sass
+```mark_sass
 .quote
   position: relative
   top: 100px
