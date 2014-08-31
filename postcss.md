@@ -119,3 +119,24 @@ a {
   - более умный парсер;
   - лучше поддержка карт кода;
   - удобнее API.
+
+## Постпроцессор
+
+<div class="post-inside">
+    <div class="css">CSS</div>
+    <div class="arrow">→</div>
+    <div class="position">
+        <div class="processor-title">Постпроцессор</div>
+        <div class="processor parser">Парсер</div>
+        <div class="processor stringifier">Сохранение</div>
+        <div class="down">
+            ↓<div class="arrow-text">JS-дерево</div>
+        </div>
+        <div class="up">
+            ↑<div class="arrow-text">Новое JS-дерево</div>
+        </div>
+        <div class="code">Ваш JS-код обработки</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="css">Новый CSS</div>
+</div>
