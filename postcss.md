@@ -199,3 +199,34 @@ var map = coloner.process(css, {
 ```
 
 !image map.png
+
+## Постпроцессоры ♥ Сасс
+
+<div class="post-inside with-sass">
+    <div class="preprocessor">
+        <div class="sass">Сасс</div>
+        <div class="arrow">→</div>
+    </div>
+    <div class="css origin">
+        CSS
+        <div class="map">Карта кода</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="position">
+        <div class="processor-title">PostCSS</div>
+        <div class="processor parser">Парсер</div>
+        <div class="processor stringifier">Сохранение</div>
+        <div class="down">
+            ↓<div class="arrow-text">JS-дерево</div>
+        </div>
+        <div class="up">
+            ↑<div class="arrow-text">Новое JS-дерево</div>
+        </div>
+        <div class="code">Ваш JS-код обработки</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="css">
+        Новый CSS
+        <div class="map">Новая карта</div>
+    </div>
+</div>
