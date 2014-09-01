@@ -72,7 +72,7 @@ a {
 
 ## *Проблема 1* Ограниченность
 
-```rem
+```mark_rem
 a {
     width: 20rem
 }
@@ -249,7 +249,7 @@ gulp.task('css', function () {
 });
 ```
 
-## Автопрефиксер
+## `autoprefixer`
 !type with-2-sides
 !type with-small-code
 !type with-bigger-right
@@ -274,5 +274,29 @@ gulp.task('css', function () {
 :fullscreen a {
     -webkit-transition: -webkit-transform 1s;
             transition: transform 1s;
+}
+```
+
+## Относительные размеры
+
+```mark_font
+.title {
+    height: 2em;
+}
+.title_note {
+    font-size: 14px;
+    height: 2em;
+}
+```
+
+## `pixrem`
+
+```mark_rem
+.title {
+    height: 2rem;
+}
+.title_note {
+    font-size: 14px;
+    height: 2rem;
 }
 ```

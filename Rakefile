@@ -143,7 +143,7 @@ class Highlighter < Redcarpet::Render::HTML
         .gsub(/\+.*/, '<mark class="important">\\0</mark>')
   end
 
-  def rem(code)
+  def mark_rem(code)
     css(code).gsub(/\d+rem/, '<mark class="important">\\0</mark>')
   end
 
@@ -162,6 +162,10 @@ class Highlighter < Redcarpet::Render::HTML
 
   def mark_postcss(code)
     js(code).gsub(/postcss\([^\)]+\)/, '<mark class="important">\\0</mark>')
+  end
+
+  def mark_font(code)
+    css(code.gsub(/font-size: .*/, '<mark class="important">\\0</mark>'))
   end
 end
 
