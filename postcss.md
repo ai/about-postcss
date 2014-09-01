@@ -493,3 +493,7 @@ var iconer = postcss(function (css) {
     content: "A";
 }
 ```
+
+## Вопросы
+!cover ask.jpg
+!type  is-bottom
