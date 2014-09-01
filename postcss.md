@@ -367,3 +367,23 @@ gulp.task('css', function () {
     background: url('data:…')
 }
 ```
+
+## `node-css-mqpacker`
+!type with-2-sides
+!type with-small-code
+
+```css
+@media screen and (min-width: 769px) {
+    a { }
+}
+@media screen and (min-width: 769px) {
+    b { }
+}
+```
+
+```css
+@media screen and (min-width: 769px) {
+    a { }
+    b { }
+}
+```
