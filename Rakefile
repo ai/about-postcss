@@ -180,6 +180,13 @@ class Highlighter < Redcarpet::Render::HTML
   def mark_right(code)
     css(code.gsub(/right/, '<mark class="important">\\0</mark>'))
   end
+
+  def mark_phone(code)
+    code.gsub(/--phone/,          '<mark class="important">\\0</mark>')
+        .gsub(/@[^\s]+/,          '<mark>\\0</mark>')
+        .gsub(/body/,             '<mark>\\0</mark>')
+        .gsub(/^(\s+)([^\s:]*):/, '\\1<mark>\\2</mark>:')
+  end
 end
 
 class Builder
