@@ -432,3 +432,8 @@ a {
 * `postcss-color`
 * `postcss-import`
 * `postcss-custom-properties`
+
+## *Часть 5* Создаём
+!cover create.jpg
+!type  is-bottom
+!type  is-black
