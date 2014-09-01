@@ -87,7 +87,7 @@ a {
 
 ## *Проблема 3* Скорость
 
-- Libsass и Автопрефиксер: **0,5 секунд**
+- Libsass и Автопрефиксер: **0,5 секунды**
 - Ruby Sass и Compass: **5 секунд**
 
 <div class="source">
@@ -118,7 +118,7 @@ a {
 2. **PostCSS**:
   - более умный парсер;
   - лучше поддержка карт кода;
-  - сохранияет форматирование;
+  - сохраняем форматирование;
   - удобнее API.
 
 ## Постпроцессор
@@ -402,7 +402,7 @@ gulp.task('css', function () {
 
 ## `csswring`
 
-Минифицрует CSS и обновит предыдущие карты кода (например, от Sass)
+Минифицирует CSS и обновит предыдущие карты кода (например, от Sass)
 
 ## `rtlcss`
 !type with-2-codes
@@ -437,3 +437,59 @@ a {
 !cover create.jpg
 !type  is-bottom
 !type  is-black
+
+## Задача
+
+Какой символ нужно использовать для иконки из своего иконочного шрифта
+
+```css
+.icon::before {
+    content: '?'
+}
+```
+
+## *Шаг 1* `gulp-iconfont`
+
+```mark_codepoints
+gulp.task('iconfont', function() {
+    gulp.src(['icons/*.svg'])
+        .pipe(iconfont({ fontName: 'Icons' })
+        .on('codepoints', function(data) {
+            codepoints = data
+        })
+        .pipe(gulp.dest('fonts/'));
+});
+```
+
+## *Шаг 2* Постпроцессор
+!type with-small-code
+
+```js
+var iconer = postcss(function (css) {
+    css.eachDecl(function (decl) {
+        if ( decl.prop == 'content' ) {
+
+            decl.value = decl.value.replace(/icon-\w/, function (name) {
+                var code = name.replace(/^icon-/, '');
+                return '"' + codepoints[name].codepoint + '"';
+            });
+
+        }
+    });
+});
+```
+
+## Результат
+!type with-2-codes
+
+```mark_icon
+.icon::before {
+    content: icon-up;
+}
+```
+
+```mark_content
+.icon::before {
+    content: "A";
+}
+```
