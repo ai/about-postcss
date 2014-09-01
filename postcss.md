@@ -290,6 +290,7 @@ gulp.task('css', function () {
 ```
 
 ## `pixrem`
+!type with-2-sides
 
 ```mark_rem
 .title {
@@ -298,5 +299,34 @@ gulp.task('css', function () {
 .title_note {
     font-size: 14px;
     height: 2rem;
+}
+```
+
+```css
+.title {
+    height: 32px;
+    height: 2rem;
+}
+.title_note {
+    font-size: 14px;
+    height: 32px;
+    height: 2rem;
+}
+```
+
+## `pleeease-filters`
+!type with-2-sides
+!type with-bigger-right
+
+```css
+.blur {
+    filter: blur(4px)
+}
+```
+
+```css
+.blur {
+    filter: url('data:image/svg+xml;…');
+    filter: blur(4px);
 }
 ```
