@@ -236,7 +236,7 @@ var map = coloner.process(css, {
 !cover usage.jpg
 !type  is-bottom
 
-## `gulp-postcss`
+## [gulp-postcss](https://github.com/w0rm/gulp-postcss)
 
 ```mark_postcss
 gulp.task('css', function () {
@@ -249,7 +249,7 @@ gulp.task('css', function () {
 });
 ```
 
-## `autoprefixer`
+## [autoprefixer](https://github.com/postcss/autoprefixer)
 !type with-2-sides
 !type with-small-code
 !type with-bigger-right
@@ -289,7 +289,7 @@ gulp.task('css', function () {
 }
 ```
 
-## `pixrem`
+## [pixrem](https://github.com/robwierzbowski/node-pixrem)
 !type with-2-sides
 
 ```mark_rem
@@ -314,7 +314,7 @@ gulp.task('css', function () {
 }
 ```
 
-## `pleeease-filters`
+## [pleeease-filters](https://github.com/iamvdo/pleeease-filters)
 !type with-2-sides
 !type with-bigger-right
 
@@ -331,7 +331,7 @@ gulp.task('css', function () {
 }
 ```
 
-## `grunt-webpcss`
+## [grunt-webpcss](https://github.com/lexich/grunt-webpcss)
 !type with-2-sides
 
 ```css
@@ -346,7 +346,7 @@ gulp.task('css', function () {
 }
 ```
 
-## `grunt-data-separator`
+## [grunt-data-separator](https://github.com/Sebastian-Fitzner/grunt-data-separator)
 !type with-2-sides
 
 ```css
@@ -368,7 +368,7 @@ gulp.task('css', function () {
 }
 ```
 
-## `node-css-mqpacker`
+## [node-css-mqpacker](https://github.com/hail2u/node-css-mqpacker)
 !type with-2-sides
 !type with-small-code
 
@@ -388,7 +388,7 @@ gulp.task('css', function () {
 }
 ```
 
-## `postcss-custom-media`
+## [postcss-custom-media](https://github.com/postcss/postcss-custom-media)
 
 ```mark_phone
 @custom-media --phone (max-width: 30em);
@@ -400,11 +400,11 @@ gulp.task('css', function () {
 }
 ```
 
-## `csswring`
+## [csswring](https://github.com/hail2u/node-csswring)
 
 Минифицирует CSS и обновит предыдущие карты кода (например, от Sass)
 
-## `rtlcss`
+## [rtlcss](https://github.com/MohammadYounes/rtlcss)
 !type with-2-codes
 
 Изменяет дизайн для арабского и иврита
@@ -448,7 +448,7 @@ a {
 }
 ```
 
-## *Шаг 1* `gulp-iconfont`
+## *Шаг 1* [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont)
 
 ```mark_codepoints
 gulp.task('iconfont', function() {
