@@ -330,3 +330,18 @@ gulp.task('css', function () {
     filter: blur(4px);
 }
 ```
+
+## `grunt-webpcss`
+!type with-2-sides
+
+```css
+.icon {
+    background: url('a.png')
+}
+```
+
+```mark_webp
+.webp .icon {
+    background: url('a.webp')
+}
+```

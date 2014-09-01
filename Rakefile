@@ -167,6 +167,10 @@ class Highlighter < Redcarpet::Render::HTML
   def mark_font(code)
     css(code.gsub(/font-size: .*/, '<mark class="important">\\0</mark>'))
   end
+
+  def mark_webp(code)
+    css(code.gsub(/\.webp/, '<mark class="important">\\0</mark>'))
+  end
 end
 
 class Builder
