@@ -120,14 +120,15 @@ class Highlighter < Redcarpet::Render::HTML
 
   def default_highlight(code)
     code.gsub(/(true|false|null|nil)/,'<mark>\\0</mark>')
-        .gsub(/"[^"]+"|'[^']+'/, '<mark>\\0</mark>')
-        .gsub(/(\s|^)(#[^\{].*$)/, '\\1<mark class="comment">\\2</mark>')
+        .gsub(/"[^"]+"|'[^']+'/,      '<mark>\\0</mark>')
+        .gsub(/(\s|^)(#[^\{].*$)/,    '\\1<mark class="comment">\\2</mark>')
         .gsub(/(\(|\[|,|^|\s|=)(\d+(px|deg|%|m?s|))(\)|,|$|\s|;)/,
           '\\1<mark>\\2</mark>\\4')
   end
 
   def css(code)
     code.gsub(/^([^\s].*){/,     '<mark>\\1</mark>{')
+        .gsub(/\/\*.*\*\//,      '<mark class="comment">\\0</mark>')
         .gsub(/^    ([^\s:]*):/, '    <mark>\\1</mark>:')
   end
 

@@ -345,3 +345,25 @@ gulp.task('css', function () {
     background: url('a.webp')
 }
 ```
+
+## `grunt-data-separator`
+!type with-2-sides
+
+```css
+/* style.css */
+.icon {
+    width: 100px;
+    background: url('data:…')
+}
+```
+
+```css
+/* style.css */
+.icon {
+    width: 100px
+}
+/* style.icons.css */
+.icon {
+    background: url('data:…')
+}
+```
