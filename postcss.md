@@ -387,3 +387,22 @@ gulp.task('css', function () {
     b { }
 }
 ```
+
+## `rtlcss`
+!type with-2-codes
+
+Изменяет дизайн для арабского и иврита
+
+```mark_left
+a {
+    left: 10px;
+    text-align: left
+}
+```
+
+```mark_right
+a {
+    right: 10px;
+    text-align: right
+}
+```

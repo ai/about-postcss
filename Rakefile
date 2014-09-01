@@ -172,6 +172,14 @@ class Highlighter < Redcarpet::Render::HTML
   def mark_webp(code)
     css(code.gsub(/\.webp/, '<mark class="important">\\0</mark>'))
   end
+
+  def mark_left(code)
+    css(code.gsub(/left/, '<mark class="important">\\0</mark>'))
+  end
+
+  def mark_right(code)
+    css(code.gsub(/right/, '<mark class="important">\\0</mark>'))
+  end
 end
 
 class Builder
