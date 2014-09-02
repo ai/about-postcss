@@ -21,29 +21,29 @@
 
 ## Стандарты развиваются медленно
 
-* **15 лет** на HTML 5;
-* **5 лет** на ECMAScript 6;
-* **3 года** на CSS 3.
+- **15 лет** на HTML 5
+- **5 лет** на ECMAScript 6
+- **3 года** на CSS 3
 
 ## 1. Скорость разработки и рендера
 !type with-2-sides
 
-Быстро разрабатывать:
+Быстро разрабатывать
 
-Быстро рендерить:
+Быстро рендерить
 
 ```css
 :root {
-    --main: #c00;
+    --main: #c00
 }
 a {
-    color: var(--main);
+    color: var(--main)
 }
 ```
 
 ```css
 a {
-    color: #c00;
+    color: #c00
 }
 ```
 
@@ -121,13 +121,13 @@ a {
 ## Постпроцессоры
 
 1. **Rework**:
-  - первый;
-  - проще, меньше.
+  - первый
+  - проще, меньше
 2. **PostCSS**:
-  - более умный парсер;
-  - лучше поддержка карт кода;
-  - сохраняем форматирование;
-  - удобнее API.
+  - более умный парсер
+  - лучше поддержка карт кода
+  - сохраняем форматирование
+  - удобнее API
 
 ## Постпроцессор
 
@@ -271,17 +271,17 @@ gulp.task('css', function () {
 ```css
 :-webkit-full-screen a {
     -webkit-transition: -webkit-transform 1s;
-            transition: transform 1s;
+            transition: transform 1s
 }
 :-moz-full-screen a {
-    transition: transform 1s;
+    transition: transform 1s
 }
 :-ms-fullscreen a {
-    transition: transform 1s;
+    transition: transform 1s
 }
 :fullscreen a {
     -webkit-transition: -webkit-transform 1s;
-            transition: transform 1s;
+            transition: transform 1s
 }
 ```
 
@@ -289,11 +289,11 @@ gulp.task('css', function () {
 
 ```mark_font
 .title {
-    height: 2em;
+    height: 2em
 }
 .title_note {
     font-size: 14px;
-    height: 2em;
+    height: 2em
 }
 ```
 
@@ -302,23 +302,23 @@ gulp.task('css', function () {
 
 ```mark_rem
 .title {
-    height: 2rem;
+    height: 2rem
 }
 .title_note {
     font-size: 14px;
-    height: 2rem;
+    height: 2rem
 }
 ```
 
 ```css
 .title {
     height: 32px;
-    height: 2rem;
+    height: 2rem
 }
 .title_note {
     font-size: 14px;
     height: 32px;
-    height: 2rem;
+    height: 2rem
 }
 ```
 
@@ -335,7 +335,7 @@ gulp.task('css', function () {
 ```css
 .blur {
     filter: url('data:image/svg+xml;…');
-    filter: blur(4px);
+    filter: blur(4px)
 }
 ```
 
@@ -492,13 +492,13 @@ var iconer = postcss(function (css) {
 
 ```mark_icon
 .icon::before {
-    content: icon-up;
+    content: icon-up
 }
 ```
 
 ```mark_content
 .icon::before {
-    content: "A";
+    content: "A"
 }
 ```
 
