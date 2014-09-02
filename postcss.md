@@ -509,6 +509,7 @@ var iconer = postcss(function (css) {
 ## [github.com/postcss/postcss](http://github.com/postcss/postcss)
 !type with-em
 
+* Презентация: [ai.github.io/about-postcss](http://ai.github.io/about-postcss/)
 * [@autoprefixer](https://twitter/autoprefixer)
 * [@andrey_sitnik](https://twitter/andrey_sitnik)
 
