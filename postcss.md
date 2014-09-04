@@ -349,6 +349,9 @@ gulp.task('css', function () {
 ```
 
 ```mark_webp
+.icon {
+    background: url('a.png')
+}
 .webp .icon {
     background: url('a.webp')
 }
