@@ -256,6 +256,31 @@ gulp.task('css', function () {
 });
 ```
 
+## [pixrem](https://github.com/robwierzbowski/node-pixrem)
+!type with-2-sides
+
+```mark_rem
+.title {
+    height: 2rem
+}
+.title_note {
+    font-size: 14px;
+    height: 2rem
+}
+```
+
+```css
+.title {
+    height: 32px;
+    height: 2rem
+}
+.title_note {
+    font-size: 14px;
+    height: 32px;
+    height: 2rem
+}
+```
+
 ## [autoprefixer](https://github.com/postcss/autoprefixer)
 !type with-2-sides
 !type with-small-code
@@ -281,43 +306,6 @@ gulp.task('css', function () {
 :fullscreen a {
     -webkit-transition: -webkit-transform 1s;
             transition: transform 1s
-}
-```
-
-## Относительные размеры
-
-```mark_font
-.title {
-    height: 2em
-}
-.title_note {
-    font-size: 14px;
-    height: 2em
-}
-```
-
-## [pixrem](https://github.com/robwierzbowski/node-pixrem)
-!type with-2-sides
-
-```mark_rem
-.title {
-    height: 2rem
-}
-.title_note {
-    font-size: 14px;
-    height: 2rem
-}
-```
-
-```css
-.title {
-    height: 32px;
-    height: 2rem
-}
-.title_note {
-    font-size: 14px;
-    height: 32px;
-    height: 2rem
 }
 ```
 
