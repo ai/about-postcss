@@ -168,10 +168,9 @@ a:after { }
 
 ```js
 var coloner = postcss(function (css) {
-    css.eachRule(function (rule) {
-        if ( rule.selector.match(/::/) )
-            rule.selector += ', ' +
-                rule.selector.replace('::', ':');
+    css.eachRule(function (i) {
+        if ( i.selector.match(/::/) )
+            i.selector += i.selector.replace('::', ':');
     });
 });
 ```
@@ -194,7 +193,7 @@ a::after {
 ```
 
 ```mark_fix
-a::after, a:after {
+a:after {
     content: "→"
 }
 ```
@@ -332,14 +331,14 @@ gulp.task('css', function () {
 }
 ```
 
-```css
+```mark_svg
 .blur {
     filter: url('data:image/svg+xml;…');
     filter: blur(4px)
 }
 ```
 
-## [grunt-webpcss](https://github.com/lexich/grunt-webpcss)
+## [webpcss](https://github.com/lexich/webpcss)
 !type with-2-sides
 
 ```css

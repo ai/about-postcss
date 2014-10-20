@@ -121,85 +121,89 @@ class Highlighter < Redcarpet::Render::HTML
   end
 
   def default_highlight(code)
-    code.gsub(/(true|false|null|nil)/,'<mark>\\0</mark>')
-        .gsub(/"[^"]+"|'[^']+'/,      '<mark>\\0</mark>')
-        .gsub(/(\s|^)(#[^\{].*$)/,    '\\1<mark class="comment">\\2</mark>')
+    code.gsub(/(true|false|null|nil)/,'<mark>\0</mark>')
+        .gsub(/"[^"]+"|'[^']+'/,      '<mark>\0</mark>')
+        .gsub(/(\s|^)(#[^\{].*$)/,    '\1<mark class="comment">\2</mark>')
         .gsub(/(\(|\[|,|^|\s|=)(\d+(px|deg|%|m?s|))(\)|,|$|\s|;)/,
           '\\1<mark>\\2</mark>\\4')
   end
 
   def css(code)
-    code.gsub(/^([^\s].*){/,     '<mark>\\1</mark>{')
-        .gsub(/\/\*.*\*\//,      '<mark class="comment">\\0</mark>')
-        .gsub(/^    ([^\s:]*):/, '    <mark>\\1</mark>:')
+    code.gsub(/^([^\s].*){/,     '<mark>\1</mark>{')
+        .gsub(/\/\*.*\*\//,      '<mark class="comment">\0</mark>')
+        .gsub(/^    ([^\s:]*):/, '    <mark>\1</mark>:')
   end
 
   def sass(code)
-    code.gsub(/\..*/,         '<mark>\\0</mark>')
-        .gsub(/\+.*/,         '<mark>\\0</mark>')
-        .gsub(/(@|\$)[\w-]*/, '<mark>\\0</mark>')
-        .gsub(/\/\/.*/,       '<mark class="comment">\\0</mark>')
+    code.gsub(/\..*/,         '<mark>\0</mark>')
+        .gsub(/\+.*/,         '<mark>\0</mark>')
+        .gsub(/(@|\$)[\w-]*/, '<mark>\0</mark>')
+        .gsub(/\/\/.*/,       '<mark class="comment">\0</mark>')
   end
 
   def mark_sass(code)
     code.gsub(/\..*/, '<mark>\\0</mark>')
-        .gsub(/\+.*/, '<mark class="important">\\0</mark>')
+        .gsub(/\+.*/, '<mark class="important">\0</mark>')
   end
 
   def mark_rem(code)
-    css(code).gsub(/\d+rem/, '<mark class="important">\\0</mark>')
+    css(code).gsub(/\d+rem/, '<mark class="important">\0</mark>')
   end
 
   def colon(code)
-    code.gsub(/:+/, '<mark class="important">\\0</mark>')
+    code.gsub(/:+/, '<mark class="important">\0</mark>')
   end
 
   def js(code)
     default_highlight(code)
-      .gsub(/if|var|function|\/[^<>\/]+\/|return/, '<mark>\\0</mark>')
+      .gsub(/if|var|function|\/[^<>\/]+\/|return/, '<mark>\0</mark>')
   end
 
   def mark_fix(code)
-    css(code).gsub(/a:after/, '<mark class="important">\\0</mark>')
+    css(code).gsub(/a:after/, '<mark class="important">\0</mark>')
   end
 
   def mark_postcss(code)
-    js(code).gsub(/postcss\([^\)]+\)/, '<mark class="important">\\0</mark>')
+    js(code).gsub(/postcss\([^\)]+\)/, '<mark class="important">\0</mark>')
   end
 
   def mark_font(code)
-    css(code.gsub(/font-size: .*/, '<mark class="important">\\0</mark>'))
+    css(code.gsub(/font-size: .*/, '<mark class="important">\0</mark>'))
   end
 
   def mark_webp(code)
-    css(code.gsub(/\.webp/, '<mark class="important">\\0</mark>'))
+    css(code.gsub(/\.webp/, '<mark class="important">\0</mark>'))
   end
 
   def mark_left(code)
-    css(code.gsub(/left/, '<mark class="important">\\0</mark>'))
+    css(code.gsub(/left/, '<mark class="important">\0</mark>'))
   end
 
   def mark_right(code)
-    css(code.gsub(/right/, '<mark class="important">\\0</mark>'))
+    css(code.gsub(/right/, '<mark class="important">\0</mark>'))
   end
 
   def mark_phone(code)
-    code.gsub(/--phone/,          '<mark class="important">\\0</mark>')
-        .gsub(/@[^\s]+/,          '<mark>\\0</mark>')
-        .gsub(/body/,             '<mark>\\0</mark>')
-        .gsub(/^(\s+)([^\s:]*):/, '\\1<mark>\\2</mark>:')
+    code.gsub(/--phone/,          '<mark class="important">\0</mark>')
+        .gsub(/@[^\s]+/,          '<mark>\0</mark>')
+        .gsub(/body/,             '<mark>\0</mark>')
+        .gsub(/^(\s+)([^\s:]*):/, '\\1<mark>\2</mark>:')
   end
 
   def mark_codepoints(code)
-    js(code).gsub(/\s(codepoints)/, ' <mark class="important">\\1</mark>')
+    js(code).gsub(/\s(codepoints)/, ' <mark class="important">\1</mark>')
   end
 
   def mark_icon(code)
-    css(code).gsub(/icon-\w+/, '<mark class="important">\\0</mark>')
+    css(code).gsub(/icon-\w+/, '<mark class="important">\0</mark>')
   end
 
   def mark_content(code)
-    css(code).gsub(/"[^"]+"/, '<mark class="important">\\0</mark>')
+    css(code).gsub(/"[^"]+"/, '<mark class="important">\0</mark>')
+  end
+
+  def mark_svg(code)
+    css(code).gsub(/data:.*/, '<mark class="important">\0</mark>')
   end
 end
 
