@@ -7,6 +7,8 @@ COMMON = ROOT.join('common')
 require 'redcarpet'
 require 'evil-front-all'
 require 'active_support/core_ext'
+require 'rails-assets-shower-core'
+require 'rails-assets-shower-bright'
 
 JqueryCdn.local_url = proc { '/jquery.js' }
 
@@ -213,17 +215,10 @@ class Builder
     @build_type = build_type
   end
 
-  def add_gem_assets(env, gem)
-    path = Gem::Specification.find_by_name(gem).gem_dir
-    path = Pathname(path).join('vendor/assets')
-    path.each_child { |path| env.append_path(path) }
-  end
-
   def assets
     @sprockets ||= begin
       Sprockets::Environment.new(ROOT) do |env|
-        add_gem_assets(env, 'rails-assets-shower-core')
-        add_gem_assets(env, 'rails-assets-shower-bright')
+        RailsAssets.load_paths.each { |i| env.append_path(i) }
 
         EvilFront.install_all(env)
         Slim::Engine.set_default_options(pretty: false, format: :html5)
