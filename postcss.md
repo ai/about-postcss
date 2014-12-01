@@ -500,7 +500,7 @@ var iconer = postcss(function (css) {
 !type with-em
 
 * Презентация: [ai.github.io/about-postcss](http://ai.github.io/about-postcss/)
-* [@autoprefixer](https://twitter.com/autoprefixer)
-* [@andrey_sitnik](https://twitter.com/andrey_sitnik)
+* Вопросы: [gitter.im/postcss/postcss](https://gitter.im/postcss/postcss)
+* Твиттер: [@postcss](https://twitter.com/autoprefixer)
 
 !image evilmartians.png
