@@ -19,6 +19,74 @@
 ## *Часть 1* Проблема
 !cover problem.jpg
 
+## Части веб-проекта
+
+<div class="project-parts">
+    <div class="project-parts_part is-css">
+        <div class="project-parts_title">CSS</div>
+        <div class="project-parts_line"></div>
+        <div class="project-parts_value">72 КБ</div>
+    </div>
+    <div class="project-parts_part is-js">
+        <div class="project-parts_title">JS</div>
+        <div class="project-parts_line"></div>
+        <div class="project-parts_value">25 КБ</div>
+    </div>
+    <div class="project-parts_part is-backend">
+        <div class="project-parts_title">Бэкенд</div>
+        <div class="project-parts_line"></div>
+        <div class="project-parts_value">43 КБ</div>
+    </div>
+</div>
+
+<div class="source">
+Источник: проекты Злых марсиан
+</div>
+
+## Хороший код: DRY
+
+```
+format_links(announce);
+format_links(text);
+```
+
+## Хороший код: DSL
+
+```
+count.should.eql(1);
+```
+
+## Хороший код: автоматизация
+
+```
+User = createModelByTable('users');
+User.findByLogin('ai');
+```
+
+## CSS
+!type with-smaller-code
+
+```css
+.logo {
+    -webkit-transition: border;
+    transition: border;
+    border: 2px solid #ffe644;
+}
+.image {
+    border: 2px solid #ffe644;
+    background: data('data:…');
+    width: 200px
+    height: 180px
+}
+.body::after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+```
+
 ## Стандарты развиваются медленно
 
 - **15 лет** на HTML 5

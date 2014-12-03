@@ -1,5 +1,7 @@
 @import "evil-front"
 
+$color: #52a2df
+
 .slide.is-title
   h2
     font-size: 32px
@@ -92,12 +94,44 @@
     code
       line-height: 1.8
 
+.slide.with-smaller-code
+  pre
+    font-size: 55%
+    code
+      line-height: 1.8
+
 .slide.with-em
   img
     position: absolute
     bottom: 60px
     width: 250px
     opacity: 0.25
+
+.project-parts
+  padding-top: 60px
+  &_part
+    clear: left
+    padding-top: 20px
+  &_title
+    float: left
+    width: 100px
+    text-align: right
+  &_line
+    float: left
+    height: 30px
+    background: #b0b0b
+    margin: 10px 0 0 20px
+  &_value
+    float: left
+    font-size: 55%
+    margin: 11px 0 0 15px
+.project-parts_part.is-css     .project-parts_line
+  background: $color
+  width: 600px * (72 / 72)
+.project-parts_part.is-js      .project-parts_line
+  width: 600px * (25 / 72)
+.project-parts_part.is-backend .project-parts_line
+  width: 600px * (43 / 72)
 
 .post-inside
   margin-top: 120px
