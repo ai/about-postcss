@@ -141,11 +141,6 @@ class Highlighter < Redcarpet::Render::HTML
         .gsub(/\/\/.*/,       '<mark class="comment">\0</mark>')
   end
 
-  def mark_sass(code)
-    code.gsub(/\..*/, '<mark>\\0</mark>')
-        .gsub(/\+.*/, '<mark class="important">\0</mark>')
-  end
-
   def mark_rem(code)
     css(code).gsub(/\d+rem/, '<mark class="important">\0</mark>')
   end
@@ -204,6 +199,10 @@ class Highlighter < Redcarpet::Render::HTML
 
   def mark_svg(code)
     css(code).gsub(/data:.*/, '<mark class="important">\0</mark>')
+  end
+
+  def mark_template(code)
+    code.gsub(/&lt;[^\n]*&gt;/, '<mark>\0</mark>')
   end
 end
 

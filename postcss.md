@@ -43,20 +43,20 @@
 Источник: проекты Злых марсиан
 </div>
 
-## Хороший код: DRY
+## *Хороший код* DRY
 
 ```
 format_links(announce);
 format_links(text);
 ```
 
-## Хороший код: DSL
+## *Хороший код* DSL
 
 ```
 count.should.eql(1);
 ```
 
-## Хороший код: автоматизация
+## *Хороший код* Метапрограммирование
 
 ```
 User = createModelByTable('users');
@@ -140,13 +140,30 @@ a {
 ## *Часть 2* Препроцессоры
 !cover sass.jpg
 
+## Шаблонизаторы CSS
+
+```mark_template
+a {
+    <%= include clickable %>
+    color: <%= $link-color %>
+}
+```
+
+## *Проблема 1* Медленно
+
+Compass на стилях ГитХаба — **3,5 секунды**
+
+<div class="source">
+Источник: <a href="https://github.com/postcss/autoprefixer/blob/master/benchmark/general.js#L53">Бенчмарк Автопрефиксера</a>
+</div>
+
 ## Синтаксические возможности
 
 - Переменные
 - Примеси
 - Функции
 
-## *Проблема 1* Ограниченность
+## *Проблема 2* Ограниченность
 
 ```mark_rem
 a {
@@ -154,31 +171,11 @@ a {
 }
 ```
 
-## *Проблема 2* Даже JS лучше Sass
+## *Проблема 3* Даже JS лучше Sass
 !type with-huge-code
 
 ```sass
 !gem compass-core/stylesheets/compass/css3/_transition.scss
-```
-
-## *Проблема 3* Скорость
-
-- Libsass и Автопрефиксер: **0,5 секунды**
-- Ruby Sass и Compass: **5 секунд**
-
-<div class="source">
-Источник: <a href="https://twitter.com/jegtnes/status/495142807494205440">Alex Jegtnes</a>
-</div>
-
-## Хороший Sass
-
-```mark_sass
-.quote
-  position: relative
-  top: 100px
-  +size(100px, 50px)
-  .arrow
-    +triangle
 ```
 
 ## *Часть 3* Постпроцессоры
@@ -199,157 +196,65 @@ a {
 
 ## Постпроцессор
 
-<div class="post-inside">
-    <div class="css">CSS</div>
-    <div class="arrow">→</div>
-    <div class="position">
-        <div class="processor-title">Постпроцессор</div>
-        <div class="processor parser">Парсер</div>
-        <div class="processor stringifier">Сохранение</div>
-        <div class="down">
-            ↓<div class="arrow-text">JS-дерево</div>
-        </div>
-        <div class="up">
-            ↑<div class="arrow-text">Новое JS-дерево</div>
-        </div>
-        <div class="code">Ваш JS-код обработки</div>
-    </div>
-    <div class="arrow">→</div>
-    <div class="css">Новый CSS</div>
-</div>
-
-## Проблема
-
-Современные браузеры:
-
-```colon
-a::after { }
-```
-
-Для IE 8:
-
-```colon
-a:after { }
-```
-
-## Пример постпроцессора
-
-```js
-var coloner = postcss(function (css) {
-    css.eachRule(function (i) {
-        if ( i.selector.match(/::/) )
-            i.selector += i.selector.replace('::', ':');
-    });
-});
-```
-
-## Результат
-!type with-js-inout
-
-```js
-var fixed = coloner.process(css).css;
-```
-
-Вход:
-
-Выход:
-
-```css
-a::after {
-    content: "→"
-}
-```
-
-```mark_fix
-a:after {
-    content: "→"
-}
-```
-
-## Карты кода
-
-```js
-var map = coloner.process(css, {
-    map: { prev: sassMap }
-}).map;
-```
-
-!image map.png
-
-## Постпроцессоры ♥ Сасс
-
-<div class="post-inside with-sass">
-    <div class="preprocessor">
-        <div class="sass">Сасс</div>
-        <div class="arrow">→</div>
-    </div>
-    <div class="css origin">
+<div class="postprocessing">
+    <div class="postprocessing_step is-css">
         CSS
-        <div class="map">Карта кода</div>
+        <span class="postprocessing_position">
+            <div class="postprocessing_note">Карта кода</div>
+        </span>
     </div>
-    <div class="arrow">→</div>
-    <div class="position">
-        <div class="processor-title">PostCSS</div>
-        <div class="processor parser">Парсер</div>
-        <div class="processor stringifier">Сохранение</div>
-        <div class="down">
-            ↓<div class="arrow-text">JS-дерево</div>
-        </div>
-        <div class="up">
-            ↑<div class="arrow-text">Новое JS-дерево</div>
-        </div>
-        <div class="code">Ваш JS-код обработки</div>
-    </div>
-    <div class="arrow">→</div>
-    <div class="css">
+    <div class="postprocessing_step is-important">Парсер</div>
+    <div class="postprocessing_step">Плагин</div>
+    <div class="postprocessing_step">Плагин</div>
+    <div class="postprocessing_step is-important">Сохранение</div>
+    <div class="postprocessing_step is-css">
         Новый CSS
-        <div class="map">Новая карта</div>
+        <span class="postprocessing_position">
+            <div class="postprocessing_note">Новая карта</div>
+        </span>
     </div>
 </div>
 
-## *Часть 4* Используем
-!cover usage.jpg
-!type  is-bottom
+## Использование
 
-## [gulp-postcss](https://github.com/w0rm/gulp-postcss)
+```js
+var postcss = require('postcss');
 
-```mark_postcss
-gulp.task('css', function () {
-    var processors = [
-        require('autoprefixer'),
-        require('csswring') ];
-    return gulp.src('./src/style.css')
-        .pipe( postcss(processors) )
-        .pipe( gulp.dest('./dest') );
-});
+css = postcss()
+        .use(plugin1)
+        .use(plugin2)
+        .process(css).css;
 ```
 
-## [pixrem](https://github.com/robwierzbowski/node-pixrem)
+## Плагин
+
+```js
+var pixrem = function (css) {
+    css.eachDecl(function (decl) {
+        decl.value = decl.value
+            .replace(/\d+rem/, function (rem) {
+                return 16 * parseFloat(rem);
+            })
+    })
+}
+```
+
+## Разница
 !type with-2-sides
 
-```mark_rem
-.title {
-    height: 2rem
-}
-.title_note {
-    font-size: 14px;
-    height: 2rem
-}
-```
+**Препроцессор**
 
-```css
-.title {
-    height: 32px;
-    height: 2rem
-}
-.title_note {
-    font-size: 14px;
-    height: 32px;
-    height: 2rem
-}
-```
+- На вход шаблон
+- «Магия» прямо в стилях
+- Функции вшиты в язык
 
-## [autoprefixer](https://github.com/postcss/autoprefixer)
+**Постпроцессор**
+
+- На вход CSS
+- «Магия» на JS
+- Все фукнции как модули
+
+## *Плагины* [autoprefixer](https://github.com/postcss/autoprefixer)
 !type with-2-sides
 !type with-small-code
 !type with-bigger-right
@@ -377,7 +282,7 @@ gulp.task('css', function () {
 }
 ```
 
-## [pleeease-filters](https://github.com/iamvdo/pleeease-filters)
+## *Плагины* [pleeease-filters](https://github.com/iamvdo/pleeease-filters)
 !type with-2-sides
 !type with-bigger-right
 
@@ -394,7 +299,7 @@ gulp.task('css', function () {
 }
 ```
 
-## [webpcss](https://github.com/lexich/webpcss)
+## *Плагины* [webpcss](https://github.com/lexich/webpcss)
 !type with-2-sides
 
 ```css
@@ -412,7 +317,7 @@ gulp.task('css', function () {
 }
 ```
 
-## [grunt-data-separator](https://github.com/Sebastian-Fitzner/grunt-data-separator)
+## *Плагины* [grunt-data-separator](https://github.com/Sebastian-Fitzner/grunt-data-separator)
 !type with-2-sides
 
 ```css
@@ -434,27 +339,7 @@ gulp.task('css', function () {
 }
 ```
 
-## [node-css-mqpacker](https://github.com/hail2u/node-css-mqpacker)
-!type with-2-sides
-!type with-small-code
-
-```css
-@media screen and (min-width: 769px) {
-    a { }
-}
-@media screen and (min-width: 769px) {
-    b { }
-}
-```
-
-```css
-@media screen and (min-width: 769px) {
-    a { }
-    b { }
-}
-```
-
-## [postcss-custom-media](https://github.com/postcss/postcss-custom-media)
+## *Плагины* [postcss-custom-media](https://github.com/postcss/postcss-custom-media)
 
 ```mark_phone
 @custom-media --phone (max-width: 30em);
@@ -466,11 +351,11 @@ gulp.task('css', function () {
 }
 ```
 
-## [csswring](https://github.com/hail2u/node-csswring)
+## *Плагины* [csswring](https://github.com/hail2u/node-csswring)
 
 Минифицирует CSS и обновит предыдущие карты кода (например, от Sass)
 
-## [rtlcss](https://github.com/MohammadYounes/rtlcss)
+## *Плагины* [rtlcss](https://github.com/MohammadYounes/rtlcss)
 !type with-2-codes
 
 Изменяет дизайн для арабского и иврита
@@ -489,15 +374,48 @@ a {
 }
 ```
 
-## [И много другого](https://github.com/postcss/postcss#built-with-postcss)
+## Скорость
 
-* `cssnext`
-* `pleeease`
-* `postcss-url`
-* `css2modernizr`
-* `postcss-color`
-* `postcss-import`
-* `postcss-custom-properties`
+## Преимущества
+
+- Скорость
+- Плагины пишутся на JS
+- Можно сделать гораздо больше
+
+## *Часть 4* Используем
+!cover usage.jpg
+!type  is-bottom
+
+## Интеграция
+
+- [Webpack](https://github.com/postcss/postcss-loader)
+- [Grunt](https://github.com/nDmitry/grunt-postcss)
+- [Gulp](https://github.com/w0rm/gulp-postcss)
+
+## [gulp-postcss](https://github.com/w0rm/gulp-postcss)
+
+```mark_postcss
+gulp.task('css', function () {
+    var processors = [/* плагины */];
+    return gulp.src('./src/style.css')
+        .pipe( postcss(processors) )
+        .pipe( gulp.dest('./dest') );
+});
+```
+
+## [Выбираем плагины](https://github.com/postcss/postcss#built-with-postcss)
+
+```js
+var processors = [
+    require('postcss-custom-properties'),
+    require('pleeease-filters'),
+    require('postcss-import'),
+    require('autoprefixer'),
+    require('postcss-calc'),
+    require('postcss-url')
+    require('csswring')
+];
+```
 
 ## *Часть 5* Создаём
 !cover create.jpg
