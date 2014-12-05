@@ -1,8 +1,8 @@
-# PostCSS: будущее после Sass и LESS
+# PostCSS: будущее после Sass и Less
 
 [Андрей Ситник](http://sitnik.ru/), [Злые марсиане](http://evilmartians.ru/)
 
-## **PostCSS** Будущее после Sass и LESS
+## **PostCSS** Будущее после Sass и Less
 !type is-title
 !image logo.png
 
@@ -401,7 +401,7 @@ a {
         <div class="compare_value">109 мс</div>
     </div>
     <div class="compare_part is-less">
-        <div class="compare_title">Less.js</div>
+        <div class="compare_title">Less</div>
         <div class="compare_line"></div>
         <div class="compare_value">150 мс</div>
     </div>

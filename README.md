@@ -1,4 +1,4 @@
-### Презентация «PostCSS: будущее после Sass и LESS»
+### Презентация «PostCSS: будущее после Sass и Less»
 
 Для выступления на [SPB Frontend](https://vk.com/spb_frontend).
 
