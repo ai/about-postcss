@@ -5,13 +5,16 @@ html lang="ru"
     link rel="icon" href="http://sitnik.ru/favicon.ico"
     title= title
     meta name="viewport" content="width=1274, user-scalable=no"
+
     - if development?
       link rel="stylesheet" href="/style.css"
       link rel="stylesheet" href="/postcss.css"
+      link rel="stylesheet" href="/fonts.css"
     - else
       style
         = assets['style.css']
         = assets['postcss.css']
+        = assets['fonts.css']
       = include_statistics
   body.list
     header.caption= caption
@@ -19,11 +22,6 @@ html lang="ru"
     - slides.each_with_index do |slide, i|
       section.slide id=(i + 1) class=slide.types.join(' ')
         div= slide.html
-
-    - if development?
-      link rel="stylesheet" href="/fonts.css"
-    - else
-      style= assets['fonts.css']
 
     - if development?
       script src="/jquery.js"
