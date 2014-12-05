@@ -339,21 +339,34 @@ var pixrem = function (css) {
 }
 ```
 
-## *Плагины* [postcss-custom-media](https://github.com/postcss/postcss-custom-media)
-
-```mark_phone
-@custom-media --phone (max-width: 30em);
-
-@media (--phone) {
-    body {
-        width: 320px
-    }
-}
-```
-
 ## *Плагины* [csswring](https://github.com/hail2u/node-csswring)
 
 Минифицирует CSS и обновит предыдущие карты кода (например, от Sass)
+
+## *Плагины* [postcss-bem-linter](https://github.com/necolas/postcss-bem-linter)
+
+Проверка БЭМ-стиля для Твиттере
+(методология [SUIT CSS](https://github.com/suitcss/suit))
+
+## *Плагины* [doiuse](https://github.com/anandthakker/doiuse)
+
+Проверка, поддерживаются ли все CSS-свойства в нужных браузерах по Can I Use.
+
+```none
+main.css: line 15, col 3 -
+  CSS user-select: none not supported by: IE (8,9)
+main.css: line 32, col 3 -
+  CSS3 Transforms not supported by: IE (8)
+```
+
+## *Плагины* [cssnext](https://github.com/cssnext/cssnext)
+
+Набор полифилов для спецификаций CSS 4:
+
+- CSS-переменные
+- Шорткаты для селекторов
+- Удобный синтаксис `font-feature-settings`
+- Новые способы задания цветов
 
 ## *Плагины* [rtlcss](https://github.com/MohammadYounes/rtlcss)
 !type with-2-codes
