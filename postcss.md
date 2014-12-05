@@ -240,18 +240,18 @@ var pixrem = function (css) {
 ```
 
 ## Разница
-!type with-2-sides
+!type with-difference
 
 **Препроцессор**
 
 - На вход шаблон
-- «Магия» прямо в стилях
+- Логика прямо в стилях
 - Функции вшиты в язык
 
 **Постпроцессор**
 
 - На вход CSS
-- «Магия» на JS
+- Логика отдельно на JS
 - Все фукнции как модули
 
 ## *Плагины* [autoprefixer](https://github.com/postcss/autoprefixer)

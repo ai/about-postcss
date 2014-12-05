@@ -36,7 +36,7 @@ $color: #52a2df
       color: black
 
 .slide.with-2-sides
-  pre, p, ul
+  pre, p
     float: left
     clear: left
     width: 350px
@@ -96,6 +96,17 @@ $color: #52a2df
     bottom: 60px
     width: 250px
     opacity: 0.25
+
+.slide.with-difference
+  p, ul
+    position: absolute
+    width: 350px
+    &:nth-of-type(2)
+      left: 560px
+  p
+    top: 186px
+  ul
+    top: 282px
 
 .compare
   padding-top: 60px
