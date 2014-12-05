@@ -10,11 +10,11 @@
 
 ## План
 
-1. Зачем обрабатывать CSS
-2. Чем плохи препроцессоры
-3. Что такое постпроцессоры
+1. Зачем обрабатывать CSS?
+2. Чем плохи препроцессоры?
+3. Что такое постпроцессоры?
 4. Как их использовать?
-5. Как их использовать на полную мощь?
+5. Пишем свой постпроцессор?
 
 ## *Часть 1* Проблема
 !cover problem.jpg
@@ -252,7 +252,7 @@ var pixrem = function (css) {
 
 - На вход CSS
 - Логика отдельно на JS
-- Все фукнции как модули
+- Все функции как модули
 
 ## *Плагины* [autoprefixer](https://github.com/postcss/autoprefixer)
 !type with-2-sides
@@ -341,11 +341,11 @@ var pixrem = function (css) {
 
 ## *Плагины* [csswring](https://github.com/hail2u/node-csswring)
 
-Минифицирует CSS и обновит предыдущие карты кода (например, после склеивания)
+Минифицирует CSS и обновляет предыдущие карты кода (например, после склеивания)
 
 ## *Плагины* [postcss-bem-linter](https://github.com/necolas/postcss-bem-linter)
 
-Проверка БЭМ-стиля для Твиттера
+Проверяет БЭМ для Твиттера
 (методология [SUIT CSS](https://github.com/suitcss/suit))
 
 ## *Плагины* [doiuse](https://github.com/anandthakker/doiuse)
@@ -424,7 +424,7 @@ a {
 ## Преимущества
 
 1. Скорость
-2. Плагины пишутся на JS
+2. Плагины на JS
 3. Можно сделать гораздо больше
 
 ## *Часть 4* Используем
@@ -531,3 +531,12 @@ var iconer = function (css) {
 * Твиттер: [@postcss](https://twitter.com/autoprefixer)
 
 !image evilmartians.png
+
+##
+!type with-icons-ad
+
+!image evil-icons.png
+
+<p>Бесплатные SVG-иконки для вашего сайта</p>
+
+[evil-icons.io](http://evil-icons.io/?utm_source=postcss-wsd)
