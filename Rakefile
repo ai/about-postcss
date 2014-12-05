@@ -208,6 +208,10 @@ class Highlighter < Redcarpet::Render::HTML
   def mark_question(code)
     css(code).gsub(/"\?"/, '<mark class="important">\0</mark>')
   end
+
+  def comment(code)
+    code.gsub(/.*/, '<mark class="comment">\0</mark>')
+  end
 end
 
 class Builder

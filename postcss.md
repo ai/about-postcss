@@ -59,7 +59,7 @@ count.should.eql(1);
 ## *Хороший код* Метапрограммирование
 
 ```
-User = createModelByTable('users');
+User = modelByTable('users');
 User.findByLogin('ai');
 ```
 
@@ -68,8 +68,8 @@ User.findByLogin('ai');
 
 ```css
 .logo {
-    -webkit-transition: border;
-    transition: border;
+    -webkit-transition: border 200ms;
+    transition: border 200ms;
     border: 2px solid #ffe644
 }
 .image {
@@ -145,7 +145,7 @@ a {
 ```mark_template
 a {
     <%= include clickable %>
-    color: <%= $link-color %>
+    color: <%= $link-color %>;
 }
 ```
 
@@ -191,7 +191,7 @@ a {
 2. **PostCSS**:
   - более умный парсер
   - лучше поддержка карт кода
-  - сохраняем форматирование
+  - сохраняет форматирование
   - удобнее API
 
 ## Постпроцессор
@@ -200,7 +200,7 @@ a {
     <div class="postprocessing_step is-css">
         CSS
         <span class="postprocessing_position">
-            <div class="postprocessing_note">Карта кода</div>
+            <div class="postprocessing_note">карта кода</div>
         </span>
     </div>
     <div class="postprocessing_step is-important">Парсер</div>
@@ -210,7 +210,7 @@ a {
     <div class="postprocessing_step is-css">
         Новый CSS
         <span class="postprocessing_position">
-            <div class="postprocessing_note">Новая карта</div>
+            <div class="postprocessing_note">новая карта</div>
         </span>
     </div>
 </div>
@@ -234,7 +234,7 @@ var pixrem = function (css) {
         decl.value = decl.value
             .replace(/\d+rem/, function (rem) {
                 return 16 * parseFloat(rem);
-            })
+            });
     })
 }
 ```
@@ -341,18 +341,18 @@ var pixrem = function (css) {
 
 ## *Плагины* [csswring](https://github.com/hail2u/node-csswring)
 
-Минифицирует CSS и обновит предыдущие карты кода (например, от Sass)
+Минифицирует CSS и обновит предыдущие карты кода (например, после склеивания)
 
 ## *Плагины* [postcss-bem-linter](https://github.com/necolas/postcss-bem-linter)
 
-Проверка БЭМ-стиля для Твиттере
+Проверка БЭМ-стиля для Твиттера
 (методология [SUIT CSS](https://github.com/suitcss/suit))
 
 ## *Плагины* [doiuse](https://github.com/anandthakker/doiuse)
 
-Проверка, поддерживаются ли все CSS-свойства в нужных браузерах по Can I Use.
+Проверяет поддержку свойств в нужных браузерах по Can I Use
 
-```none
+```comment
 main.css: line 15, col 3 -
   CSS user-select: none not supported by: IE (8,9)
 main.css: line 32, col 3 -
