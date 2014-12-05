@@ -21,21 +21,21 @@
 
 ## Части веб-проекта
 
-<div class="project-parts">
-    <div class="project-parts_part is-css">
-        <div class="project-parts_title">CSS</div>
-        <div class="project-parts_line"></div>
-        <div class="project-parts_value">72 КБ</div>
+<div class="compare">
+    <div class="compare_part is-css">
+        <div class="compare_title">CSS</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">72 КБ</div>
     </div>
-    <div class="project-parts_part is-js">
-        <div class="project-parts_title">JS</div>
-        <div class="project-parts_line"></div>
-        <div class="project-parts_value">25 КБ</div>
+    <div class="compare_part is-js">
+        <div class="compare_title">JS</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">25 КБ</div>
     </div>
-    <div class="project-parts_part is-backend">
-        <div class="project-parts_title">Бэкенд</div>
-        <div class="project-parts_line"></div>
-        <div class="project-parts_value">43 КБ</div>
+    <div class="compare_part is-backend">
+        <div class="compare_title">Бэкенд</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">43 КБ</div>
     </div>
 </div>
 
@@ -375,6 +375,38 @@ a {
 ```
 
 ## Скорость
+
+<div class="compare is-long">
+    <div class="compare_part is-postcss">
+        <div class="compare_title">PostCSS</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">36 мс</div>
+    </div>
+    <div class="compare_part is-libsass">
+        <div class="compare_title">libsass</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">109 мс</div>
+    </div>
+    <div class="compare_part is-less">
+        <div class="compare_title">Less.js</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">150 мс</div>
+    </div>
+    <div class="compare_part is-stylus">
+        <div class="compare_title">Stylus</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">283 мс</div>
+    </div>
+    <div class="compare_part is-sass">
+        <div class="compare_title">Sass</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">1153 мс</div>
+    </div>
+</div>
+
+<div class="source">
+Источник: <a href="https://github.com/postcss/postcss/blob/master/benchmark/processors.js">парсинг Бутстрапа</a>
+</div>
 
 ## Преимущества
 

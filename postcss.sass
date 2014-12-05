@@ -97,8 +97,10 @@ $color: #52a2df
     width: 250px
     opacity: 0.25
 
-.project-parts
+.compare
   padding-top: 60px
+  &.is-long
+    padding-top: 0
   &_part
     clear: left
     padding-top: 20px
@@ -115,13 +117,26 @@ $color: #52a2df
     float: left
     font-size: 55%
     margin: 11px 0 0 15px
-.project-parts_part.is-css     .project-parts_line
+
+.compare_part.is-css .compare_line
   background: $color
   width: 600px * (72 / 72)
-.project-parts_part.is-js      .project-parts_line
+.compare_part.is-js .compare_line
   width: 600px * (25 / 72)
-.project-parts_part.is-backend .project-parts_line
+.compare_part.is-backend .compare_line
   width: 600px * (43 / 72)
+
+.compare_part.is-postcss .compare_line
+  background: $color
+  width: 600px * (36 / 1153)
+.compare_part.is-libsass .compare_line
+  width: 600px * (109 / 1153)
+.compare_part.is-less .compare_line
+  width: 600px * (150 / 1153)
+.compare_part.is-stylus .compare_line
+  width: 600px * (283 / 1153)
+.compare_part.is-sass .compare_line
+  width: 600px * (1153 / 1153)
 
 .postprocessing
   position: relative
