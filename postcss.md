@@ -471,41 +471,37 @@ var processors = [
 
 Какой символ нужно использовать для иконки из своего иконочного шрифта
 
-```css
+```mark_question
 .icon::before {
-    content: '?'
+    content: "?";
 }
 ```
 
 ## *Шаг 1* [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont)
 
-```mark_codepoints
+```mark_icons
 gulp.task('iconfont', function() {
     gulp.src(['icons/*.svg'])
         .pipe(iconfont({ fontName: 'Icons' })
         .on('codepoints', function(data) {
-            codepoints = data
+            icons = data;
         })
         .pipe(gulp.dest('fonts/'));
 });
 ```
 
-## *Шаг 2* Постпроцессор
-!type with-small-code
+## *Шаг 2* Плагин для PostCSS
 
-```js
-var iconer = postcss(function (css) {
+```mark_icons
+var iconer = function (css) {
     css.eachDecl(function (decl) {
-        if ( decl.prop == 'content' ) {
-
-            decl.value = decl.value.replace(/icon-\w/, function (name) {
-                var code = name.replace(/^icon-/, '');
-                return '"' + codepoints[name].codepoint + '"';
+        decl.value = decl.value
+            .replace(/icon-\w/, function (str) {
+                var name = str.replace(/^icon-/, '');
+                return '"' + icons[name].codepoint + '"';
             });
-
-        }
     });
-});
+};
 ```
 
 ## Результат

@@ -185,8 +185,8 @@ class Highlighter < Redcarpet::Render::HTML
         .gsub(/^(\s+)([^\s:]*):/, '\\1<mark>\2</mark>:')
   end
 
-  def mark_codepoints(code)
-    js(code).gsub(/\s(codepoints)/, ' <mark class="important">\1</mark>')
+  def mark_icons(code)
+    js(code).gsub(/\s(icons)/, ' <mark class="important">\1</mark>')
   end
 
   def mark_icon(code)
@@ -203,6 +203,10 @@ class Highlighter < Redcarpet::Render::HTML
 
   def mark_template(code)
     code.gsub(/&lt;[^\n]*&gt;/, '<mark>\0</mark>')
+  end
+
+  def mark_question(code)
+    css(code).gsub(/"\?"/, '<mark class="important">\0</mark>')
   end
 end
 
