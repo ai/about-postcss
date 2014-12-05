@@ -70,12 +70,12 @@ User.findByLogin('ai');
 .logo {
     -webkit-transition: border;
     transition: border;
-    border: 2px solid #ffe644;
+    border: 2px solid #ffe644
 }
 .image {
     border: 2px solid #ffe644;
-    background: data('data:…');
-    width: 200px
+    background: data(data:…);
+    width: 200px;
     height: 180px
 }
 .body::after {
@@ -83,7 +83,7 @@ User.findByLogin('ai');
     visibility: hidden;
     display: block;
     height: 0;
-    clear: both;
+    clear: both
 }
 ```
 
@@ -294,7 +294,7 @@ var pixrem = function (css) {
 
 ```mark_svg
 .blur {
-    filter: url('data:image/svg+xml;…');
+    filter: url(data:image/svg+xml;…);
     filter: blur(4px)
 }
 ```
@@ -304,16 +304,16 @@ var pixrem = function (css) {
 
 ```css
 .icon {
-    background: url('a.png')
+    background: url(a.png)
 }
 ```
 
 ```mark_webp
 .icon {
-    background: url('a.png')
+    background: url(a.png)
 }
 .webp .icon {
-    background: url('a.webp')
+    background: url(a.webp)
 }
 ```
 
@@ -324,7 +324,7 @@ var pixrem = function (css) {
 /* style.css */
 .icon {
     width: 100px;
-    background: url('data:…')
+    background: url(data:…)
 }
 ```
 
@@ -335,7 +335,7 @@ var pixrem = function (css) {
 }
 /* style.icons.css */
 .icon {
-    background: url('data:…')
+    background: url(data:…)
 }
 ```
 
@@ -423,9 +423,9 @@ a {
 
 ## Преимущества
 
-- Скорость
-- Плагины пишутся на JS
-- Можно сделать гораздо больше
+1. Скорость
+2. Плагины пишутся на JS
+3. Можно сделать гораздо больше
 
 ## *Часть 4* Используем
 !cover usage.jpg
@@ -473,7 +473,7 @@ var processors = [
 
 ```mark_question
 .icon::before {
-    content: "?";
+    content: "?"
 }
 ```
 
