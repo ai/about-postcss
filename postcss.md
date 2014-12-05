@@ -129,8 +129,9 @@ a {
 Нестандартный `<blink>` поддерживали **19 лет**
 
 ## Эволюция
+!type with-evolution
 
-1. <mark>Случайные идеи</makr>
+1. **Случайные идеи**
 2. Сравнение в реальном мире
 3. Отбор
 
@@ -151,7 +152,7 @@ a {
 
 ## *Проблема 1* Медленно
 
-Compass на стилях ГитХаба — *5,5 секунды**
+Compass на стилях ГитХаба — **5,5 секунды**
 
 <div class="source">
 Источник: <a href="https://github.com/postcss/autoprefixer/blob/master/benchmark/general.js#L53">Бенчмарк Автопрефиксера</a>
@@ -233,7 +234,7 @@ var pixrem = function (css) {
     css.eachDecl(function (decl) {
         decl.value = decl.value
             .replace(/\d+rem/, function (rem) {
-                return 16 * parseFloat(rem);
+                return 16 * parseFloat(rem) + 'px';
             });
     })
 }
@@ -294,7 +295,7 @@ var pixrem = function (css) {
 
 ```mark_svg
 .blur {
-    filter: url(data:image/svg+xml;…);
+    filter: url(data:image/svg…);
     filter: blur(4px)
 }
 ```
