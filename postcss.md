@@ -151,7 +151,7 @@ a {
 
 ## *Проблема 1* Медленно
 
-Compass на стилях ГитХаба — **3,5 секунды**
+Compass на стилях ГитХаба — *5,5 секунды**
 
 <div class="source">
 Источник: <a href="https://github.com/postcss/autoprefixer/blob/master/benchmark/general.js#L53">Бенчмарк Автопрефиксера</a>
