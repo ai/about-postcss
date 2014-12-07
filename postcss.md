@@ -236,8 +236,8 @@ var pixrem = function (css) {
             .replace(/\d+rem/, function (rem) {
                 return 16 * parseFloat(rem) + 'px';
             });
-    })
-}
+    });
+};
 ```
 
 ## Разница
@@ -458,7 +458,7 @@ var processors = [
     require('postcss-import'),
     require('autoprefixer'),
     require('postcss-calc'),
-    require('postcss-url')
+    require('postcss-url'),
     require('csswring')
 ];
 ```
