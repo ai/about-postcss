@@ -287,7 +287,7 @@ class Builder
 
   def to_html
     layout  = COMMON.join('layout.slim')
-    options = { disable_escape: true, pretty: false }
+    options = { format: :html, disable_escape: true, pretty: false }
     Slim::Template.new(layout.to_s, options).render(self)
   end
 end
