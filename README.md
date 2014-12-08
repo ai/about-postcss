@@ -1,6 +1,7 @@
-### Презентация «PostCSS: будущее после Sass и Less»
+### Keynotes about PostCSS
 
-Для выступления на [SPB Frontend](https://vk.com/spb_frontend)
-и [WSD в Киеве](http://webstandardsdays.ru/2014/12/06/).
+From my speech from [SPB Frontend](https://vk.com/spb_frontend)
+and [WSD in Kiev](http://webstandardsdays.ru/2014/12/06/).
 
-Посмотреть: [ai.github.io/about-postcss](http://ai.github.io/about-postcss/).
+* Russian: [ai.github.io/about-postcss](http://ai.github.io/about-postcss/).
+* English: [ai.github.io/about-postcss/en](http://ai.github.io/about-postcss/en).
