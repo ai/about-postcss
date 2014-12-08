@@ -232,7 +232,6 @@ class Builder
         RailsAssets.load_paths.each { |i| env.append_path(i) }
 
         EvilFront.install_all(env)
-        Slim::Engine.set_default_options(pretty: false, format: :html5)
 
         env.append_path(ROOT)
         env.append_path(COMMON)
@@ -288,7 +287,7 @@ class Builder
 
   def to_html
     layout  = COMMON.join('layout.slim')
-    options = { format: :html5, disable_escape: true, pretty: false }
+    options = { disable_escape: true, pretty: false }
     Slim::Template.new(layout.to_s, options).render(self)
   end
 end
