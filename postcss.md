@@ -4,7 +4,7 @@
 
 ## **PostCSS** Будущее после Sass и Less
 !type is-title
-!image logo.png
+!image logo.svg
 
 *Андрей Ситник, Злые марсиане*
 

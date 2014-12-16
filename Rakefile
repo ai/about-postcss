@@ -322,7 +322,7 @@ task :server do
     end
 
     {
-      css: 'text/css',  js:  'text/javascript',
+      css: 'text/css',  js:  'text/javascript', svg: 'image/svg+xml',
       png: 'image/png', jpg: 'image/jpeg', ico: 'image/vnd.microsoft.icon'
     }.each_pair do |ext, mime|
       get "/*.#{ ext }" do |path|
