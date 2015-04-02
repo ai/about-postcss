@@ -532,12 +532,3 @@ var iconer = function (css) {
 * Твиттер: [@postcss](https://twitter.com/autoprefixer)
 
 !image evilmartians.png
-
-##
-!type with-icons-ad
-
-!image evil-icons.png
-
-<p>Бесплатные SVG-иконки для вашего сайта</p>
-
-[evil-icons.io](http://evil-icons.io/?utm_source=postcss-wsd)
