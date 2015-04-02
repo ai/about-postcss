@@ -6,6 +6,7 @@ COMMON = ROOT.join('common')
 
 require 'redcarpet'
 require 'evil-front-all'
+require 'active_support'
 require 'active_support/core_ext'
 require 'rails-assets-shower-core'
 require 'rails-assets-shower-bright'
@@ -93,7 +94,7 @@ module Helpers
   end
 
   def file_type(file)
-    `file -ib #{file}`.split(';').first
+    MIME::Types.type_for(file.to_s).first.content_type
   end
 
   def include_statistics
