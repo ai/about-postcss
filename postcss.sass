@@ -1,6 +1,12 @@
 @import "evil-front"
 
-$color: #52a2df
+$color: #0080e0
+
+.slide.shout
+  background: $color
+  h2
+    line-height: 1.4
+    font-family: 'Open Sans', sans-serif
 
 .slide.is-title
   h2
@@ -112,6 +118,44 @@ $color: #52a2df
   ul
     top: 282px
 
+.evolution
+  height: 300px
+  width: 620px
+  margin: 0 auto
+  position: relative
+  white-space: nowrap
+  font-size: 140%
+  &_top, &_right, &_left
+    position: absolute
+    width: 235px
+    text-align: center
+  &_top
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+  &_right
+    bottom: 0
+    right: 0
+  &_left
+    bottom: 0
+    left: 0
+  &_first, &_second, &_third
+    font-size: 170%
+    position: absolute
+    color: $color
+  &_first
+    top: 30%
+    left: 65%
+    transform: rotate(60deg)
+  &_second
+    bottom: -34px
+    left: 55%
+    transform: translateX(-50%) rotate(180deg)
+  &_third
+    top: 30%
+    right: 65%
+    transform: rotate(-60deg)
+
 .compare
   padding-top: 60px
   &.is-long
@@ -132,14 +176,6 @@ $color: #52a2df
     float: left
     font-size: 55%
     margin: 11px 0 0 15px
-
-.compare_part.is-css .compare_line
-  background: $color
-  width: 600px * (72 / 72)
-.compare_part.is-js .compare_line
-  width: 600px * (25 / 72)
-.compare_part.is-backend .compare_line
-  width: 600px * (43 / 72)
 
 .compare_part.is-postcss .compare_line
   background: $color

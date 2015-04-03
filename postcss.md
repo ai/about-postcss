@@ -19,123 +19,33 @@
 ## *Часть 1* Проблема
 !cover problem.jpg
 
-## Части веб-проекта
-
-<div class="compare">
-    <div class="compare_part is-css">
-        <div class="compare_title">CSS</div>
-        <div class="compare_line"></div>
-        <div class="compare_value">72 КБ</div>
-    </div>
-    <div class="compare_part is-js">
-        <div class="compare_title">JS</div>
-        <div class="compare_line"></div>
-        <div class="compare_value">25 КБ</div>
-    </div>
-    <div class="compare_part is-backend">
-        <div class="compare_title">Бэкенд</div>
-        <div class="compare_line"></div>
-        <div class="compare_value">43 КБ</div>
-    </div>
-</div>
-
-<div class="source">
-Источник: проекты Злых марсиан
-</div>
-
-## *Хороший код* DRY
-
-```
-format_links(announce);
-format_links(text);
-```
-
-## *Хороший код* DSL
-
-```
-count.should.eql(1);
-```
-
-## *Хороший код* Метапрограммирование
-
-```
-User = modelByTable('users');
-User.findByLogin('ai');
-```
-
-## CSS
-!type with-smaller-code
-
-```css
-.logo {
-    -webkit-transition: border 200ms;
-    transition: border 200ms;
-    border: 2px solid #ffe644
-}
-.image {
-    border: 2px solid #ffe644;
-    background: data(data:…);
-    width: 200px;
-    height: 180px
-}
-.body::after {
-    content: " ";
-    visibility: hidden;
-    display: block;
-    height: 0;
-    clear: both
-}
-```
-
-## Стандарты развиваются медленно
-
-- **15 лет** на HTML 5
-- **5 лет** на ECMAScript 6
-- **3 года** на CSS 3
-
-## 1. Скорость разработки и рендера
-!type with-2-sides
-
-Быстро разрабатывать
-
-Быстро рендерить
-
-```css
-:root {
-    --main: #c00
-}
-a {
-    color: var(--main)
-}
-```
-
-```css
-a {
-    color: #c00
-}
-```
-
-## 2. Всем нужно договориться
-!type is-browsers
-
-!image chrome.png
-!image ie.png
-!image firefox.png
-!image safari.png
-!image opera.png
-
-## 3. Обратная совместимость
-
-Нестандартный `<blink>` поддерживали **19 лет**
-
 ## Эволюция
-!type with-evolution
 
-1. **Случайные идеи**
-2. Сравнение в реальном мире
-3. Отбор
+<div class="evolution">
+  <div class="evolution_top">Мутации</div>
+  <div class="evolution_first">→</div>
+  <div class="evolution_right">Отбор</div>
+  <div class="evolution_second">→</div>
+  <div class="evolution_left">Наследование</div>
+  <div class="evolution_third">→</div>
+</div>
 
-## Машины должны страдать
+## Естественный отбор?
+
+`<blink>` поддерживали **19 лет**
+
+## Случайные мутации
+
+<figure>
+  <blockquote>
+    <p>
+      Свобода ничего не стоит, если она не включает в себя свободу ошибаться
+    </p>
+  </blockquote>
+  <figcaption>— Махатма Ганди</figcaption>
+</figure>
+
+## 40% ES6 пришло из CoffeeScript
 !type shout
 
 ## *Часть 2* Препроцессоры
