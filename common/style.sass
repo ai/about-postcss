@@ -1,7 +1,10 @@
 @import "shower-bright"
 @import "evil-front"
 
-$color: #52a2df
+$color: #0080e0
+
+a
+  color: $color
 
 .slide
   mark
@@ -13,6 +16,8 @@ $color: #52a2df
     color: white
     mark
       color: white
+  pre mark.important
+    background: $color
   pre mark.comment
     color: #888
 
@@ -21,9 +26,9 @@ $color: #52a2df
 
 .caption a, .slide a
   background: none
-  border-bottom: 0.09em solid rgba(#52a2df, 0.4)
+  border-bottom: 0.09em solid rgba($color, 0.4)
   &:hover
-    border-bottom-color: #52a2df
+    border-bottom-color: $color
 
 .caption a
   display: inline-block
@@ -66,3 +71,7 @@ $color: #52a2df
   bottom: 30px
   right: 96px
   font-size: 50%
+
+@media screen
+  .list .slide:target:before
+    box-shadow: 0 0 10px 0 #3c99db, 0 0 0 12px $color
