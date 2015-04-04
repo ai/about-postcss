@@ -152,7 +152,7 @@ class Highlighter < Redcarpet::Render::HTML
 
   def js(code)
     default_highlight(code)
-      .gsub(/if|var|function|\/[^<>\/]+\/|return/, '<mark>\0</mark>')
+      .gsub(/if|var|function|\/[^<>\/]+\/|return|=&gt;|let/, '<mark>\0</mark>')
   end
 
   def mark_fix(code)
@@ -208,6 +208,10 @@ class Highlighter < Redcarpet::Render::HTML
 
   def mark_question(code)
     css(code).gsub(/"\?"/, '<mark class="important">\0</mark>')
+  end
+
+  def mark_plugin(code)
+    js(code).gsub(/plugin\d/, '<mark class="important">\0</mark>')
   end
 
   def comment(code)

@@ -108,6 +108,12 @@ $color: #0080e0
     color: $color
 
 .slide.with-difference
+  .arrow
+    position: absolute
+    top: 164px
+    left: 366px
+    font-size: 200%
+    color: $color
   p, ul
     position: absolute
     width: 350px
@@ -115,29 +121,30 @@ $color: #0080e0
       left: 560px
   p
     top: 186px
+    font-size: 130%
   ul
     top: 282px
 
 .evolution
   height: 300px
-  width: 620px
+  width: 650px
   margin: 0 auto
   position: relative
-  white-space: nowrap
   font-size: 140%
   &_top, &_right, &_left
     position: absolute
     width: 235px
     text-align: center
+    line-height: 1.4
   &_top
     top: 0
     left: 50%
     transform: translateX(-50%)
   &_right
-    bottom: 0
+    top: 244px
     right: 0
   &_left
-    bottom: 0
+    top: 244px
     left: 0
   &_first, &_second, &_third
     font-size: 170%
@@ -151,6 +158,8 @@ $color: #0080e0
     bottom: -34px
     left: 55%
     transform: translateX(-50%) rotate(180deg)
+  &.is-postcss .evolution_second
+    left: 51%
   &_third
     top: 30%
     right: 65%

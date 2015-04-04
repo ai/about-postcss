@@ -60,27 +60,25 @@ a {
 }
 ```
 
-## *Проблема 1* Медленно
-
-Compass на стилях ГитХаба — **5,5 секунды**
-
-<div class="source">
-Источник: <a href="https://github.com/postcss/autoprefixer/blob/master/benchmark/general.js#L53">Бенчмарк Автопрефиксера</a>
-</div>
-
 ## Синтаксические возможности
 
-- Переменные
-- Примеси
-- Функции
+1. Переменные<br>`$var: 1`
+2. Примеси<br>`@include mixin`
+3. Функции<br>`black()`
 
-## *Проблема 2* Ограниченность
+## *Проблема 1* Ограниченность
 
 ```mark_rem
 a {
     width: 20rem
 }
 ```
+
+## *Проблема 2* Монолитность
+
+- **Libsass:** 130 файлов, 986 КБ C++ кода
+- **Stylus:** 77 файлов, 341 КБ кода
+- **Less:** 144 файлов, 488 КБ кода
 
 ## *Проблема 3* Даже JS лучше Sass
 !type with-huge-code
@@ -89,23 +87,33 @@ a {
 !gem compass-core/stylesheets/compass/css3/_transition.scss
 ```
 
-## *Часть 3* Постпроцессоры
+## *Часть 3* PostCSS
 !cover postcss.jpg
-!type  is-bottom
 !type  is-black
 
-## Постпроцессоры
+## Начало
 
-1. **Rework**:
-  - первый
-  - проще, меньше
-2. **PostCSS**:
-  - более умный парсер
-  - лучше поддержка карт кода
-  - сохраняет форматирование
-  - удобнее API
+«<a href="http://tjholowaychuk.tumblr.com/post/44267035203/modular-css-preprocessing-with-rework">Modular CSS preprocessing with rework</a>»
+— TJ Holowaychuk, 2013
 
-## Постпроцессор
+## Развитие
+!type with-difference
+
+<div class="arrow">→</div>
+
+**Rework**
+
+- первый
+- проще, меньше
+
+**PostCSS**
+
+- более умный парсер
+- лучше поддержка карт кода
+- сохраняет форматирование
+- удобнее API
+
+## PostCSS
 
 <div class="postprocessing">
     <div class="postprocessing_step is-css">
@@ -128,24 +136,22 @@ a {
 
 ## Использование
 
-```js
-var postcss = require('postcss');
+```mark_plugin
+let postcss = require('postcss');
 
-css = postcss()
-        .use(plugin1)
-        .use(plugin2)
-        .process(css).css;
+postcss([ plugin1, plugin2 ])
+    .process(css)
+    .then( result => console.log(result.css) );
 ```
 
 ## Плагин
 
 ```js
-var pixrem = function (css) {
-    css.eachDecl(function (decl) {
-        decl.value = decl.value
-            .replace(/\d+rem/, function (rem) {
-                return 16 * parseFloat(rem) + 'px';
-            });
+function (css) {
+    css.eachDecl( decl => {
+        decl.value = decl.value.replace(/\d+rem/, rem => {
+            return 16 * parseFloat(rem) + 'px';
+        });
     });
 };
 ```
@@ -155,15 +161,27 @@ var pixrem = function (css) {
 
 **Препроцессор**
 
-- На вход шаблон
-- Логика прямо в стилях
-- Функции вшиты в язык
+- Монолитный
+- Логика прямо в шаблоне
 
-**Постпроцессор**
+**PostCSS**
 
-- На вход CSS
-- Логика отдельно на JS
-- Все функции как модули
+- Все функции как плагины
+- JS трансорфмирует CSS
+
+## Эволюция
+
+<div class="evolution is-postcss">
+  <div class="evolution_top">Пишем плагин</div>
+  <div class="evolution_first">→</div>
+  <div class="evolution_right">Популярность</div>
+  <div class="evolution_second">→</div>
+  <div class="evolution_left">Спецификация</div>
+  <div class="evolution_third">→</div>
+</div>
+
+## *Часть 4* Практика
+!cover practice.jpg
 
 ## *Плагины* [autoprefixer](https://github.com/postcss/autoprefixer)
 !type with-2-sides
@@ -371,63 +389,6 @@ var processors = [
     require('postcss-url'),
     require('csswring')
 ];
-```
-
-## *Часть 5* Создаём
-!cover create.jpg
-!type  is-bottom
-!type  is-black
-
-## Задача
-
-Какой символ нужно использовать для иконки из своего иконочного шрифта
-
-```mark_question
-.icon::before {
-    content: "?"
-}
-```
-
-## *Шаг 1* [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont)
-
-```mark_icons
-gulp.task('iconfont', function() {
-    gulp.src(['icons/*.svg'])
-        .pipe(iconfont({ fontName: 'Icons' })
-        .on('codepoints', function(data) {
-            icons = data;
-        })
-        .pipe(gulp.dest('fonts/'));
-});
-```
-
-## *Шаг 2* Плагин для PostCSS
-
-```mark_icons
-var iconer = function (css) {
-    css.eachDecl(function (decl) {
-        decl.value = decl.value
-            .replace(/icon-\w/, function (str) {
-                var name = str.replace(/^icon-/, '');
-                return '"' + icons[name].codepoint + '"';
-            });
-    });
-};
-```
-
-## Результат
-!type with-2-codes
-
-```mark_icon
-.icon::before {
-    content: icon-up
-}
-```
-
-```mark_content
-.icon::before {
-    content: "A"
-}
 ```
 
 ## Вопросы
