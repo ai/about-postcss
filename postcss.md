@@ -84,9 +84,12 @@ a {
 !type  is-bottom
 
 ## Начало
+!type with-article
+
+!image tj.jpg
 
 «<a href="http://tjholowaychuk.tumblr.com/post/44267035203/modular-css-preprocessing-with-rework">Modular CSS preprocessing with rework</a>»
-— TJ Holowaychuk, 2013
+<cite><br>— TJ Holowaychuk, 2013</cite>
 
 ## Развитие
 !type with-difference
@@ -441,6 +444,34 @@ a {
 
 ## *Часть 4*  Настоящее
 !cover present.jpg
+!type  is-bottom
+
+## 430 000 загрузок в месяц
+!type shout
+
+## Используют PostCSS
+!type with-companies
+
+!image google.svg
+!image twitter.svg
+!image taobao.svg
+!image wordpress.svg
+
+## Обсуждение
+!type with-article
+
+!image benfrain.jpg
+
+«[Breaking up with Sass: it’s not you, it’s me](http://benfrain.com/breaking-up-with-sass-postcss/)»
+<cite><br> — Бен Фрейн, автор «Sass и Compass для дизайнеров»</cite>
+
+## Обсуждение
+!type with-article
+
+!image alistapart.png
+
+«[What Will Save Us from the Dark Side of CSS Pre‑Processors?](http://alistapart.com/column/what-will-save-us-from-the-dark-side-of-pre-processors)»
+<cite><br> — A List Apart</cite>
 
 ## *Часть 5*  Применяем
 !cover use.jpg
