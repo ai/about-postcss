@@ -8,14 +8,6 @@
 
 *Андрей Ситник, Злые марсиане*
 
-## План
-
-1. Зачем обрабатывать CSS?
-2. Чем плохи препроцессоры?
-3. Что такое постпроцессоры?
-4. Как их использовать?
-5. Пишем свой постпроцессор?
-
 ## *Часть 1* Проблема
 !cover problem.jpg
 
@@ -447,40 +439,11 @@ a {
 2. Модульность
 3. Плагины, невозможные на Sass
 
-## *Часть 4* Используем
-!cover usage.jpg
-!type  is-bottom
+## *Часть 4*  Настоящее
+!cover present.jpg
 
-## Интеграция
-
-- [Webpack](https://github.com/postcss/postcss-loader)
-- [Grunt](https://github.com/nDmitry/grunt-postcss)
-- [Gulp](https://github.com/w0rm/gulp-postcss)
-
-## [gulp-postcss](https://github.com/w0rm/gulp-postcss)
-
-```mark_postcss
-gulp.task('css', function () {
-    var processors = [/* плагины */];
-    return gulp.src('./src/style.css')
-        .pipe( postcss(processors) )
-        .pipe( gulp.dest('./dest') );
-});
-```
-
-## [Выбираем плагины](https://github.com/postcss/postcss#built-with-postcss)
-
-```js
-var processors = [
-    require('postcss-custom-properties'),
-    require('pleeease-filters'),
-    require('postcss-import'),
-    require('autoprefixer'),
-    require('postcss-calc'),
-    require('postcss-url'),
-    require('csswring')
-];
-```
+## *Часть 5*  Применяем
+!cover use.jpg
 
 ## Вопросы
 !cover ask.jpg
