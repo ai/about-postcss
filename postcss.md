@@ -76,9 +76,9 @@ a {
 
 ## *Проблема 2* Монолитность
 
-- **Libsass:** 130 файлов, 986 КБ C++ кода
-- **Stylus:** 77 файлов, 341 КБ кода
-- **Less:** 144 файлов, 488 КБ кода
+- **Libsass:** 110 файлов, 21 300 строк C++ кода
+- **Stylus:** 72 файла, 7 900 строк кода
+- **Less:** 105 файлов, 9 800 строк кода
 
 ## *Проблема 3* Даже JS лучше Sass
 !type with-huge-code
@@ -89,7 +89,7 @@ a {
 
 ## *Часть 3* PostCSS
 !cover postcss.jpg
-!type  is-black
+!type  is-bottom
 
 ## Начало
 
@@ -183,7 +183,51 @@ function (css) {
 ## *Часть 4* Практика
 !cover practice.jpg
 
-## *Плагины* [autoprefixer](https://github.com/postcss/autoprefixer)
+## *Плагины* [postcss-simple-vars](https://github.com/postcss/postcss-simple-vars)
+
+```mark_vars
+$blue: #056ef0;
+$column: 200px;
+
+.menu_link {
+    background: $blue;
+    width: $column;
+}
+```
+
+## *Плагины* [postcss-nested](https://github.com/postcss/postcss-nested)
+
+```mark_nested
+.phone {
+    &_title {
+        width: 500px;
+        @media (max-width: 500px) {
+            width: auto;
+        }
+    }
+}
+```
+
+## *Плагины* [postcss-mixins](https://github.com/postcss/postcss-mixins)
+
+```mark_mixins
+@define-mixin icon $network $color {
+    .icon.is-$network {
+        color: $color;
+    }
+}
+
+@mixin icon twitter blue;
+@mixin icon youtube red;
+```
+
+## Поддерживаемость
+
+- **postcss-nested:** 63 строки кода
+- **postcss-simple-vars:** 73 строки кода
+- **postcss-mixins:** 100 строк кода
+
+## *Невозможно на Sass* [autoprefixer](https://github.com/postcss/autoprefixer)
 !type with-2-sides
 !type with-small-code
 !type with-bigger-right
@@ -194,7 +238,7 @@ function (css) {
 }
 ```
 
-```css
+```mark_prefixes
 :-webkit-full-screen a {
     -webkit-transition: -webkit-transform 1s;
             transition: transform 1s
@@ -211,73 +255,86 @@ function (css) {
 }
 ```
 
-## *Плагины* [pleeease-filters](https://github.com/iamvdo/pleeease-filters)
-!type with-2-sides
-!type with-bigger-right
+## *Невозможно на Sass* [cssnext](https://github.com/cssnext/cssnext)
 
-```css
-.blur {
-    filter: blur(4px)
+```mark_css4
+@custom-selector --heading h1, h2, h3, h4, h5, h6;
+
+.post-article --heading {
+    margin-top: calc(10 * var(--row));
+    color: color( var(--mainColor) blackness(+20%) );
+    font-variant-caps: small-caps;
 }
 ```
 
-```mark_svg
-.blur {
-    filter: url(data:image/svg…);
-    filter: blur(4px)
-}
-```
-
-## *Плагины* [webpcss](https://github.com/lexich/webpcss)
+## *Невозможно на Sass* [cssgrace](https://github.com/cssdream/cssgrace)
 !type with-2-sides
 
 ```css
 .icon {
-    background: url(a.png)
+    opacity: 0.6;
+    display: inline-block;
 }
 ```
 
-```mark_webp
+```mark_ie
 .icon {
-    background: url(a.png)
-}
-.webp .icon {
-    background: url(a.webp)
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
 }
 ```
 
-## *Плагины* [grunt-data-separator](https://github.com/Sebastian-Fitzner/grunt-data-separator)
+## *Невозможно на Sass* [postcss-quantity-queries](https://github.com/pascalduez/postcss-quantity-queries)
 !type with-2-sides
+!type with-smaller-right
+
+```mark_quantity
+ul > li:exactly(4) {
+    width: 25%;
+}
+```
 
 ```css
+ul > li:nth-last-child(4):first-child,
+ul > li:nth-last-child(4):first-child ~ li {
+    width: 25%;
+}
+```
+
+## *Невозможно на Sass* [postcss-data-packer](https://github.com/Ser-Gen/postcss-data-packer)
+!type with-2-sides
+
+```mark_data
 /* style.css */
-.icon {
+.icon1 {
     width: 100px;
     background: url(data:…)
 }
-```
-
-```css
-/* style.css */
-.icon {
-    width: 100px
-}
-/* style.icons.css */
-.icon {
+.icon2 {
     background: url(data:…)
 }
 ```
 
-## *Плагины* [csswring](https://github.com/hail2u/node-csswring)
+```mark_data
+/* style.css */
+.icon1 {
+    width: 100px
+}
+/* style.icons.css */
+.icon1, .icon2 {
+    background: url(data:…)
+}
+```
 
-Минифицирует CSS и обновляет предыдущие карты кода (например, после склеивания)
-
-## *Плагины* [postcss-bem-linter](https://github.com/necolas/postcss-bem-linter)
+## *Невозможно на Sass* [postcss-bem-linter](https://github.com/necolas/postcss-bem-linter)
 
 Проверяет БЭМ для Твиттера
 (методология [SUIT CSS](https://github.com/suitcss/suit))
 
-## *Плагины* [doiuse](https://github.com/anandthakker/doiuse)
+## *Невозможно на Sass* [doiuse](https://github.com/anandthakker/doiuse)
 
 Проверяет поддержку свойств в нужных браузерах по Can I Use
 
@@ -288,16 +345,7 @@ main.css: line 32, col 3 -
   CSS3 Transforms not supported by: IE (8)
 ```
 
-## *Плагины* [cssnext](https://github.com/cssnext/cssnext)
-
-Набор полифилов для спецификаций CSS 4:
-
-- CSS-переменные
-- Шорткаты для селекторов
-- Удобный синтаксис `font-feature-settings`
-- Новые способы задания цветов
-
-## *Плагины* [rtlcss](https://github.com/MohammadYounes/rtlcss)
+## *Невозможно на Sass* [rtlcss](https://github.com/MohammadYounes/rtlcss)
 !type with-2-codes
 
 Изменяет дизайн для арабского и иврита
@@ -315,6 +363,45 @@ a {
     text-align: right
 }
 ```
+
+## [Ещё более 70 плагинов](https://github.com/postcss/postcss#plugins)
+
+- Полифилы новых спецификаций
+- Поддержка старых браузеров
+- Расширения языка
+- Оптимизация
+- Синтаксический сахар
+- Аналитика
+
+## Препроцессоры
+
+<div class="compare is-long">
+    <div class="compare_part is-postcss is-hide">
+        <div class="compare_title">PostCSS</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">36 мс</div>
+    </div>
+    <div class="compare_part is-libsass">
+        <div class="compare_title">libsass</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">109 мс</div>
+    </div>
+    <div class="compare_part is-less">
+        <div class="compare_title">Less</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">150 мс</div>
+    </div>
+    <div class="compare_part is-stylus">
+        <div class="compare_title">Stylus</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">283 мс</div>
+    </div>
+    <div class="compare_part is-sass">
+        <div class="compare_title">Sass</div>
+        <div class="compare_line"></div>
+        <div class="compare_value">1153 мс</div>
+    </div>
+</div>
 
 ## Скорость
 
@@ -353,8 +440,8 @@ a {
 ## Преимущества
 
 1. Скорость
-2. Плагины на JS
-3. Можно сделать гораздо больше
+2. Модульность
+3. Плагины, невозможные на препроцессорах
 
 ## *Часть 4* Используем
 !cover usage.jpg
