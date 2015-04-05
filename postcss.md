@@ -373,7 +373,7 @@ a {
 - Синтаксический сахар
 - Аналитика
 
-## Препроцессоры
+## Скорость
 
 <div class="compare is-long">
     <div class="compare_part is-postcss is-hide">
@@ -401,6 +401,10 @@ a {
         <div class="compare_line"></div>
         <div class="compare_value">1153 мс</div>
     </div>
+</div>
+
+<div class="source">
+Источник: <a href="https://github.com/postcss/postcss/blob/master/benchmark/processors.js">парсинг Бутстрапа</a>
 </div>
 
 ## Скорость
@@ -441,7 +445,7 @@ a {
 
 1. Скорость
 2. Модульность
-3. Плагины, невозможные на препроцессорах
+3. Плагины, невозможные на Sass
 
 ## *Часть 4* Используем
 !cover usage.jpg
