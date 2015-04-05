@@ -476,6 +476,45 @@ a {
 ## *Часть 5*  Применяем
 !cover use.jpg
 
+## 1. Разработка CSS-инструмента
+
+- Работает с Sass, Stylus, Less и CSS
+- Очень быстрый и точный парсер
+- Карты кода
+
+## 2. Сайт не использует PostCSS
+
+```mark_case1
+.pipe( sass() )
+.pipe( postcss([
+    require('autoprefixer')
+]) )
+```
+
+## 3. Сайт уже с Автопрефиксером
+
+```mark_case2
+.pipe( sass() )
+.pipe( postcss([
+    require('autoprefixer'),
+    require('postcss-easings'),
+    require('cssnext')
+]) )
+```
+
+## 4. Новый проект
+
+```mark_case3
+.pipe( postcss([
+    require('postcss-nested'),
+    require('postcss-mixins'),
+    require('postcss-simple-vars'),
+    require('autoprefixer'),
+    require('postcss-easings'),
+    require('cssnext')
+]) )
+```
+
 ## Вопросы
 !cover ask.jpg
 !type  is-bottom

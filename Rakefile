@@ -148,7 +148,8 @@ class Highlighter < Redcarpet::Render::HTML
 
   def js(code)
     default_highlight(code)
-      .gsub(/if|var|function|\/[^<>\/]+\/|return|=&gt;|let/, '<mark>\0</mark>')
+      .gsub(/(\s|^)(if|var|function|return|=&gt;|let)/, '\1<mark>\2</mark>')
+      .gsub(/\/[^<>\/]+\//, '<mark>\0</mark>')
   end
 
   def mark_postcss(code)
@@ -210,6 +211,18 @@ class Highlighter < Redcarpet::Render::HTML
 
   def mark_ie(code)
     css(code).gsub(/\*\w+|filter/, '<mark class="important">\0</mark>')
+  end
+
+  def mark_case1(code)
+    js(code).gsub(/autoprefixer/, '<mark class="important">\0</mark>')
+  end
+
+  def mark_case2(code)
+    js(code).gsub(/cssnext|postcss-\w+/, '<mark class="important">\0</mark>')
+  end
+
+  def mark_case3(code)
+    js(code).gsub(/postcss-(n|m|s)[\w-]+/, '<mark class="important">\0</mark>')
   end
 
   def comment(code)
