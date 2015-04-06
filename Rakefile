@@ -103,6 +103,12 @@ module Helpers
 end
 
 class Highlighter < Redcarpet::Render::HTML
+  def self.reload!
+    if Object.const_defined? 'PostcssHighlighter'
+      Object.send(:remove_const, 'PostcssHighlighter')
+    end
+  end
+
   def block_code(code, lang)
     lines = code.lines.map do |line|
       line = EvilFront.escape(line)
@@ -115,118 +121,6 @@ class Highlighter < Redcarpet::Render::HTML
     end
 
     '<pre>' + lines.map { |i| "<code>#{ i }</code>" }.join + '</pre>'
-  end
-
-  def none(code)
-    code
-  end
-
-  def default_highlight(code)
-    code.gsub(/(true|false|null|nil)/,'<mark>\0</mark>')
-        .gsub(/"[^"]+"|'[^']+'/,      '<mark>\0</mark>')
-        .gsub(/(\s|^)(#[^\{].*$)/,    '\1<mark class="comment">\2</mark>')
-        .gsub(/(\(|\[|,|^|\s|=)(\d+(px|deg|%|m?s|))(\)|,|$|\s|;)/,
-          '\\1<mark>\\2</mark>\\4')
-  end
-
-  def css(code)
-    code.gsub(/^([^\s].*){/,     '<mark>\1</mark>{')
-        .gsub(/\/\*.*\*\//,      '<mark class="comment">\0</mark>')
-        .gsub(/^    ([^\s:]*):/, '    <mark>\1</mark>:')
-  end
-
-  def sass(code)
-    code.gsub(/\..*/,         '<mark>\0</mark>')
-        .gsub(/\+.*/,         '<mark>\0</mark>')
-        .gsub(/(@|\$)[\w-]*/, '<mark>\0</mark>')
-        .gsub(/\/\/.*/,       '<mark class="comment">\0</mark>')
-  end
-
-  def mark_rem(code)
-    css(code).gsub(/\d+rem/, '<mark class="important">\0</mark>')
-  end
-
-  def js(code)
-    default_highlight(code)
-      .gsub(/(\s|^)(if|var|function|return|=&gt;|let)/, '\1<mark>\2</mark>')
-      .gsub(/\/[^<>\/]+\//, '<mark>\0</mark>')
-  end
-
-  def mark_postcss(code)
-    js(code).gsub(/postcss\([^\)]+\)/, '<mark class="important">\0</mark>')
-  end
-
-  def mark_webp(code)
-    css(code.gsub(/\.webp/, '<mark class="important">\0</mark>'))
-  end
-
-  def mark_left(code)
-    css(code.gsub(/left/, '<mark class="important">\0</mark>'))
-  end
-
-  def mark_right(code)
-    css(code.gsub(/right/, '<mark class="important">\0</mark>'))
-  end
-
-  def mark_template(code)
-    code.gsub(/&lt;[^\n]*&gt;/, '<mark>\0</mark>')
-  end
-
-  def mark_plugin(code)
-    js(code).gsub(/plugin\d/, '<mark class="important">\0</mark>')
-  end
-
-  def mark_vars(code)
-    css(code).gsub(/\$\w+/, '<mark class="important">\0</mark>')
-  end
-
-  def mark_nested(code)
-    code.gsub(/([^\s].*)\{/, '<mark>\1</mark>{')
-        .gsub(/&amp;|@\w+/, '<mark class="important">\0</mark>')
-  end
-
-  def mark_mixins(code)
-    code.gsub(/@[\w-]+/, '<mark class="important">\0</mark>')
-        .gsub(/\$\w+/, '<mark>\0</mark>')
-  end
-
-  def mark_css4(code)
-    css(code).gsub(/var\([^)]+\)/, '<mark class="important">\0</mark>')
-             .gsub(/--heading/, '<mark class="important">\0</mark>')
-             .gsub(/blackness\([^)]+\)/, '<mark class="important">\0</mark>')
-             .gsub(/small-caps/, '<mark class="important">\0</mark>')
-  end
-
-  def mark_prefixes(code)
-    css(code).gsub(/-(webkit|ms|moz|o)-/, '<mark class="important">\0</mark>')
-  end
-
-  def mark_data(code)
-    css(code).gsub(/data:…/, '<mark class="important">\0</mark>')
-  end
-
-  def mark_quantity(code)
-    css(code).gsub(/:exactly\(\d+\)/, '<mark class="important">\0</mark>')
-  end
-
-  def mark_ie(code)
-    css(code).gsub(/\*\w+|filter/, '<mark class="important">\0</mark>')
-  end
-
-  def mark_case1(code)
-    js(code).gsub(/autoprefixer/, '<mark class="important">\0</mark>')
-  end
-
-  def mark_case2(code)
-    js(code).gsub(/cssnext|postcss-\w+/, '<mark class="important">\0</mark>')
-  end
-
-  def mark_case3(code)
-    js(code).gsub(/postcss-(n|m|s)[\w-]+/, '<mark class="important">\0</mark>')
-  end
-
-  def comment(code)
-    code.gsub(/.*/, '<mark class="comment">\0</mark>')
   end
 end
 
@@ -273,6 +167,7 @@ class Builder
     @caption  = nil
     @sections = nil
     @renderer = nil
+    Highlighter.reload!
   end
 
   def title
@@ -285,7 +180,8 @@ class Builder
 
   def markdown
     @renderer ||= begin
-      Redcarpet::Markdown.new(Highlighter.new, fenced_code_blocks: true)
+      load ROOT.join('postcss_highlighter.rb').to_s
+      Redcarpet::Markdown.new(PostcssHighlighter.new, fenced_code_blocks: true)
     end
   end
 
