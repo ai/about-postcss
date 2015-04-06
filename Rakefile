@@ -128,12 +128,16 @@ class Builder
   include EvilFront::Helpers
   include Helpers
 
-  def self.load
-    @cache ||= self.new
+  attr_reader :lang
+
+  def self.load(lang = 'en')
+    @cache       ||= { }
+    @cache[lang] ||= self.new(lang)
   end
 
-  def initialize(build_type = :development)
+  def initialize(lang, build_type = :development)
     @build_type = build_type
+    @lang       = lang
   end
 
   def assets
@@ -186,7 +190,7 @@ class Builder
   end
 
   def sections
-    @sections ||= ROOT.join('postcss.md').read
+    @sections ||= ROOT.join("postcss.#{ @lang }.md").read
       .split(/^##/).map.with_index do |text, index|
         index == 0 ? text : '##' + text
       end
@@ -215,9 +219,13 @@ end
 
 desc 'Build presentations all-in-one files'
 task :build => :clean do
-  html = ROOT.join('./build/postcss.html')
-  html.dirname.mkpath
-  html.open('w') { |io| io << Builder.new(:standalone).to_html }
+  %w(ru en).each do |lang|
+    html = ROOT.join("./build/postcss.#{lang}.html")
+    html.dirname.mkpath
+    html.open('w') { |io| io << Builder.new(lang, :standalone).to_html }
+    print '.'
+  end
+  puts
 end
 
 desc 'Run server for development'
@@ -228,9 +236,7 @@ task :server do
     set :lock, true
 
     get '/' do
-      builder = Builder.load
-      builder.reload!
-      builder.to_html
+      '<a href="/en">English</a> <a href="/ru">Русский</a>'
     end
 
     {
@@ -252,6 +258,12 @@ task :server do
           send_file asset.pathname
         end
       end
+    end
+
+    get '/:lang' do
+      builder = Builder.load(params[:lang])
+      builder.reload!
+      builder.to_html
     end
 
     def assets
