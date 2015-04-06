@@ -440,7 +440,7 @@ Source: <a href="https://github.com/postcss/postcss/blob/master/benchmark/proces
 
 1. Perfomance
 2. Modularity
-3. Impossible on Sass plugins
+3. Features, impossible in Sass
 
 ## *Part 4*  Present
 !cover present.jpg
