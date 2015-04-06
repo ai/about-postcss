@@ -72,7 +72,7 @@ a {
 - **Stylus:** 72 файла, 7 900 строк кода
 - **Less:** 105 файлов, 9 800 строк кода
 
-## *Проблема 3* Даже JS лучше Sass
+## *Проблема 3* Неудобно программировать
 !type with-huge-code
 
 ```sass
@@ -162,7 +162,7 @@ function (css) {
 **PostCSS**
 
 - Все функции как плагины
-- JS трансорфмирует CSS
+- JS трансформирует CSS
 
 ## Эволюция
 
@@ -470,7 +470,7 @@ a {
 
 !image benfrain.jpg
 
-«[Расставание с Sass: дело во мне, а не тебе](http://benfrain.com/breaking-up-with-sass-postcss/)»
+«[Расставание с Sass: дело во мне, а не в тебе](http://benfrain.com/breaking-up-with-sass-postcss/)»
 <cite><br> — Бен Фрейн, автор «Sass и Compass для дизайнеров»</cite>
 
 ## *Часть 5*  Применяем
