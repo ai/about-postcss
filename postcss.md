@@ -88,7 +88,7 @@ a {
 
 !image tj.jpg
 
-«<a href="http://tjholowaychuk.tumblr.com/post/44267035203/modular-css-preprocessing-with-rework">Modular CSS preprocessing with rework</a>»
+«<a href="http://tjholowaychuk.tumblr.com/post/44267035203/modular-css-preprocessing-with-rework">Модульный CSS-препроцессинг с Реворком</a>»
 <cite><br>— TJ Holowaychuk, 2013</cite>
 
 ## Развитие
@@ -453,25 +453,25 @@ a {
 !type with-companies
 
 !image google.svg
-!image twitter.svg
 !image taobao.svg
 !image wordpress.svg
-
-## Обсуждение
-!type with-article
-
-!image benfrain.jpg
-
-«[Breaking up with Sass: it’s not you, it’s me](http://benfrain.com/breaking-up-with-sass-postcss/)»
-<cite><br> — Бен Фрейн, автор «Sass и Compass для дизайнеров»</cite>
+!image twitter.svg
 
 ## Обсуждение
 !type with-article
 
 !image alistapart.png
 
-«[What Will Save Us from the Dark Side of CSS Pre‑Processors?](http://alistapart.com/column/what-will-save-us-from-the-dark-side-of-pre-processors)»
+«[Что спасёт нас от тёмной стороны CSS‑препроцессоров](http://alistapart.com/column/what-will-save-us-from-the-dark-side-of-pre-processors)»
 <cite><br> — A List Apart</cite>
+
+## Обсуждение
+!type with-article
+
+!image benfrain.jpg
+
+«[Расставание с Sass: дело во мне, а не тебе](http://benfrain.com/breaking-up-with-sass-postcss/)»
+<cite><br> — Бен Фрейн, автор «Sass и Compass для дизайнеров»</cite>
 
 ## *Часть 5*  Применяем
 !cover use.jpg
