@@ -8,6 +8,14 @@
 
 *Andrey Sitnik, Evil Martians*
 
+## План
+
+1. Why we need to compile CSS?
+2. What is a problems with preprocessors?
+3. What is PostCSS?
+4. What is PostCSS benefits?
+5. Who uses PostCSS?
+
 ## *Part 1* Problem
 !cover problem.jpg
 
@@ -104,7 +112,7 @@ a {
 
 **PostCSS**
 
-- smarter parse
+- smarter parser
 - better source map support
 - preserves source formatting
 - useful API
