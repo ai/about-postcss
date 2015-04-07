@@ -70,7 +70,7 @@ a {
 
 ```mark_rem
 a {
-    width: 20rem
+    width: 20rem;
 }
 ```
 
@@ -237,24 +237,24 @@ $column: 200px;
 
 ```css
 :fullscreen a {
-    transition: transform 1s
+    transition: transform 1s;
 }
 ```
 
 ```mark_prefixes
 :-webkit-full-screen a {
     -webkit-transition: -webkit-transform 1s;
-            transition: transform 1s
+            transition: transform 1s;
 }
 :-moz-full-screen a {
-    transition: transform 1s
+    transition: transform 1s;
 }
 :-ms-fullscreen a {
-    transition: transform 1s
+    transition: transform 1s;
 }
 :fullscreen a {
     -webkit-transition: -webkit-transform 1s;
-            transition: transform 1s
+            transition: transform 1s;
 }
 ```
 
@@ -314,21 +314,21 @@ ul > li:nth-last-child(4):first-child ~ li {
 /* style.css */
 .icon1 {
     width: 100px;
-    background: url(data:…)
+    background: url(data:…);
 }
 .icon2 {
-    background: url(data:…)
+    background: url(data:…);
 }
 ```
 
 ```mark_data
 /* style.css */
 .icon1 {
-    width: 100px
+    width: 100px;
 }
 /* style.icons.css */
 .icon1, .icon2 {
-    background: url(data:…)
+    background: url(data:…);
 }
 ```
 
@@ -356,14 +356,14 @@ main.css: line 32, col 3 -
 ```mark_left
 a {
     left: 10px;
-    text-align: left
+    text-align: left;
 }
 ```
 
 ```mark_right
 a {
     right: 10px;
-    text-align: right
+    text-align: right;
 }
 ```
 
