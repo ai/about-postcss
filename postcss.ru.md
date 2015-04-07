@@ -527,7 +527,7 @@ a {
 !cover ask.jpg
 !type  is-bottom
 
-## [github.com/postcss/postcss](http://github.com/postcss/postcss)
+## <a class="github" href="http://github.com/postcss/postcss">github.com/<strong>postcss</strong>/<strong>postcss</strong></a>
 !type with-em
 
 * Презентация: [ai.github.io/about-postcss](http://ai.github.io/about-postcss/)

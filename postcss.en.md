@@ -527,10 +527,10 @@ Source: <a href="https://github.com/postcss/postcss/blob/master/benchmark/proces
 !cover ask.jpg
 !type  is-bottom
 
-## [github.com/postcss/postcss](http://github.com/postcss/postcss)
+## <a class="github" href="http://github.com/postcss/postcss">github.com/<strong>postcss</strong>/<strong>postcss</strong></a>
 !type with-em
 
-* Keynote: [ai.github.io/about-postcss](http://ai.github.io/about-postcss/)
+* Keynote: [ai.github.io/about-postcss/en](http://ai.github.io/about-postcss/en)
 * Chat: [gitter.im/postcss/postcss](https://gitter.im/postcss/postcss)
 * Twitter: [@postcss](https://twitter.com/autoprefixer)
 
