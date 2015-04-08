@@ -37,7 +37,7 @@ $color: #0080e0
   img
     display: block
     width: 320px
-    margin: 0 auto
+    margin: 80px auto 0 auto
 
 [lang=en] .slide.is-title
   h2 strong
@@ -107,12 +107,12 @@ $color: #0080e0
     code
       line-height: 1.8
 
-.slide.with-em
+.slide.with-links
   img
     position: absolute
-    bottom: 60px
+    bottom: 70px
+    right: 100px
     width: 250px
-    opacity: 0.25
 
 .slide.with-evolution
   strong
@@ -143,8 +143,22 @@ $color: #0080e0
     flex-wrap: wrap
     justify-content: center
   img
-    height: 90px
+    max-height: 90px
+    max-width: 320px
     padding: 40px
+
+.slide.with-clients
+  img
+    display: block
+    margin: 0 auto 70px auto
+    &:first-child
+      width: 200px
+      margin-top: 75px
+      margin-bottom: 55px
+    &:nth-child(2)
+      width: 300px
+    &:nth-child(3)
+      width: 300px
 
 .slide.with-article
   img

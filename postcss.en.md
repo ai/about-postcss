@@ -8,10 +8,17 @@
 
 *Andrey Sitnik, Evil Martians*
 
-## [evl.ms](https://evilmartians.com/)
+##
 !type with-martians
 
 !image martians.svg
+
+## Worked On
+!type with-clients
+
+!image ebay.svg
+!image groupon.svg
+!image amplifr.png
 
 ## Plan
 
@@ -538,10 +545,11 @@ Source: <a href="https://github.com/postcss/postcss/blob/master/benchmark/proces
 !type  is-bottom
 
 ## <a class="github" href="http://github.com/postcss/postcss">github.com/<strong>postcss</strong>/<strong>postcss</strong></a>
-!type with-em
+!type with-links
 
 * Keynote: [ai.github.io/about-postcss/en](http://ai.github.io/about-postcss/en)
-* Chat: [gitter.im/postcss/postcss](https://gitter.im/postcss/postcss)
-* Twitter: [@postcss](https://twitter.com/autoprefixer)
+* PostCSS: [@postcss](https://twitter.com/postcss)
+* Evil Martians: [evl.ms](https://evilmartians.com/)
+* Amplifr: [amplifr.com/en](https://amplifr.com/en)
 
-!image evilmartians.png
+!image martians.svg

@@ -8,10 +8,17 @@
 
 *Андрей Ситник, Злые марсиане*
 
-## [evl.ms](https://evilmartians.com/)
+##
 !type with-martians
 
 !image martians.svg
+
+## Worked On
+!type with-clients
+
+!image ebay.svg
+!image groupon.svg
+!image amplifr.png
 
 ## План
 
@@ -538,10 +545,11 @@ a {
 !type  is-bottom
 
 ## <a class="github" href="http://github.com/postcss/postcss">github.com/<strong>postcss</strong>/<strong>postcss</strong></a>
-!type with-em
+!type with-links
 
 * Презентация: [ai.github.io/about-postcss](http://ai.github.io/about-postcss/)
 * ВКонтакте: [vk.com/postcss](https://vk.com/postcss)
-* Твиттер: [@postcss](https://twitter.com/autoprefixer)
+* Злые марсиане: [evl.ms](https://evilmartians.com/)
+* Амплифер: [amplifr.com](https://amplifr.com/)
 
-!image evilmartians.png
+!image martians.svg
