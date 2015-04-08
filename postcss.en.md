@@ -348,6 +348,11 @@ main.css: line 32, col 3 -
   CSS3 Transforms not supported by: IE (8)
 ```
 
+## Hebrew Wikipedia
+!type with-image
+
+!image hewiki.jpg
+
 ## *Impossible on Sass* [rtlcss](https://github.com/MohammadYounes/rtlcss)
 !type with-2-codes
 
