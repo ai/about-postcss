@@ -531,7 +531,7 @@ a {
 !type with-em
 
 * Презентация: [ai.github.io/about-postcss](http://ai.github.io/about-postcss/)
-* Вопросы: [gitter.im/postcss/postcss](https://gitter.im/postcss/postcss)
+* ВКонтакте: [vk.com/postcss](https://vk.com/postcss)
 * Твиттер: [@postcss](https://twitter.com/autoprefixer)
 
 !image evilmartians.png
