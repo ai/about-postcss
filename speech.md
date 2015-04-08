@@ -40,19 +40,24 @@ Evolution is based on three steps. Random mutation. Natural selection
 in the wild. And best result inheritance.
 
 But does we have this steps in browsers specification process? Of course,
-we had a lot of inheritance. A lot of legcay code.
+we had a lot of inheritance. A lot of legacy code and specifications.
 
 ---
 
-But does we had a selection? Non-standard blink tag was … TODO
+But does we had a selection? Mozilla was forced to support blink tag
+for 19 years. It was non-standard tag working only in Firefox.
 
 ---
+
+Will you afraid a mistakes, if you will support them for a decades?
+Can
 
 TODO
 
 ---
 
-That’s all. You can fint project and github-postcss-postcss.
-Here is our Twitter. Now it is time for your questions.
+That’s all. You can fint project and github-com-slash-postcss-slash-postcss.
+Here is keynotes with all link. Here is our Twitter.
 
+Now it is time for your questions.
 For every question you will receive small Russian candy. Like this.
