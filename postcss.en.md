@@ -8,7 +8,7 @@
 
 *Andrey Sitnik, Evil Martians*
 
-## План
+## Plan
 
 1. Why we need to compile CSS?
 2. What is a problems with preprocessors?
