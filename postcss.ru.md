@@ -8,6 +8,11 @@
 
 *Андрей Ситник, Злые марсиане*
 
+## [evl.ms](https://evilmartians.com/)
+!type with-martians
+
+!image martians.svg
+
 ## План
 
 1. Зачем компилировать CSS?
