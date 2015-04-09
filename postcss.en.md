@@ -20,6 +20,12 @@
 !image groupon.svg
 !image amplifr.png
 
+## Open Source
+!type with-projects
+
+!image autoprefixer.svg
+!image logo.svg
+
 ## Plan
 
 1. Why we need to compile CSS?

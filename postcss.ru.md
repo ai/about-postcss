@@ -20,6 +20,12 @@
 !image groupon.svg
 !image amplifr.png
 
+## Опенсорс
+!type with-projects
+
+!image autoprefixer.svg
+!image logo.svg
+
 ## План
 
 1. Зачем компилировать CSS?
