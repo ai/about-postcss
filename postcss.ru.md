@@ -13,7 +13,7 @@
 
 !image martians.svg
 
-## Worked On
+## Работал над
 !type with-clients
 
 !image ebay.svg
