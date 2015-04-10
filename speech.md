@@ -26,8 +26,6 @@ This is because Autoprefixer is only a tip of the iceberg of an entire new way
 to process your CSS. Autoprefixer is just a plugin for PostCSS, tool to extend
 or even replace CSS preprocessors.
 
----
-
 Today I will tell you about PostCSS.
 
 ---
