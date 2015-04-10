@@ -66,8 +66,9 @@ W3C prefers very long theoretical dicussion for every technology, because they
 afrain to make mistake.
 
 And it is a main problem. Many great ideas looked very crazy at the beggining.
-What people thinked about iPhone, when it was released? What people think about
-Web applications 15 years ago?
+What people thinked about iPhone, when it was released? What people thinked
+about Web applications 15 years ago? Or what people thinked airplanes, when
+they were invented century ago.
 
 We must have some playground to make mistakes if we want new awesome ideas.
 If we want long-term development of Web.
