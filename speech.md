@@ -224,7 +224,180 @@ Even if at the beggining that idea looked really strange.
 
 ---
 
-TODO
+But a told only about theory. Current science tell that theory is nothing
+without practical result.
+
+If PostCSS ideas really works we will see new features or awesome benchmark
+results.
+
+So, does PostCSS has this results?
+
+---
+
+First. Of course, we have plugins for variables, …
+
+---
+
+… nesting …
+
+---
+
+… and mixins.
+
+---
+
+But this features are not built-in as part of PostCSS. They are just a common
+plugins. If you didn’t use mixin, you can remove mixin plugin.
+Or even replace it by plugin with different syntax.
+
+But it is not about freedom to choose. Main benefit is that this plugins
+are really small and simple. For example, nesting is working because of
+few functions in 60 lines of JS code. It is very easy to maintain this features.
+
+---
+
+But, of course, PostCSS is not only about doing Sass job by plugin.
+PostCSS is about many other tasks, which are impossible on proprocessors.
+
+Autoprefixes is most popular example from this whole new frontend world.
+
+There is no mixins. You just write CSS like there is no prefixes anymore.
+Autoprefixer will take Can I Use data, find necessary selectors and properties
+and generates new CSS with prefixes. Like magic.
+
+---
+
+But we can go feather.
+
+How many people use Babel? …
+
+It compiles future ES6 JavaScript to old JS for current browsers.
+
+But why we can do so for CSS? Maxime from France wrote cssnext, PostCSS plugin
+to compile future CSS 4 to CSS 3 for current browsers.
+
+For example, in CSS 4 you can use variables, color transformations,
+many shortcuts, or even define you own custom selector. And all of that will
+work right now.
+
+---
+
+Next I tell you very scary story. China is a big market with a lot of money.
+But even IE 6 is still popular there. Poor Chinese developers.
+
+So, Alibaba, one of the biggest Chinese IT company, wrote PostCSS plugin
+to solve their IE problem. It is live previous cssnext but it works
+in other way.
+
+It coverts CSS 3 to CSS 2. Add many hacks for old IE.
+
+---
+
+Next will be a magic. PostCSS plugin, that add new selector.
+
+This selector will be apply if there are only some count items in list.
+So, for example, we can set 25% width menu links only if menu contains 4 links.
+
+For 5 items menu we will use 20% width.
+
+---
+
+We all know that fast loading sites make more money. And we has two
+way to optimize images. Base64 inline and sprites.
+
+Inline imges are simplier, but they makes our CSS bigger. And user will see
+nothig until CSS is loading.
+
+Other problem is when you use one images for many classes
+in different CSS files.
+
+But in PostCSS we have new way. It is called CSS sprite.
+
+PostCSS plugin will find all inlined images and move them to other file.
+Also it will join selectors with same classes.
+
+As result, main CSS with your site design will be small.
+
+---
+
+But PostCSS is not only to add something to your styles. PostCSS working
+awesome as CS linter.
+
+For example, Twitter wrote PostCSS plugin to lint their CSS
+for Twitter guidelines. They use modification of awesome BEM methodology.
+
+---
+
+But PostCSS linters can be much smarter, that jshint or csslint.
+
+Doiuse is a PostCSS plugin like a Autoprefixer. But it works in diferent way.
+
+It takes Can I Use data and check do all your browers support CSS that
+you write. Maybe your forgot that IE 9 doesn’t support flexbox?
+
+---
+
+And this is my favorite plugin.
+
+This is a Hebrew Wikipedia.
+
+As you know Arabs and Jews has right-to-left writing.
+Our language affects on our mind, the way how we think.
+
+So in right-to-left countries future is not on the right. Time does from right
+to left. So progress bar should go in other direction too, from right to left.
+
+We need to mirror all our design. But, of course, we didn’t want to support
+two different CSS files.
+
+---
+
+And Mohammad from Jordan wrote a really awesome plugin.
+It replaces mirrors you styles automatically.
+It replaces left to right, changes margin values order.
+
+It works like a magic and so WordPress uses it to convert own styles
+for Arabic and Hebrew users.
+
+---
+
+I mentioned only mot interesting plugins, which are impossible on Sass.
+
+But PostCSS has many other plugin from really good developers around the world.
+
+I will get a link to this presentation on last slide.
+By this link you can find many other awesome tools to make you work better.
+
+---
+
+I showed you that PostCSS can do much more, that preprocessors.
+Only a Autoprefixer is much smarter that Compass. And Cssnext can even add
+new syntax.
+
+But does it work fast?
+
+Because Sass team rewrote their project to C++ and killed compatibility
+with Compass to be the fastest preprocessor.
+
+Can a smarter tool on JavaScript can be faster than C++?
+
+---
+
+And this is why modular CSS processing is amazing!
+
+PostCSS written on JavaScript is 4 times faster, that libsass written on C++.
+
+Does somebody use old Ruby Sass? For example, because of Compass?
+
+If you will move to PostCSS, you will have more features and 40 times faster
+frontend build process.
+
+---
+
+So, what is benefits of using PostCSS right now?
+
+It is much faster and have many new features to make your frontend work better.
+All of this because of modular way inside PostCSS.
 
 ---
 
