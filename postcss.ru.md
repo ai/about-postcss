@@ -308,12 +308,22 @@ $column: 200px;
 ul > li:exactly(4) {
     width: 25%;
 }
+
+ul > li:exactly(5) {
+    width: 20%;
+}
 ```
 
 ```css
 ul > li:nth-last-child(4):first-child,
 ul > li:nth-last-child(4):first-child ~ li {
     width: 25%;
+}
+
+
+ul > li:nth-last-child(5):first-child,
+ul > li:nth-last-child(5):first-child ~ li {
+    width: 20%;
 }
 ```
 
