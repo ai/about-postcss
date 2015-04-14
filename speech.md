@@ -32,61 +32,61 @@ Today I will tell you about PostCSS.
 
 ---
 
-We will start from theory. Why CSS processors is so important.
-What idea is behind PostCSS.
+We will start with some theory. Why is using CSS processors so important.
+And what ideas are behind PostCSS.
 
 ---
 
 I believe that every long-term development is based on evolution.
 We have a great example of biologically evolution in nature.
-We use genetics algorithms in our computer science.
-There are a theories, that even human ideas is a part of same evolution process.
+We use genetic algorithms in computer science.
+There are theories that even human ideas is a part of same evolution process.
 
 Evolution is based on three steps. Random mutation. Natural selection
 in the wild. And inheritance of the best results.
 
-But do we have this steps in browsers specification process?
+But do we have these steps in browsers specification process?
 Of course, we have a lot of inheritance.
 A lot of legacy code and old specifications.
 
 ---
 
-But does we really have a selection? Mozilla was forced to support blink tag
-for 19 years. And it was only non-standard tag working only in Firefox.
+But do we really have a selection process? Mozilla was forced to support blink tag
+for 19 years. And it was only a non-standard tag working only in Firefox.
 
-If some technology become a standard, many sites start to use it.
-And we will need a decades to replace it for some better standard.
+If some technology becomes a standard, many sites start to use it.
+And we will need decades to replace it for some better standard.
 
-I will tell you some scary story: old IE are still popular in China.
+I will tell you a scary story: old IE is still popular in China.
 
 ---
 
-Will you think about some new crazy ideas, if you must support you mistakes
-of decades?
+Will you think about some new crazy ideas, if you must support your mistakes
+for decades?
 
 W3C prefers very long theoretical discussion for every technology, because they
-afraid to make mistake.
+are afraid to make a mistake.
 
 And it is a main problem. Many great ideas looked very crazy at the beginning.
-What people thinked about iPhone, when it was released? What people thinked
-about Web applications 15 years ago? Or what people thinked airplanes, when
+What people thought about iPhone, when it was released? What people thought
+about Web applications 15 years ago? Or what people thought about airplanes, when
 they were invented century ago.
 
 We must have some playground to make mistakes if we want new awesome ideas.
-If we want long-term development of Web.
+If we want long-term development of the Web.
 
 ---
 
-40% of next JavaScript come from CoffeeScript preprocessor.
+40% of next JavaScript comes from the CoffeeScript preprocessor.
 
-Even next next ES7 standard takes async-await after we test
+Even the next ES7 standard takes async-await after we've tested
 it in IcedCoffeeScript.
 
-And this is why preprocessors are a big deal. They are this kind of playground.
+And this is why preprocessors are a big deal. They are this kind of a playground.
 Every developer can use own modules.
-For example, Haskel for frontend in awesome Elm tool or ClosureScript.
+For example, Haskell has an awesome Elm tool. Clojure has ClosureScript.
 
-And we will get real world feedback before idea become a standard.
+And we can get real world feedback before idea becomes a standard.
 
 ---
 
