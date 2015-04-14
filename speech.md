@@ -155,46 +155,46 @@ Better that Sass. And when I saw Rework, I thought that it was a revolution.
 ---
 
 But Autoprefixer quickly became too big for Rework.
-We required better source map support and
-more accurate parser too process legacy CSS with hacks.
+We did require better source map support and
+more accurate parser to process legacy CSS with hacks.
 
-And this is how PostCSS was created.
+And this is how PostCSS was started.
 
 ---
 
-So, how modular CSS processor works?
+So, how does a modular CSS processor work?
 
 PostCSS core contains only two small parts. CSS parser which returns
-tree of node’s objects. And stringifier that converts node tree to CSS string.
+tree of node's objects. And stringifier that converts node tree to CSS string.
 
-That’s all. By default PostCSS will not change any byte of your CSS.
-It will just parse it, even saves all whitespaces. And converts it back
+That’s all. By default, PostCSS will not change a byte of your CSS.
+It will just parse it, even saves all whitespace. And converts it back
 to string.
 
 All magic happens in plugins.
-Plugin is very simple too.
-It is just a JavaScript function, that receives that node tree and change it.
-Read some node, remove unnecessary, add necessary nodes.
-And pass changed tree to next plugin.
+Plugin code is very simple too.
+It is just a JavaScript function, that receives that node tree and changes it.
+Read some node, remove unnecessary and add necessary nodes.
+And pass changed tree to the next plugin.
 
 ---
 
-How it looks like in code?
+How does it look like in code?
 
-You take PostCSS from npm. Set array with plugins. And process your CSS
-through this plugins.
+You install PostCSS using npm. Set an array with plugins. And process your CSS
+through these plugins.
 
 ---
 
 Plugin code is simple.
 
-Do you remember slide about units in preprocessors. In PostCSS it is very easy
-to add new unit.
+Do you remember my slide about units in preprocessors? In PostCSS it is very easy
+to add a new unit.
 
-This is your plugin’s function. It receive a parsed tree. We iterates through
-all declaration. And replace rem unit to pixels.
+This is your plugin’s function. It receives a parsed tree. We iterate through
+all declarations. And replace rem unit to pixels.
 
-That’s all. New plugin with CSS unit polyfill by 1-2-3-4 lines.
+That’s all. New plugin with CSS unit polyfill with 1-2-3-4 lines.
 
 ---
 
@@ -202,37 +202,37 @@ So, let’s be clear.
 What is the difference between preprocessors and PostCSS?
 
 Preprocessors are a monolithic template language,
-when you mix your styles and code.
+which mixes your style and code.
 
-PostCSS transforms your styles by small JS function.
-All features re in modules. You can use one variable module or other?
+PostCSS transforms your styles with a small JS function.
+All features are in modules. You can use one variable module or the other.
 Of none of them if you didn’t want to use variables.
 
 ---
 
-So why it is important? Do you remember about evolution?
+So why it is important? Do you remember what I said about evolution?
 This plugins are ideal for the evolution process.
 
-You wrote a plugin with some crazy idea. For example, new way to optimize
-load time.
+You write a plugin with some crazy idea. For example, a new way to optimize
+page load time.
 
-Then some developers uses it. Other developers hates it.
+Then some developers use it. Other developers hate it.
 
-But emotions doesn’t matter. If your crazy idea works, you will receive
+But emotions don't matter. If your crazy idea works, you will receive
 good feedback. More developers will use it.
 
-And we will now that this new way or new syntax works before specification.
-Even if at the beginning that idea looked really strange.
+And we will know that this new way or new syntax works before it becomes a
+specification. Even if at the beginning that idea looked really strange.
 
 ---
 
-But a told only about theory. Current science tell that theory is nothing
-without practical result.
+But I only told you about how things are in theory. Current science tells
+us that theory is nothing without practical result.
 
-If PostCSS ideas really works we will see new features or awesome benchmark
+If PostCSS ideas really do work, we will see new features or awesome benchmark
 results.
 
-So, does PostCSS has this results?
+So, does PostCSS have these results?
 
 ---
 
@@ -248,77 +248,77 @@ First. Of course, we have plugins for variables, …
 
 ---
 
-But this features are not built-in as part of PostCSS. They are just a common
-plugins. If you didn’t use mixin, you can remove mixin plugin.
-Or even replace it by plugin with different syntax.
+But these features are not built-in as part of PostCSS. They are just common
+plugins. If you didn’t use mixins, you can remove the mixin plugin.
+Or even replace it by a plugin with different syntax.
 
-But it is not about freedom to choose. Main benefit is that this plugins
+But it is not about freedom to choose. Main benefit is that these plugins
 are really small and simple. For example, nesting is working because of
-few functions in 60 lines of JS code. It is very easy to maintain this features.
+few functions in 60 lines of JS code. It is very easy to maintain these features.
 
 ---
 
-But, of course, PostCSS is not only about doing Sass job by plugin.
-PostCSS is about many other tasks, which are impossible on preprocessors.
+But, of course, PostCSS is not only about doing Sass job with plugins.
+PostCSS is about many other tasks, which are impossible with preprocessors.
 
-Autoprefixer is most popular example from this whole new frontend world.
+Autoprefixer is the most popular example from this whole new frontend world.
 
-There is no mixins. You just write CSS like there is no prefixes anymore.
-Autoprefixer will take Can I Use data, find necessary selectors and properties
+There are no mixins. You just write CSS like there are no prefixes anymore.
+Autoprefixer takes Can I Use data, finds necessary selectors and properties
 and generates new CSS with prefixes. Like magic.
 
 ---
 
-But we can go feather.
+But we can go further.
 
 How many people use Babel? …
 
 It compiles future ES6 JavaScript to old JS for current browsers.
 
-But why we can do so for CSS? Maxime from France wrote cssnext, PostCSS plugin
+But why can't we do so for CSS? Maxime from France wrote cssnext, a PostCSS plugin
 to compile future CSS 4 to CSS 3 for current browsers.
 
 For example, in CSS 4 you can use variables, color transformations,
-many shortcuts, or even define you own custom selector. And all of that will
+many shortcuts, or even define your own custom selector. And all of that will
 work right now.
 
 ---
 
-Next I tell you very scary story. China is a big market with a lot of money.
+Next, I'll tell you a very scary story. China is a big market with lots of money.
 But even IE 6 is still popular there. Poor Chinese developers.
 
-So, Alibaba, one of the biggest Chinese IT company, wrote PostCSS plugin
+So, Alibaba, one of the biggest Chinese IT companies, wrote a PostCSS plugin
 to solve their IE problem. It is live previous cssnext but it works
 in other way.
 
-It coverts CSS 3 to CSS 2. Add many hacks for old IE.
+It coverts CSS 3 to CSS 2. And adds many hacks for old IE.
 
 ---
 
-Next will be a magic. PostCSS plugin, that add new selector.
+Next will be some magic. A PostCSS plugin that adds a new selector.
 
-This selector will be apply if there are only some count items in list.
+This selector will be applied only if there is some count of items in a list.
 So, for example, we can set 25% width menu links only if menu contains 4 links.
 
 For 5 items menu we will use 20% width.
 
 ---
 
-We all know that fast loading sites make more money. And we has two
-way to optimize images. Base64 inline and sprites.
+We all know that fast loading sites do make more money. And we have two
+ways to optimize images. Base64 inline and sprites.
 
-Inline images are simplier, but they makes our CSS bigger. And user will see
-nothing until CSS is loading.
+Inline images are simpler, but they make our CSS bigger. And the user will see
+nothing until CSS finishes loading.
 
-Other problem is when you use one images for many classes
+Other problem is when you use one image for many classes
 in different CSS files.
 
-But in PostCSS we have new way. It is called CSS sprite.
+But in PostCSS we have a new way. It is called a CSS sprite.
 
-PostCSS plugin will find all inlined images and move them to other file.
+PostCSS plugin will find all inlined images and move them to another file.
 Also it will join selectors with same classes.
 
-As result, main CSS with your site design will be small.
+As a result, main CSS with your site design will be small.
 
 ---
 
