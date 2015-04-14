@@ -556,7 +556,7 @@ Source: <a href="https://github.com/postcss/postcss/blob/master/benchmark/proces
 !type with-links
 
 * Keynote: [ai.github.io/about-postcss/en](http://ai.github.io/about-postcss/en)
-* PostCSS: [@postcss](https://twitter.com/postcss)
+* Twitter: [@postcss](https://twitter.com/postcss)
 * Evil Martians: [evl.ms](https://evilmartians.com/)
 * Amplifr: [amplifr.com/en](https://amplifr.com/en)
 

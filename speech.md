@@ -51,7 +51,9 @@ Every evolution process is based on three steps.
 Random mutation. Natural selection
 in the wild. And inheritance.
 
-But do we have these steps in browsers specification process?
+But do we have these steps in our Web?
+Does W3C uses evolution process to develop new specifications?
+
 Of course, we have a lot of inheritance.
 A lot of legacy code and old specifications.
 
