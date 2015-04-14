@@ -325,17 +325,17 @@ As a result, main CSS with your site design will be small.
 But PostCSS is not only to add something to your styles. PostCSS working
 awesome as CS linter.
 
-For example, Twitter wrote PostCSS plugin to lint their CSS
+For example, Twitter wrote a PostCSS plugin to lint their CSS
 for Twitter guidelines. They use modification of awesome BEM methodology.
 
 ---
 
-But PostCSS linters can be much smarter, that jshint or csslint.
+But PostCSS linters can be much smarter than jshint or csslint.
 
-Doiuse is a PostCSS plugin like a Autoprefixer. But it works in different way.
+Doiuse is a PostCSS plugin, like Autoprefixer. But it works in a different way.
 
 It takes Can I Use data and check do all your browsers support CSS that
-you write. Maybe your forgot that IE 9 doesn’t support flexbox?
+you write. Maybe you've forgot that IE 9 doesn’t support flexbox?
 
 ---
 
@@ -343,89 +343,91 @@ And this is my favorite plugin.
 
 This is a Hebrew Wikipedia.
 
-As you know Arabs and Jews has right-to-left writing.
-Our language affects on our mind, the way how we think.
+As you know, in Arabic world, right-to-left writing is dominant.
+Our language affects on our mind, and the way we think.
 
-So in right-to-left countries future is not on the right. Time does from right
-to left. So progress bar should go in other direction too, from right to left.
+So in right-to-left countries the "future" is not on the right. Time goes from right
+to left. So a progress bar should go in another direction too, from right to left.
 
-We need to mirror all our design. But, of course, we didn’t want to support
+We need to mirror all our of design. But, of course, we don't want to support
 two different CSS files.
 
 ---
 
 And Mohammad from Jordan wrote a really awesome plugin.
-It replaces mirrors you styles automatically.
+It mirrors your styles automatically.
 It replaces left to right, changes margin values order.
 
-It works like a magic and so WordPress uses it to convert own styles
+It works like magic, and so WordPress uses it to convert own styles
 for Arabic and Hebrew users.
 
 ---
 
-I mentioned only mot interesting plugins, which are impossible on Sass.
+I've mentioned only the mots interesting plugins, which are impossible
+to implement on Sass.
 
-But PostCSS has many other plugin from really good developers around the world.
+But PostCSS has many other plugins from really good developers around the world.
 
-I will get a link to this presentation on last slide.
-By this link you can find many other awesome tools to make you work better.
+I will post a link to this presentation on the last slide.
+Following this link, you can find many other awesome tools to make
+your work better.
 
 ---
 
-I showed you that PostCSS can do much more, that preprocessors.
-Only a Autoprefixer is much smarter that Compass. And Cssnext can even add
-new syntax.
+I've shown you that PostCSS can do much more than preprocessors.
+Autoprefixer is much smarter that Compass. And Cssnext can even add
+a new syntax.
 
 But does it work fast?
 
-Because Sass team rewrote their project to C++ and killed compatibility
+Sass team rewrote their project to C++ and killed compatibility
 with Compass to be the fastest preprocessor.
 
-Can a smarter tool on JavaScript can be faster than C++?
+Can a smarter JavaScript tool be faster than a C++ tool?
 
 ---
 
 And this is why modular CSS processing is amazing!
 
-PostCSS written on JavaScript is 4 times faster, that libsass written on C++.
+PostCSS (written in JavaScript) is 4 times faster than libsass written in C++.
 
 Does somebody use old Ruby Sass? For example, because of Compass?
 
-If you will move to PostCSS, you will have more features and 40 times faster
+By moving to PostCSS you will have more features and 40 times faster
 frontend build process.
 
 ---
 
-So, what is benefits of using PostCSS right now?
+So, what are the benefits of using PostCSS right now?
 
-It is much faster and have many new features to make your frontend work better.
-All of this because of modular way inside PostCSS.
+It is much faster and has many new features to make your frontend work better.
+All of this because of the modular PostCSS way.
 
 ---
 
 But I lied to you. Talk title is “Future after Sass”. But PostCSS is not
-a future, it is a present.
+the future, it is the present.
 
 ---
 
-According npm statistics, we a close to half million. It is more, that
-Babel, Stylus or libsass.
+According to npm statistics, we're close to half a million downloads.
+It is more than Babel, Stylus or libsass have.
 
 ---
 
-Paul Irish told me, that Google uses PostCSS with Autoprefixer.
+Paul Irish told me that Google uses PostCSS with Autoprefixer.
 
 WordPress uses PostCSS with Autoprefixer and RTLCSS.
 
-Taobao, largest internet shop in China, not only uses PostCSS, but also wrote
+Taobao, largest e-commerce in China, not only uses PostCSS, but also wrote
 many awesome plugins.
 
-But most exciting example is Twitter. Necolas told that Twitter doesn’t use
+But the most exciting example is Twitter. Nicolas told that Twitter doesn’t use
 any preprocessor at all. They moved from Less to Rework postprocessor
 and not in the middle of migration to PostCSS only solution.
 
-This slide shows not only big names. But it shows that PostCSS is absolutely
-production ready.
+Not onlu does this slide show the bug names, but it also shows that PostCSS
+is absolutely production ready.
 We have many users around the world.
 With many different cases.
 With hacks and legacy CSS.
@@ -435,60 +437,61 @@ And PostCSS parses all this complicated cases.
 
 PostCSS became a trend.
 
-A List Apart wrote a article about “Dark Side” of preprocessors
+A List Apart wrote an article about “Dark Side” of preprocessors
 and that PostCSS can save us from it.
 
 ---
 
-Ben Frain, author of “Sass and Compass for designers” wrote good article
+Ben Frain, author of “Sass and Compass for designers” wrote a good article
 about breaking up with Sass.
 
 ---
 
-So, what I want from you to do at this weekend?
+So, what do I want from you this weekend?
 
 ---
 
 If you want to write some CSS tool, linter, library. Look at PostCSS.
 
-First, PostCSS is better that regexp, because it has very accurate parser
+First, PostCSS is better than regexps, because it has very accurate parser
 and will generate and update source maps.
 
-Second, PostCSS is better that mixins library, because you will have
-bigger user base. Mixin library will work only with one preprocessor.
+Second, PostCSS is better than a mixins library, because you will have
+bigger user base. Mixin library will work only with a single preprocessor.
 Autoprefixer or other PostCSS plugin can be executed after preprocessor,
-so users use it any environments.
+so users could use it in any environment.
 
 ---
 
-If you didn’t use PostCSS at all, you must add at least Autoprefixer.
+If you don't use PostCSS at all, you must add at least Autoprefixer.
 
 There are many reasons why Autoprefixer is must-have library.
 But I will use big names.
 
-Google recommends only a Autoprefixer as a tool to handle prefixes.
+Google recommends to use Autoprefixer only as a tool to handle prefixes.
 
 ---
 
 If your project uses only Autoprefixer, you should look at other plugins.
 
-PostCSS has many plugins. They are awesome as Autoprefixer too.
+PostCSS has many plugins. They are as awesome as Autoprefixer.
 
 ---
 
-And if you start a new project, you should think about PostCSS only solution.
+And if you start a new project, you should think about a PostCSS-only solution.
 
 Twitter is happy with it.
 
 PostCSS can do variables, nested and mixins better that preprocessors.
 So why you need this big and slow tools?
 
-Because IT is all about simplicity. And one tool is a simplier that two.
+Because IT is all about simplicity. And one tool is a simpler than two.
 
 ---
 
 That’s all. You can find project and github-com-slash-postcss-slash-postcss.
-Here is keynotes with all links. Here is PostCSS Twitter and our company sites.
+Here are keynotes with all links.
+Here are PostCSS Twitter and our company site and twitter.
 
 Now it is time for your questions.
 For every question you will receive small Russian candy. Like this.
