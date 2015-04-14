@@ -241,7 +241,7 @@ $column: 200px;
 - **postcss-simple-vars:** 73 LOC
 - **postcss-mixins:** 100 LOC
 
-## *Impossible on Sass* [autoprefixer](https://github.com/postcss/autoprefixer)
+## *Impossible with Sass* [autoprefixer](https://github.com/postcss/autoprefixer)
 !type with-2-sides
 !type with-small-code
 !type with-bigger-right
@@ -269,7 +269,7 @@ $column: 200px;
 }
 ```
 
-## *Impossible on Sass* [cssnext](https://github.com/cssnext/cssnext)
+## *Impossible with Sass* [cssnext](https://github.com/cssnext/cssnext)
 
 ```mark_css4
 @custom-selector --heading h1, h2, h3, h4, h5, h6;
@@ -281,7 +281,7 @@ $column: 200px;
 }
 ```
 
-## *Impossible on Sass* [cssgrace](https://github.com/cssdream/cssgrace)
+## *Impossible with Sass* [cssgrace](https://github.com/cssdream/cssgrace)
 !type with-2-sides
 
 ```css
@@ -301,7 +301,7 @@ $column: 200px;
 }
 ```
 
-## *Impossible on Sass* [postcss-quantity-queries](https://github.com/pascalduez/postcss-quantity-queries)
+## *Impossible with Sass* [postcss-quantity-queries](https://github.com/pascalduez/postcss-quantity-queries)
 !type with-2-sides
 !type with-smaller-right
 
@@ -328,7 +328,7 @@ ul > li:nth-last-child(5):first-child ~ li {
 }
 ```
 
-## *Impossible on Sass* [postcss-data-packer](https://github.com/Ser-Gen/postcss-data-packer)
+## *Impossible with Sass* [postcss-data-packer](https://github.com/Ser-Gen/postcss-data-packer)
 !type with-2-sides
 
 ```mark_data
@@ -353,11 +353,11 @@ ul > li:nth-last-child(5):first-child ~ li {
 }
 ```
 
-## *Impossible on Sass* [postcss-bem-linter](https://github.com/necolas/postcss-bem-linter)
+## *Impossible with Sass* [postcss-bem-linter](https://github.com/necolas/postcss-bem-linter)
 
 Lint Twitter BEM-style [SUIT CSS](https://github.com/suitcss/suit)
 
-## *Impossible on Sass* [doiuse](https://github.com/anandthakker/doiuse)
+## *Impossible with Sass* [doiuse](https://github.com/anandthakker/doiuse)
 
 Lint CSS for browser support against Can I Use database
 
@@ -373,7 +373,7 @@ main.css: line 32, col 3 -
 
 !image hewiki.jpg
 
-## *Impossible on Sass* [rtlcss](https://github.com/MohammadYounes/rtlcss)
+## *Impossible with Sass* [rtlcss](https://github.com/MohammadYounes/rtlcss)
 !type with-2-codes
 
 Mirrors styles for Arabic or Hebrew
@@ -398,10 +398,10 @@ a {
 - Fallbacks
 - Language extensions
 - Optimizations
-- Shorcuts
+- Shortcuts
 - Analytics
 
-## Perfomance
+## Performance
 
 <div class="compare is-long">
     <div class="compare_part is-postcss is-hide">
@@ -435,7 +435,7 @@ a {
 Source: <a href="https://github.com/postcss/postcss/blob/master/benchmark/processors.js">Bootstrap parsing</a>
 </div>
 
-## Perfomance
+## Performance
 
 <div class="compare is-long">
     <div class="compare_part is-postcss">
@@ -471,9 +471,9 @@ Source: <a href="https://github.com/postcss/postcss/blob/master/benchmark/proces
 
 ## Benefits
 
-1. Perfomance
+1. Performance
 2. Modularity
-3. Features, impossible in Sass
+3. Features that are impossible with Sass
 
 ## *Part 4*  Present
 !cover present.jpg
