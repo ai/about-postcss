@@ -35,8 +35,8 @@ What idea is behind PostCSS.
 
 ---
 
-I belive that every long-term development is based on evolution.
-We have a great example of biogically evolution in nature.
+I believe that every long-term development is based on evolution.
+We have a great example of biologically evolution in nature.
 We use genetics algorithms in our computer science.
 There are a theories, that even human ideas is a part of same evolution process.
 
@@ -62,10 +62,10 @@ I will tell you some scary story: old IE are still popular in China.
 Will you think about some new crazy ideas, if you must support you mistakes
 of decades?
 
-W3C prefers very long theoretical dicussion for every technology, because they
-afrain to make mistake.
+W3C prefers very long theoretical discussion for every technology, because they
+afraid to make mistake.
 
-And it is a main problem. Many great ideas looked very crazy at the beggining.
+And it is a main problem. Many great ideas looked very crazy at the beginning.
 What people thinked about iPhone, when it was released? What people thinked
 about Web applications 15 years ago? Or what people thinked airplanes, when
 they were invented century ago.
@@ -100,13 +100,13 @@ They are template language. Like PHP, but you mix your code with CSS template.
 ---
 
 Some preprocessor tool like Compass or Bourbon can create only mixins,
-functions and varibles.
+functions and variables.
 
 ---
 
 And it is a first big problem of preprocessors.
 
-How we can add polyill for units?
+How we can add polyfill for units?
 
 Maybe mixins are enough for today simple task.
 But we have many new ideas and preprocessors are too limited for them.
@@ -120,7 +120,7 @@ Preprocessors codebase are big and very monolithic.
 
 Do you have any friend who contribute something in preprocessors?
 
-Sass team went further. To get better perfomance, they rewrote project to C++
+Sass team went further. To get better performance, they rewrote project to C++
 and now we have even less developers, who can add something new.
 
 ---
@@ -143,7 +143,7 @@ without limitations of current preprocessors.
 PostCSS was not first.
 
 3 years ago, TJ Holowaychuk, Stylus maintainer, saw same problems.
-He understoood that preprocessor idea was finished.
+He understood that preprocessor idea was finished.
 
 He started new modular CSS processor tool, Rework.
 
@@ -186,7 +186,7 @@ through this plugins.
 
 Plugin code is simple.
 
-Do you remember slide aout units in preprocessors. In PostCSS it is very easy
+Do you remember slide about units in preprocessors. In PostCSS it is very easy
 to add new unit.
 
 This is your plugin’s function. It receive a parsed tree. We iterates through
@@ -209,7 +209,7 @@ Of none of them if you didn’t want to use variables.
 ---
 
 So why it is important? Do you remember about evolution?
-This plugins are ideal for tht evolution process.
+This plugins are ideal for the evolution process.
 
 You wrote a plugin with some crazy idea. For example, new way to optimize
 load time.
@@ -217,10 +217,10 @@ load time.
 Then some developers uses it. Other developers hates it.
 
 But emotions doesn’t matter. If your crazy idea works, you will receive
-good feedback. More develoeprs will use it.
+good feedback. More developers will use it.
 
 And we will now that this new way or new syntax works before specification.
-Even if at the beggining that idea looked really strange.
+Even if at the beginning that idea looked really strange.
 
 ---
 
@@ -257,9 +257,9 @@ few functions in 60 lines of JS code. It is very easy to maintain this features.
 ---
 
 But, of course, PostCSS is not only about doing Sass job by plugin.
-PostCSS is about many other tasks, which are impossible on proprocessors.
+PostCSS is about many other tasks, which are impossible on preprocessors.
 
-Autoprefixes is most popular example from this whole new frontend world.
+Autoprefixer is most popular example from this whole new frontend world.
 
 There is no mixins. You just write CSS like there is no prefixes anymore.
 Autoprefixer will take Can I Use data, find necessary selectors and properties
@@ -305,8 +305,8 @@ For 5 items menu we will use 20% width.
 We all know that fast loading sites make more money. And we has two
 way to optimize images. Base64 inline and sprites.
 
-Inline imges are simplier, but they makes our CSS bigger. And user will see
-nothig until CSS is loading.
+Inline images are simplier, but they makes our CSS bigger. And user will see
+nothing until CSS is loading.
 
 Other problem is when you use one images for many classes
 in different CSS files.
@@ -330,9 +330,9 @@ for Twitter guidelines. They use modification of awesome BEM methodology.
 
 But PostCSS linters can be much smarter, that jshint or csslint.
 
-Doiuse is a PostCSS plugin like a Autoprefixer. But it works in diferent way.
+Doiuse is a PostCSS plugin like a Autoprefixer. But it works in different way.
 
-It takes Can I Use data and check do all your browers support CSS that
+It takes Can I Use data and check do all your browsers support CSS that
 you write. Maybe your forgot that IE 9 doesn’t support flexbox?
 
 ---
@@ -411,22 +411,22 @@ Babel, Stylus or libsass.
 
 ---
 
-Paul Irish tols me, that Google uses PostCSS with Autoprefixer.
+Paul Irish told me, that Google uses PostCSS with Autoprefixer.
 
 WordPress uses PostCSS with Autoprefixer and RTLCSS.
 
-Taobao, largest internet shop in China, not only uses PostCSS, but also writed
+Taobao, largest internet shop in China, not only uses PostCSS, but also wrote
 many awesome plugins.
 
 But most exciting example is Twitter. Necolas told that Twitter doesn’t use
 any preprocessor at all. They moved from Less to Rework postprocessor
 and not in the middle of migration to PostCSS only solution.
 
-This slide shows not only big names. But it shows that PostCSS is absolutly
+This slide shows not only big names. But it shows that PostCSS is absolutely
 production ready.
 We have many users around the world.
 With many different cases.
-With hacks aand legacy CSS.
+With hacks and legacy CSS.
 And PostCSS parses all this complicated cases.
 
 ---
@@ -447,15 +447,15 @@ So, what I want from you to do at this weekend?
 
 ---
 
-If you wnt to write some CSS tool, linter, library. Look at PostCSS.
+If you want to write some CSS tool, linter, library. Look at PostCSS.
 
 First, PostCSS is better that regexp, because it has very accurate parser
 and will generate and update source maps.
 
-Second, PostCSS is better tht mixins library, because you will have
+Second, PostCSS is better that mixins library, because you will have
 bigger user base. Mixin library will work only with one preprocessor.
 Autoprefixer or other PostCSS plugin can be executed after preprocessor,
-so users use it any enviroments.
+so users use it any environments.
 
 ---
 
@@ -468,24 +468,24 @@ Google recommends only a Autoprefixer as a tool to handle prefixes.
 
 ---
 
-If your project ues only Autoprefixer, you should look at other plugins.
+If your project uses only Autoprefixer, you should look at other plugins.
 
-PostCSS has many plugins. They are aweome as Autoprefixer too.
+PostCSS has many plugins. They are awesome as Autoprefixer too.
 
 ---
 
-And if you start a new project, you should think about PostCSSS only solution.
+And if you start a new project, you should think about PostCSS only solution.
 
-Twitter is happy it.
+Twitter is happy with it.
 
-PostCSS can do varibles, nested and mixins better that preprocessors.
+PostCSS can do variables, nested and mixins better that preprocessors.
 So why you need this big and slow tools?
 
 Because IT is all about simplicity. And one tool is a simplier that two.
 
 ---
 
-That’s all. You can fint project and github-com-slash-postcss-slash-postcss.
+That’s all. You can find project and github-com-slash-postcss-slash-postcss.
 Here is keynotes with all links. Here is PostCSS Twitter and our company sites.
 
 Now it is time for your questions.
