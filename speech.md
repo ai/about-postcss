@@ -1,12 +1,13 @@
 ---
 
-Hi, my name is Andrey Sitnik. I am a front-end developer at a company called Evil Martians.
+Hi, my name is Andrey Sitnik. I am a front-end developer at Evil Martians.
 
 ---
 
-As a front-end in my company I've been behind the development of
-front-end of Groupon Russia (since the early days to the IPO), eBay Social, a social marketplace we've done for eBay,
-Rocketbank, a "Russian version" of Bank Simple. Most of the time I work on Amplifr.com, a social networking posting and analytics tool.
+As a front-end in my company I was doing front-end for Groupon Russia,
+eBay Social, Rocketbank, a "Russian version" of Bank Simple.
+
+My current project Amplifr.com, a social networking posting and analytics tool.
 
 ---
 
