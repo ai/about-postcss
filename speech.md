@@ -401,6 +401,90 @@ All of this because of modular way inside PostCSS.
 
 ---
 
+But I lied to you. Talk title is “Future after Sass”. But PostCSS is not
+a future, it is a present.
+
+---
+
+According npm statistics, we a close to half million. It is more, that
+Babel, Stylus or libsass.
+
+---
+
+Paul Irish tols me, that Google uses PostCSS with Autoprefixer.
+
+WordPress uses PostCSS with Autoprefixer and RTLCSS.
+
+Taobao, largest internet shop in China, not only uses PostCSS, but also writed
+many awesome plugins.
+
+But most exciting example is Twitter. Necolas told that Twitter doesn’t use
+any preprocessor at all. They moved from Less to Rework postprocessor
+and not in the middle of migration to PostCSS only solution.
+
+This slide shows not only big names. But it shows that PostCSS is absolutly
+production ready.
+We have many users around the world.
+With many different cases.
+With hacks aand legacy CSS.
+And PostCSS parses all this complicated cases.
+
+---
+
+PostCSS became a trend.
+
+A List Apart wrote a article about “Dark Side” of preprocessors
+and that PostCSS can save us from it.
+
+---
+
+Ben Frain, author of “Sass and Compass for designers” wrote good article
+about breaking up with Sass.
+
+---
+
+So, what I want from you to do at this weekend?
+
+---
+
+If you wnt to write some CSS tool, linter, library. Look at PostCSS.
+
+First, PostCSS is better that regexp, because it has very accurate parser
+and will generate and update source maps.
+
+Second, PostCSS is better tht mixins library, because you will have
+bigger user base. Mixin library will work only with one preprocessor.
+Autoprefixer or other PostCSS plugin can be executed after preprocessor,
+so users use it any enviroments.
+
+---
+
+If you didn’t use PostCSS at all, you must add at least Autoprefixer.
+
+There are many reasons why Autoprefixer is must-have library.
+But I will use big names.
+
+Google recommends only a Autoprefixer as a tool to handle prefixes.
+
+---
+
+If your project ues only Autoprefixer, you should look at other plugins.
+
+PostCSS has many plugins. They are aweome as Autoprefixer too.
+
+---
+
+And if you start a new project, you should think about PostCSSS only solution.
+
+Twitter is happy it.
+
+PostCSS can do varibles, nested and mixins better that preprocessors.
+So why you need this big and slow tools?
+
+Because IT is all about simplicity. And one tool is a simplier that two.
+
+---
+
 That’s all. You can fint project and github-com-slash-postcss-slash-postcss.
 Here is keynotes with all links. Here is PostCSS Twitter and our company sites.
 
