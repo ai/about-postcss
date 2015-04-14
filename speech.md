@@ -4,7 +4,7 @@ Hi, my name is Andrey Sitnik. I am a front-end developer at Evil Martians.
 
 ---
 
-We are worked on Groupon Russia and eBay Social.
+We worked on Groupon Russia and eBay Social.
 
 My current project Amplifr.com, a social media tool.
 
