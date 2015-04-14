@@ -1,29 +1,31 @@
 ---
 
-Hi. My name is Andrey Sitnik. I am frontend developer in Evil Martians.
+Hi, my name is Andrey Sitnik. I am a front-end developer at a company called Evil Martians.
 
 ---
 
-I worked on Groupon Russia and eBay Social.
-Now I am on Amplifr, social media tool.
+As a front-end in my company I've been behind the development of
+front-end of Groupon Russia (since the early days to the IPO), eBay Social, a social marketplace we've done for eBay,
+Rocketbank, a "Russian version" of Bank Simple. Most of the time I work on Amplifr.com, a social networking posting and analytics tool.
 
 ---
 
-Also I am author of Autoprefixer and PostCSS.
+I am also the author of Autoprefixer and PostCSS.
 
-We will talk about CSS processors.
+Today, I will talk about CSS processors.
 
-How many people use Stylus? (Please, raise your hand.)
+How many people here do use Stylus? (Please, raise your hand.)
 Less?
 Sass?
 Autoprefixer?
 
-If you have used Autoprefixer you may see, that it works not like Compass,
-Bourbon or any other mixins library. It has no mixins at all.
-You just write selectors and properties and it just works, like a magic.
 
-This is because Autoprefixer is only a tip of the iceberg of an entire new way
-to process your CSS. Autoprefixer is just a plugin for PostCSS, tool to extend
+If you've used Autoprefixer, you may already know that it does not work the same way Compass, Bourbon
+or any other mixins library does. It has no mixins at all. You just write selectors
+and properties and it just works — like magic.
+
+This is because Autoprefixer is only a tip of the iceberg of an entirely new way
+to process your CSS. In fact, Autoprefixer is just a plugin for PostCSS, a tool to extend
 or even replace CSS preprocessors.
 
 Today I will tell you about PostCSS.
