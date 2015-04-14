@@ -376,7 +376,7 @@ main.css: line 32, col 3 -
 ## *Impossible with Sass* [rtlcss](https://github.com/MohammadYounes/rtlcss)
 !type with-2-codes
 
-Mirrors styles for Arabic or Hebrew
+Mirror styles for Arabic or Hebrew
 
 ```mark_left
 a {

@@ -73,8 +73,8 @@ are afraid to make a mistake.
 
 And it is a main problem. Many great ideas looked very crazy at the beginning.
 What people thought about iPhone, when it was released? What people thought
-about Web applications 15 years ago? Or what people thought airplanes, when
-they were invented century ago.
+about Web applications 15 years ago? Or what people thought about airplanes,
+when they were invented century ago.
 
 We must have some playground to make mistakes if we want new awesome ideas.
 If we want long-term development of the Web.
@@ -136,7 +136,7 @@ and now we have even less developers who can add something new.
 
 And a last but not least problem. Preprocessors are template language.
 
-But is it a good language? It is not a some complicated function. This huge
+But is it a good language? It is not some complicated function. This huge
 code is just a mixin for simple transition from Compass.
 
 Sass is nice for simple tasks.
@@ -170,7 +170,7 @@ And this is how PostCSS was started.
 
 ---
 
-So, how modular CSS processor works?
+So, how does a modular CSS processor work?
 
 PostCSS core contains only two small parts. CSS parser which returns
 tree of node’s objects. And stringifier that converts node tree to CSS string.
@@ -210,7 +210,7 @@ So, let’s be clear.
 What is the difference between preprocessors and PostCSS?
 
 Preprocessors are a monolithic template language,
-when you mix your styles and code.
+which mixes your style and code.
 
 PostCSS transforms your styles with a small JS function.
 All features are in modules. You can use one variable module or the other.
@@ -269,7 +269,7 @@ It is very easy to maintain these features.
 
 ---
 
-But, of course, PostCSS is not only about doing Sass job with plugin.
+But, of course, PostCSS is not only about doing Sass job with plugins.
 PostCSS is about many other tasks, which are impossible with preprocessors.
 
 Autoprefixer is the most popular example from this whole new frontend world.
@@ -308,7 +308,7 @@ It coverts CSS 3 to CSS 2. Add adds many hacks for old IE.
 
 ---
 
-Next will be some magic. PostCSS plugin, that adds a new selector.
+Next will be some magic. A PostCSS plugin, that adds a new selector.
 
 This selector will be applied only
 if there is only some count of items in a list.
@@ -340,12 +340,12 @@ As a result, main CSS with your site design will be small.
 But PostCSS is not only to add something to your styles. PostCSS working
 awesome as CS linter.
 
-For example, a Twitter wrote PostCSS plugin to lint their CSS
+For example, Twitter wrote PostCSS plugin to lint their CSS
 for Twitter guidelines. They use modification of awesome BEM methodology.
 
 ---
 
-But PostCSS linters can be much smarter, than jshint or csslint.
+But PostCSS linters can be much smarter than jshint or csslint.
 
 Doiuse is a PostCSS plugin, like a Autoprefixer.
 But it works in a different way.
@@ -372,10 +372,10 @@ two different CSS files.
 ---
 
 And Mohammad from Jordan wrote a really awesome plugin.
-It replaces mirrors your styles automatically.
+It mirrors your styles automatically.
 It replaces left to right, changes margin values order.
 
-It works like a magic, and so WordPress uses it to convert own styles
+It works like magic, and so WordPress uses it to convert own styles
 for Arabic and Hebrew users.
 
 ---
@@ -463,7 +463,7 @@ about breaking up with Sass.
 
 ---
 
-So, what do I want from you to do at this weekend?
+So, what do I want from you this weekend?
 
 ---
 
@@ -501,13 +501,13 @@ Twitter is happy with it.
 PostCSS can do variables, nested and mixins better that preprocessors.
 So why you need this big and slow tools?
 
-Because IT is all about simplicity. And one tool is a simplier than two.
+Because IT is all about simplicity. And one tool is a simpler than two.
 
 ---
 
 That’s all. You can find project and github-com-slash-postcss-slash-postcss.
-Here is keynotes with all links.
-Here is PostCSS Twitter and our company sites.
+Here are keynotes with all links.
+Here are PostCSS Twitter and our company sites.
 
 Now it is time for your questions.
 For every question you will receive small Russian candy. Like this.
