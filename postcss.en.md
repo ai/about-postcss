@@ -475,7 +475,7 @@ Source: <a href="https://github.com/postcss/postcss/blob/master/benchmark/proces
 2. Modularity
 3. Features that are impossible with Sass
 
-## *Part 4*  Present
+## *Part 5*  Present
 !cover present.jpg
 !type  is-bottom
 
@@ -506,7 +506,7 @@ Source: <a href="https://github.com/postcss/postcss/blob/master/benchmark/proces
 “[Breaking up with Sass: it’s not you, it’s me](http://benfrain.com/breaking-up-with-sass-postcss/)”
 <cite><br> — Ben Frain, author of «Sass and Compass for Designers»</cite>
 
-## *Part 5*  Usage
+## *Part 6*  Usage
 !cover use.jpg
 
 ## 1. CSS Tool
