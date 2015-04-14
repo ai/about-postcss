@@ -91,17 +91,17 @@ And we can get real world feedback before idea becomes a standard.
 ---
 
 I am very happy about JavaScript preprocessors.
-But do CSS preprocessors work as this playground for ideas of next generations?
+But do CSS preprocessors work as this kind of playground for ideas of next generations?
 I didn’t think so.
 
 ---
 
-But let’s start from beggining. How CSS preprocessors work today?
-They are template language. Like PHP, but you mix your code with CSS template.
+But let’s start from the beginning. How do CSS preprocessors work today?
+They are like a template language. Like PHP, but you mix your code with CSS templates.
 
 ---
 
-Some preprocessor tool like Compass or Bourbon can create only mixins,
+A preprocessor tool like Compass or Bourbon can only create mixins,
 functions and variables.
 
 ---
@@ -110,47 +110,47 @@ And it is a first big problem of preprocessors.
 
 How we can add polyfill for units?
 
-Maybe mixins are enough for today simple task.
+Maybe mixins are enough for today's simple tasks.
 But we have many new ideas and preprocessors are too limited for them.
-Can we create Autoprefixer with mixins?
+Could we create Autoprefixer with mixins?
 
 ---
 
-Any there is reason why we have not new features in preprocessor for a years.
+And there is reason why we did not have new features in preprocessors for years.
 
-Preprocessors codebase are big and very monolithic.
+Preprocessors codebase is big and very monolithic.
 
-Do you have any friend who contribute something in preprocessors?
+Do you have any friend who did contribute something to preprocessors?
 
 Sass team went further. To get better performance, they rewrote project to C++
-and now we have even less developers, who can add something new.
+and now we have even less developers who can add something new.
 
 ---
 
-And last but not least problem. Preprocessors are template language.
+And a last but not least problem. Preprocessors are template language.
 
-But does it good language? It is not a some complicated function. This huge
+But is it a good language? It is not some complicated function. This huge
 code is just a mixin for simple transition from Compass.
 
-Sass is nice for simple task. But you will have a problems if you want some
-complicated awesome tool.
+Sass is nice for simple tasks. But you will have problems if you want a
+better, awesome tool.
 
 ---
 
-And this are a ideas behind PostCSS. Create a playground for next ideas
-without limitations of current preprocessors.
+And these are the ideas behind PostCSS. Create a playground for next generation
+of ideas without the limitations of current preprocessors.
 
 ---
 
-PostCSS was not first.
+PostCSS was not the first.
 
-3 years ago, TJ Holowaychuk, Stylus maintainer, saw same problems.
-He understood that preprocessor idea was finished.
+3 years ago, TJ Holowaychuk, Stylus maintainer, saw the same problems.
+He understood that preprocessor — as an idea — was finished.
 
-He started new modular CSS processor tool, Rework.
+He started a new modular CSS processor tool, Rework.
 
-When I thinked about Autoprefixer, I looked for some new tool. Better that Sass.
-And when I saw Rework, I understood that it was a revolution.
+When I thought about creating Autoprefixer, I was looking for a new tool.
+Better that Sass. And when I saw Rework, I thought that it was a revolution.
 
 ---
 
