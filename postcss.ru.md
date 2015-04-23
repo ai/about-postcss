@@ -357,6 +357,15 @@ ul > li:nth-last-child(5):first-child ~ li {
 Проверяет БЭМ для Твиттера
 (методология [SUIT CSS](https://github.com/suitcss/suit))
 
+```css
+/** @define Block */
+:root {
+  --Block-property: value;
+}
+.Block {}
+.Block-other {}
+```
+
 ## *Невозможно на Sass* [doiuse](https://github.com/anandthakker/doiuse)
 
 Проверяет поддержку свойств в нужных браузерах по Can I Use

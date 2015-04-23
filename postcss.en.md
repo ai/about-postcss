@@ -357,6 +357,15 @@ ul > li:nth-last-child(5):first-child ~ li {
 
 Lint Twitter BEM-style [SUIT CSS](https://github.com/suitcss/suit)
 
+```css
+/** @define Block */
+:root {
+  --Block-property: value;
+}
+.Block {}
+.Block-other {}
+```
+
 ## *Impossible with Sass* [doiuse](https://github.com/anandthakker/doiuse)
 
 Lint CSS for browser support against Can I Use database
