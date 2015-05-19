@@ -236,9 +236,9 @@ $column: 200px;
 
 ## Поддерживаемость
 
-- **postcss-nested:** 63 строки кода
-- **postcss-simple-vars:** 73 строки кода
-- **postcss-mixins:** 100 строк кода
+- **postcss-nested:** 68 строки кода
+- **postcss-simple-vars:** 74 строки кода
+- **postcss-mixins:** 147 строк кода
 
 ## *Невозможно на Sass* [autoprefixer](https://github.com/postcss/autoprefixer)
 !type with-2-sides
