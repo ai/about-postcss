@@ -122,7 +122,7 @@ a {
 
 **PostCSS**
 
-- smarter parser
+- 2 times faster
 - better source map support
 - preserves source formatting
 - useful API
