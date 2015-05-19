@@ -401,7 +401,7 @@ a {
 }
 ```
 
-## [70+ plugins](https://github.com/postcss/postcss#plugins)
+## [90+ plugins](https://github.com/postcss/postcss#plugins)
 
 - Future CSS syntax
 - Fallbacks

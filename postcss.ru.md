@@ -401,7 +401,7 @@ a {
 }
 ```
 
-## [Ещё более 70 плагинов](https://github.com/postcss/postcss#plugins)
+## [Ещё более 90 плагинов](https://github.com/postcss/postcss#plugins)
 
 - Полифилы новых спецификаций
 - Поддержка старых браузеров
