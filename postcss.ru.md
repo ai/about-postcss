@@ -106,7 +106,7 @@ a {
 
 !image tj.jpg
 
-«<a href="http://tjholowaychuk.tumblr.com/post/44267035203/modular-css-preprocessing-with-rework">Модульный CSS-препроцессинг с Реворком</a>»
+<a href="http://tjholowaychuk.tumblr.com/post/44267035203/modular-css-preprocessing-with-rework">Модульный CSS-препроцессинг с Реворком</a>
 <cite><br>— TJ Holowaychuk, 2013</cite>
 
 ## Развитие
@@ -504,7 +504,7 @@ a {
 
 !image alistapart.png
 
-«[Что спасёт нас от тёмной стороны CSS‑препроцессоров](http://alistapart.com/column/what-will-save-us-from-the-dark-side-of-pre-processors)»
+[Что спасёт нас от тёмной стороны CSS‑препроцессоров](http://alistapart.com/column/what-will-save-us-from-the-dark-side-of-pre-processors)
 <cite><br> — A List Apart</cite>
 
 ## Обсуждение
@@ -512,7 +512,7 @@ a {
 
 !image benfrain.jpg
 
-«[Расставание с Sass: дело во мне, а не в тебе](http://benfrain.com/breaking-up-with-sass-postcss/)»
+[Расставание с Sass: дело во мне, а не в тебе](http://benfrain.com/breaking-up-with-sass-postcss/)
 <cite><br> — Бен Фрейн, автор «Sass и Compass для дизайнеров»</cite>
 
 ## *Часть 6*  Применяем

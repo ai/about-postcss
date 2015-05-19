@@ -107,7 +107,7 @@ a {
 
 !image tj.jpg
 
-“<a href="http://tjholowaychuk.tumblr.com/post/44267035203/modular-css-preprocessing-with-rework">Modular CSS Preprocessing with Rework</a>”
+<a href="http://tjholowaychuk.tumblr.com/post/44267035203/modular-css-preprocessing-with-rework">Modular CSS Preprocessing with Rework</a>
 <cite><br>— TJ Holowaychuk, 2013</cite>
 
 ## Development
@@ -504,7 +504,7 @@ Source: <a href="https://github.com/postcss/benchmark#preprocessors">Preprocesso
 
 !image alistapart.png
 
-“[What Will Save Us from the Dark Side of Pre‑Processors](http://alistapart.com/column/what-will-save-us-from-the-dark-side-of-pre-processors)”
+[What Will Save Us from the Dark Side of Pre‑Processors](http://alistapart.com/column/what-will-save-us-from-the-dark-side-of-pre-processors)
 <cite><br> — A List Apart</cite>
 
 ## Buzz
@@ -512,7 +512,7 @@ Source: <a href="https://github.com/postcss/benchmark#preprocessors">Preprocesso
 
 !image benfrain.jpg
 
-“[Breaking up with Sass: it’s not you, it’s me](http://benfrain.com/breaking-up-with-sass-postcss/)”
+[Breaking up with Sass: it’s not you, it’s me](http://benfrain.com/breaking-up-with-sass-postcss/)
 <cite><br> — Ben Frain, author of «Sass and Compass for Designers»</cite>
 
 ## *Part 6*  Usage
