@@ -149,7 +149,7 @@ a {
 
 ## Использование
 
-```mark_plugin
+```steps:mark_plugin
 let postcss = require('postcss');
 
 postcss([ plugin1, plugin2 ])
@@ -159,7 +159,7 @@ postcss([ plugin1, plugin2 ])
 
 ## Плагин
 
-```js
+```steps:js
 function (css) {
     css.eachDecl( decl => {
         decl.value = decl.value.replace(/\d+rem/, rem => {
@@ -554,6 +554,5 @@ a {
 * Презентация: [ai.github.io/about-postcss](http://ai.github.io/about-postcss/)
 * ВКонтакте: [vk.com/postcss](https://vk.com/postcss)
 * Злые марсиане: [evl.ms](https://evilmartians.com/)
-* Амплифер: [amplifr.com](https://amplifr.com/)
 
 !image martians.svg

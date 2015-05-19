@@ -112,8 +112,13 @@ $color: #0080e0
       line-height: 1.8
 
 .slide.with-links
+  &::after
+    visibility: hidden
   li
     font-size: 140%
+    margin-top: 15px
+    &::before
+      visibility: hidden
   img
     position: absolute
     bottom: 70px

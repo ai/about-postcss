@@ -150,7 +150,7 @@ a {
 
 ## Usage
 
-```mark_plugin
+```steps:mark_plugin
 let postcss = require('postcss');
 
 postcss([ plugin1, plugin2 ])
@@ -160,7 +160,7 @@ postcss([ plugin1, plugin2 ])
 
 ## Plugin
 
-```js
+```steps:js
 function (css) {
     css.eachDecl( decl => {
         decl.value = decl.value.replace(/\d+rem/, rem => {
@@ -554,6 +554,5 @@ Source: <a href="https://github.com/postcss/benchmark#preprocessors">Preprocesso
 * Keynote: [ai.github.io/about-postcss/en](http://ai.github.io/about-postcss/en)
 * Twitter: [@postcss](https://twitter.com/postcss)
 * Evil Martians: [evl.ms](https://evilmartians.com/)
-* Amplifr: [amplifr.com/en](https://amplifr.com/en)
 
 !image martians.svg

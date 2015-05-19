@@ -110,6 +110,11 @@ class Highlighter < Redcarpet::Render::HTML
   end
 
   def block_code(code, lang)
+    if lang.start_with? 'steps:'
+      steps = true
+      lang  = lang.sub(/^steps:/, '')
+    end
+
     lines = code.lines.map do |line|
       line = EvilFront.escape(line)
 
@@ -120,7 +125,13 @@ class Highlighter < Redcarpet::Render::HTML
       end
     end
 
-    '<pre>' + lines.map { |i| "<code>#{ i }</code>" }.join + '</pre>'
+    '<pre>' + lines.map.with_index { |line, i|
+      if not steps or line.strip.empty? or i.zero?
+        "<code>#{ line }</code>"
+      else
+        "<code class=\"next\">#{ line }</code>"
+      end
+    }.join + '</pre>'
   end
 end
 
