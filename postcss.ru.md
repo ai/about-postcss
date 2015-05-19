@@ -138,7 +138,7 @@ a {
     <div class="postprocessing_step is-important">Парсер</div>
     <div class="postprocessing_step">Плагин</div>
     <div class="postprocessing_step">Плагин</div>
-    <div class="postprocessing_step is-important">Сохранение</div>
+    <div class="postprocessing_step is-important">Стригифайр</div>
     <div class="postprocessing_step is-css">
         Новый CSS
         <span class="postprocessing_position">

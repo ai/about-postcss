@@ -278,22 +278,24 @@ $color: #0080e0
 .postprocessing
   position: relative
   margin: 0 auto
-  width: 186px
+  width: 210px
+  top: -55px
   &_step
-    +height(40px)
+    +height(50px)
     border: 1px solid
     text-align: center
     position: relative
-    width: 180px
-    margin-top: 28px
+    width: 100%
+    margin-top: 32px
     margin-left: 3px
+    font-size: 115%
     &:after
       content: "↓"
-      font-size: 80%
+      font-size: 70%
       color: black
       position: absolute
-      top: -38px
-      left: 85px
+      top: -46px
+      left: 97px
     &:first-child
       margin-top: 0
       &:after
@@ -312,14 +314,14 @@ $color: #0080e0
       margin-left: 0
       font-weight: bold
       &:after
-        top: -40px
+        top: -48px
   &_position
     position: relative
   &_note
     position: absolute
-    top: 9px
+    top: 11px
     left: 15px
-    font-size: 65%
+    font-size: 55%
     white-space: nowrap
 
 .slide .github
