@@ -9,6 +9,10 @@ $color: #0080e0
     font-family: 'Open Sans', sans-serif
 
 .slide.is-title
+  &::after
+    visibility: hidden
+    .list &
+      visibility: visible
   h2
     font-size: 32px
     strong
@@ -236,12 +240,11 @@ $color: #0080e0
       width: 245px
 
 .compare
-  padding-top: 60px
   &.is-long
     padding-top: 0
   &_part
     clear: left
-    padding-top: 20px
+    padding-top: 15px
     &.is-hidden
       visibility: hidden
   &_title

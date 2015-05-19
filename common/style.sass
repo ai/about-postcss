@@ -37,7 +37,13 @@ a
   line-height: 1.2
 
 .slide::after
-  display: none
+  text-align: right
+  right: 50px
+
+.list .slide:after
+  padding-top: 35px
+  right: 0
+  text-align: center
 
 .slide > div
   padding-top: 80px
@@ -70,9 +76,9 @@ a
 
 .source
   position: absolute
-  bottom: 30px
-  right: 96px
-  font-size: 50%
+  bottom: 48px
+  left: 128px
+  font-size: 60%
 
 @media screen
   .list .slide:target:before
