@@ -494,6 +494,14 @@ a {
 [Расставание с Sass: дело во мне, а не в тебе](http://benfrain.com/breaking-up-with-sass-postcss/)
 <cite><br> — Бен Фрейн, автор «Sass и Compass для дизайнеров»</cite>
 
+## Обсуждение
+!type with-quote
+
+!image markotto.jpg
+
+«Bootstrap 5 будет, скорее всего, на PostCSS, потому что оно выглядит круто»
+<cite><br> — <a href="https://twitter.com/mdo/status/591364406816079873">Марк Отто, создатель Bootstrap</a></cite>
+
 ## *Часть 6*  Применяем
 !cover use.jpg
 

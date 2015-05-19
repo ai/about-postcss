@@ -494,6 +494,14 @@ Source: <a href="https://github.com/postcss/benchmark#preprocessors">Preprocesso
 [Breaking up with Sass: it’s not you, it’s me](http://benfrain.com/breaking-up-with-sass-postcss/)
 <cite><br> — Ben Frain, author of «Sass and Compass for Designers»</cite>
 
+## Buzz
+!type with-quote
+
+!image markotto.jpg
+
+«Bootstrap 5 will likely be in PostCSS because holy crap that sounds cool»
+<cite><br> — <a href="https://twitter.com/mdo/status/591364406816079873">Mark Otto, Creator of Bootstrap</a></cite>
+
 ## *Part 6*  Usage
 !cover use.jpg
 
