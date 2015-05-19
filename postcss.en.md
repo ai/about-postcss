@@ -413,7 +413,7 @@ a {
 ## Performance
 
 <div class="compare is-long">
-    <div class="compare_part is-postcss is-hide">
+    <div class="compare_part is-postcss is-hidden">
         <div class="compare_title">PostCSS</div>
         <div class="compare_line"></div>
         <div class="compare_value">36 ms</div>
@@ -421,27 +421,27 @@ a {
     <div class="compare_part is-libsass">
         <div class="compare_title">libsass</div>
         <div class="compare_line"></div>
-        <div class="compare_value">109 ms</div>
+        <div class="compare_value">136 ms</div>
     </div>
     <div class="compare_part is-less">
         <div class="compare_title">Less</div>
         <div class="compare_line"></div>
-        <div class="compare_value">150 ms</div>
+        <div class="compare_value">160 ms</div>
     </div>
     <div class="compare_part is-stylus">
         <div class="compare_title">Stylus</div>
         <div class="compare_line"></div>
-        <div class="compare_value">283 ms</div>
+        <div class="compare_value">167 ms</div>
     </div>
     <div class="compare_part is-sass">
         <div class="compare_title">Sass</div>
         <div class="compare_line"></div>
-        <div class="compare_value">1153 ms</div>
+        <div class="compare_value">1084 ms</div>
     </div>
 </div>
 
 <div class="source">
-Source: <a href="https://github.com/postcss/postcss/blob/master/benchmark/processors.js">Bootstrap parsing</a>
+Source: <a href="https://github.com/postcss/benchmark#preprocessors">Preprocessors benchmark</a>
 </div>
 
 ## Performance
@@ -455,27 +455,27 @@ Source: <a href="https://github.com/postcss/postcss/blob/master/benchmark/proces
     <div class="compare_part is-libsass">
         <div class="compare_title">libsass</div>
         <div class="compare_line"></div>
-        <div class="compare_value">109 ms</div>
+        <div class="compare_value">136 ms</div>
     </div>
     <div class="compare_part is-less">
         <div class="compare_title">Less</div>
         <div class="compare_line"></div>
-        <div class="compare_value">150 ms</div>
+        <div class="compare_value">160 ms</div>
     </div>
     <div class="compare_part is-stylus">
         <div class="compare_title">Stylus</div>
         <div class="compare_line"></div>
-        <div class="compare_value">283 ms</div>
+        <div class="compare_value">167 ms</div>
     </div>
     <div class="compare_part is-sass">
         <div class="compare_title">Sass</div>
         <div class="compare_line"></div>
-        <div class="compare_value">1153 ms</div>
+        <div class="compare_value">1084 ms</div>
     </div>
 </div>
 
 <div class="source">
-Source: <a href="https://github.com/postcss/postcss/blob/master/benchmark/processors.js">Bootstrap parsing</a>
+Source: <a href="https://github.com/postcss/benchmark#preprocessors">Preprocessors benchmark</a>
 </div>
 
 ## Benefits
