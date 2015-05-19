@@ -491,7 +491,7 @@ Source: <a href="https://github.com/postcss/benchmark#preprocessors">Preprocesso
 
 !image benfrain.jpg
 
-[Breaking up with Sass: it’s not you, it’s me](http://benfrain.com/breaking-up-with-sass-postcss/)
+[Breaking up with Sass:<br>it’s not you, it’s me](http://benfrain.com/breaking-up-with-sass-postcss/)
 <cite><br> — Ben Frain, author of «Sass and Compass for Designers»</cite>
 
 ## Buzz

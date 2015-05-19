@@ -491,7 +491,7 @@ a {
 
 !image benfrain.jpg
 
-[Расставание с Sass: дело во мне, а не в тебе](http://benfrain.com/breaking-up-with-sass-postcss/)
+[Расставание с Sass:<br>дело во мне, а не в тебе](http://benfrain.com/breaking-up-with-sass-postcss/)
 <cite><br> — Бен Фрейн, автор «Sass и Compass для дизайнеров»</cite>
 
 ## Обсуждение
