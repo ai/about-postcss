@@ -157,9 +157,11 @@ class Builder
           end
         end
 
-        unless development?
+        if development?
+          env.css_compressor = nil
+        else
           env.js_compressor  = Uglifier.new(copyright: false)
-          env.css_compressor = :csso
+          env.css_compressor = Csso::Compressor.new
         end
       end
     end
