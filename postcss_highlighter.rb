@@ -110,4 +110,10 @@ class PostcssHighlighter < Highlighter
   def comment(code)
     code.gsub(/.*/, '<mark class="comment">\0</mark>')
   end
+
+  def mark_context(code)
+    code.gsub(/^(\s*[^\s].*){/, '<mark>\1</mark>{')
+        .gsub(/([^\s:]*):/,     '<mark>\1</mark>:')
+        .gsub(/@context/,       '<mark class="important">\0</mark>')
+  end
 end

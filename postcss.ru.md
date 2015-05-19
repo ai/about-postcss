@@ -352,6 +352,19 @@ ul > li:nth-last-child(5):first-child ~ li {
 }
 ```
 
+## *Невозможно на Sass* [postcss-plugin-context](https://github.com/postcss/postcss-plugin-context)
+
+```mark_context
+@context autoprefixer {
+    .all {
+        transition: all 600ms;
+    }
+}
+.modern {
+    transition: all 600ms;
+}
+```
+
 ## *Невозможно на Sass* [postcss-bem-linter](https://github.com/necolas/postcss-bem-linter)
 
 Проверяет БЭМ для Твиттера
