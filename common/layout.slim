@@ -22,6 +22,9 @@ html lang=lang
     - slides.each_with_index do |slide, i|
       section.slide id=(i + 1) class=slide.types.join(' ')
         div= slide.html
+    
+    .progress
+      .progressbar
 
     - if development?
       script src="/jquery.js"
