@@ -483,7 +483,7 @@ a {
 
 !image alistapart.png
 
-[Что спасёт нас от тёмной стороны CSS‑препроцессоров](http://alistapart.com/column/what-will-save-us-from-the-dark-side-of-pre-processors)
+[Что спасёт нас от<br>тёмной стороны CSS‑препроцессоров?](http://alistapart.com/column/what-will-save-us-from-the-dark-side-of-pre-processors)
 <cite><br> — A List Apart</cite>
 
 ## Обсуждение
@@ -499,8 +499,8 @@ a {
 
 !image markotto.jpg
 
-«Bootstrap 5 будет, скорее всего, на PostCSS, потому что оно выглядит круто»
-<cite><br> — <a href="https://twitter.com/mdo/status/591364406816079873">Марк Отто, создатель Bootstrap</a></cite>
+[Bootstrap 5 будет, скорее всего, на PostCSS, потому что оно выглядит офигенно](https://twitter.com/mdo/status/591364406816079873)
+<cite><br> — Марк Отто, создатель Bootstrap</cite>
 
 ## *Часть 6*  Применяем
 !cover use.jpg

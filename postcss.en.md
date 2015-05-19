@@ -483,7 +483,7 @@ Source: <a href="https://github.com/postcss/benchmark#preprocessors">Preprocesso
 
 !image alistapart.png
 
-[What Will Save Us from the Dark Side of Pre‑Processors](http://alistapart.com/column/what-will-save-us-from-the-dark-side-of-pre-processors)
+[What Will Save Us from <br>the Dark Side of Pre‑Processors?](http://alistapart.com/column/what-will-save-us-from-the-dark-side-of-pre-processors)
 <cite><br> — A List Apart</cite>
 
 ## Buzz
@@ -495,12 +495,12 @@ Source: <a href="https://github.com/postcss/benchmark#preprocessors">Preprocesso
 <cite><br> — Ben Frain, author of «Sass and Compass for Designers»</cite>
 
 ## Buzz
-!type with-quote
+!type with-article
 
 !image markotto.jpg
 
-«Bootstrap 5 will likely be in PostCSS because holy crap that sounds cool»
-<cite><br> — <a href="https://twitter.com/mdo/status/591364406816079873">Mark Otto, Creator of Bootstrap</a></cite>
+[Bootstrap 5 will likely be in PostCSS because holy crap that sounds cool](https://twitter.com/mdo/status/591364406816079873)
+<cite><br> — Mark Otto, Creator of Bootstrap</cite>
 
 ## *Part 6*  Usage
 !cover use.jpg
