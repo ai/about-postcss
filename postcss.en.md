@@ -488,7 +488,7 @@ Source: <a href="https://github.com/postcss/postcss/blob/master/benchmark/proces
 !cover present.jpg
 !type  is-bottom
 
-## 430 000 downloads per month
+## 630 000 downloads per month
 !type shout
 
 ## PostCSS Users

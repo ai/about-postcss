@@ -488,7 +488,7 @@ a {
 !cover present.jpg
 !type  is-bottom
 
-## 430 000 загрузок в месяц
+## 630 000 загрузок в месяц
 !type shout
 
 ## Используют PostCSS
