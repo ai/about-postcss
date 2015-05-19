@@ -225,14 +225,14 @@ $column: 200px;
 ## *Plugins* [postcss-mixins](https://github.com/postcss/postcss-mixins)
 
 ```mark_mixins
-@define-mixin icon $network $color {
+@define-mixin icon $network, $color {
     .icon.is-$network {
         color: $color;
     }
 }
 
-@mixin icon twitter blue;
-@mixin icon youtube red;
+@mixin icon twitter, blue;
+@mixin icon youtube, red;
 ```
 
 ## Maintainability
