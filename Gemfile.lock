@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/ai/autoprefixer-rails.git
-  revision: 322715717939b3058c14aec593e044f73c85b9e9
+  revision: d7cea3e66934a5871086a21b44a05852541e4dc2
   branch: v5.2
   specs:
     autoprefixer-rails (5.1.11)
