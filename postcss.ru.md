@@ -547,5 +547,6 @@ a {
 * Презентация: [ai.github.io/about-postcss](http://ai.github.io/about-postcss/)
 * ВКонтакте: [vk.com/postcss](https://vk.com/postcss)
 * Злые марсиане: [evl.ms](https://evilmartians.com/)
+* Амплифер: [amplifr.com](https://amplifr.com/)
 
 !image martians.svg

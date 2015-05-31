@@ -8,6 +8,12 @@
 
 *Andrey Sitnik, Evil Martians*
 
+## Russia
+!type cover
+!type h
+
+!image russia.jpg
+
 ##
 !type with-martians
 
@@ -547,5 +553,6 @@ Source: <a href="https://github.com/postcss/benchmark#preprocessors">Preprocesso
 * Keynote: [ai.github.io/about-postcss/en](http://ai.github.io/about-postcss/en)
 * Twitter: [@postcss](https://twitter.com/postcss)
 * Evil Martians: [evl.ms](https://evilmartians.com/)
+* Amplifr: [amplifr.com/en](https://amplifr.com/en)
 
 !image martians.svg
