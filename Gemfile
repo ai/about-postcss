@@ -10,7 +10,7 @@ gem 'activesupport'
 gem 'jquery-cdn',        '>= 2.1.3'
 gem 'evil-front-all',    '>= 0.3.1'
 gem 'term-ansicolor'
-gem 'autoprefixer-rails', github: 'ai/autoprefixer-rails', branch: 'v5.2'
+gem 'autoprefixer-rails'
 
 gem 'rails-assets-shower-core'
 gem 'rails-assets-shower-bright'

@@ -1,12 +1,3 @@
-GIT
-  remote: git://github.com/ai/autoprefixer-rails.git
-  revision: d7cea3e66934a5871086a21b44a05852541e4dc2
-  branch: v5.2
-  specs:
-    autoprefixer-rails (5.1.11)
-      execjs
-      json
-
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -17,6 +8,9 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    autoprefixer-rails (5.2.0)
+      execjs
+      json
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -54,9 +48,9 @@ GEM
       sprockets (>= 2)
     json (1.8.2)
     libv8 (3.16.14.7)
-    mime-types (2.5)
+    mime-types (2.6.1)
     mini_portile (0.6.2)
-    minitest (5.6.1)
+    minitest (5.7.0)
     multi_json (1.11.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -73,7 +67,7 @@ GEM
     redcarpet (3.2.3)
     ref (1.0.5)
     rubypants-unicode (0.2.5)
-    sass (3.4.13)
+    sass (3.4.14)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -93,7 +87,7 @@ GEM
       ref
     thread_safe (0.3.5)
     tilt (2.0.1)
-    tins (1.5.1)
+    tins (1.5.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
@@ -106,7 +100,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
-  autoprefixer-rails!
+  autoprefixer-rails
   compass-core
   evil-front-all (>= 0.3.1)
   jquery-cdn (>= 2.1.3)
