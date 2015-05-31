@@ -14,6 +14,10 @@
 
 !image russia.jpg
 
+<a class="copyright" href="https://500px.com/photo/104280043/-by-olga-barantseva">
+© Olga Barantseva
+</a>
+
 ##
 !type with-martians
 
