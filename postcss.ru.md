@@ -31,6 +31,10 @@
 
 ## Эволюция
 
+!image evolution.jpg
+
+## Как работает эволюция
+
 <div class="evolution">
   <div class="evolution_top">Мутации</div>
   <div class="evolution_first">→</div>

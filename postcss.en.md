@@ -47,6 +47,10 @@
 
 ## Evolution
 
+!image evolution.jpg
+
+## How Evolution Works
+
 <div class="evolution">
   <div class="evolution_top">Mutations</div>
   <div class="evolution_first">→</div>
