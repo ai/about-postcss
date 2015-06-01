@@ -19,6 +19,12 @@
 </a>
 
 ##
+!type cover
+!type h
+
+!image attacks.jpg
+
+##
 !type with-martians
 
 !image martians.svg
