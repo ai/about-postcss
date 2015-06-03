@@ -87,10 +87,6 @@ class PostcssHighlighter < Highlighter
     css(code).gsub(/data:…/, '<mark class="important">\0</mark>')
   end
 
-  def mark_quantity(code)
-    css(code).gsub(/:exactly\(\d+\)/, '<mark class="important">\0</mark>')
-  end
-
   def mark_ie(code)
     css(code).gsub(/\*\w+|filter/, '<mark class="important">\0</mark>')
   end

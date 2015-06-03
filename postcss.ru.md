@@ -304,33 +304,6 @@ $column: 200px;
 }
 ```
 
-## *Невозможно на Sass* [postcss-quantity-queries](https://github.com/pascalduez/postcss-quantity-queries)
-!type with-2-sides
-!type with-smaller-right
-
-```mark_quantity
-ul > li:exactly(4) {
-    width: 25%;
-}
-
-ul > li:exactly(5) {
-    width: 20%;
-}
-```
-
-```css
-ul > li:nth-last-child(4):first-child,
-ul > li:nth-last-child(4):first-child ~ li {
-    width: 25%;
-}
-
-
-ul > li:nth-last-child(5):first-child,
-ul > li:nth-last-child(5):first-child ~ li {
-    width: 20%;
-}
-```
-
 ## *Невозможно на Sass* [postcss-data-packer](https://github.com/Ser-Gen/postcss-data-packer)
 !type with-2-sides
 
@@ -411,7 +384,7 @@ a {
 }
 ```
 
-## [Ещё более 90 плагинов](https://github.com/postcss/postcss#plugins)
+## [Ещё более 100 плагинов](https://github.com/postcss/postcss#plugins)
 
 - Полифилы новых спецификаций
 - Поддержка старых браузеров
