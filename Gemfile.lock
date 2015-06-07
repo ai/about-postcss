@@ -64,7 +64,7 @@ GEM
       mime-types (> 0)
       sass (> 0)
     rake (10.4.2)
-    redcarpet (3.2.3)
+    redcarpet (3.3.0)
     ref (1.0.5)
     rubypants-unicode (0.2.5)
     sass (3.4.14)
@@ -72,14 +72,14 @@ GEM
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
-    slim (3.0.4)
+    slim (3.0.6)
       temple (~> 0.7.3)
       tilt (>= 1.3.3, < 2.1)
     sprockets (3.2.0)
       rack (~> 1.0)
     standalone_typograf (3.0.2)
       activesupport
-    temple (0.7.5)
+    temple (0.7.6)
     term-ansicolor (1.3.0)
       tins (~> 1.0)
     therubyracer (0.12.2)
@@ -111,3 +111,6 @@ DEPENDENCIES
   sinatra
   term-ansicolor
   therubyracer
+
+BUNDLED WITH
+   1.10.3
