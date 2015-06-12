@@ -365,7 +365,7 @@ Or other example. About 5% of users can’t see some colors. 5% is big number.
 It is more, that IE users for some projects.
 So we need to test colors combinations.
 
-This plugin replaces all colors to how colorblinds see.
+This plugin from Netflix replaces all colors to how colorblinds see.
 
 Of course, there are many other better way to test it.
 But it is a good example of PostCSS power.
