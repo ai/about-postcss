@@ -1,16 +1,32 @@
----
-
-Hi, my name is Andrey Sitnik. I am a front-end developer at Evil Martians.
+Hi, my name is Andrey Sitnik.
 
 ---
 
-We worked on Groupon Russia and eBay Social.
+I am from Russia, Saint Petersburg.
 
-My current project Amplifr.com, a social media tool.
+“Winter is comming” is totally about my country.
 
 ---
 
-But you can know me as author of Autoprefixer.
+I am lead frontend developer in Evil Martians.
+
+Unfortunately, we have no robots and blaster yet.
+
+---
+
+Right now only Rails and React.
+
+---
+
+But we worked on Groupon Russia and eBay Social.
+
+And my current project to test new technologies is Amplifr.com,
+a social media tool.
+
+---
+
+But, I think, you can know me for my open source.
+As author of Autoprefixer.
 
 So today, I will talk about CSS processors.
 
@@ -28,28 +44,37 @@ And it just works — like magic.
 This is because Autoprefixer is only a tip of the iceberg of an entirely new way
 to process your CSS.
 
-In fact, Autoprefixer is just a plugin for PostCSS, a tool to extend
-or even replace CSS preprocessors.
+In fact, Autoprefixer is not a preprocessor at all.
+It is just a plugin for PostCSS,
+a tool to extend or even replace CSS preprocessors.
 
-Today I will tell you about PostCSS.
+So today I will tell you about PostCSS.
 
 ---
 
-We will start with some theory. Why is using CSS processors so important.
+We will start with some theory.
+
+Why is using CSS processors so important.
 And what ideas are behind PostCSS.
 
 ---
 
+I belive in evolution.
+
 I believe that every long-term development is based on evolution.
-We have a great example of biologically evolution in nature.
+
+We have a great examples right in front of us. The biologically evolution.
 We use genetic algorithms in computer science.
-Richard Dawkins suggested that even human ideas are created in same evolution
-process.
+Richard Dawkins suggested that even human ideas are created
+in same evolution process.
 
-Every evolution process is based on three steps.
+---
 
-Random mutation. Natural selection
-in the wild. And inheritance.
+And *every* evolution process is based on three steps.
+
+*Random* mutation.
+Natural selection *in the wild*.
+And inheritance.
 
 But do we have these steps in our Web?
 Does W3C uses evolution process to develop new specifications?
@@ -59,52 +84,60 @@ A lot of legacy code and old specifications.
 
 ---
 
-Do we really have a selection process? Mozilla was forced to support blink tag
-for 19 years. And it was only a non-standard tag working only in Firefox.
+Do we really have a selection?
+
+Blink tag was a *non-standard* tag working *only* in Firefox.
+But even in this case Mozilla was forced to support blink tag for *19 years*.
 
 If some technology becomes a standard, many sites start to use it.
-And we will need decades to replace it for some better standard.
+But how we can fix some issue in standard? For we can remove bad ideas?
 
 ---
 
-Will you think about some new crazy ideas, if you must support your mistakes
-for decades?
+So we have not chance to fail in our standard.
 
-W3C prefers very long theoretical discussion for every technology, because they
-are afraid to make a mistake.
+Will you think about some awesome but litle crazy ideas,
+if you must support your mistakes for decades?
 
 And it is a main problem. Many great ideas looked very crazy at the beginning.
-What people thought about iPhone, when it was released? What people thought
-about Web applications 15 years ago? Or what people thought about airplanes,
-when they were invented century ago.
+What people thought about iPhone, when it was released?
+What people thought about frontend 5 years ago?
+What people thought about Web applications 15 years ago?
 
-We must have some playground to make mistakes if we want new awesome ideas.
-If we want long-term development of the Web.
+Development is about making a mistakes.
+There is no great ideas without mistakes.
+
+And this is why is so important to have have some playground.
 
 ---
-
-40% of next JavaScript comes from the CoffeeScript preprocessor.
-
-Even the next ES7 standard takes async-await after we have tested
-it in IcedCoffeeScript.
 
 And this is why preprocessors are a big deal.
 They are this kind of a playground.
-Every developer can use own modules.
-For example, ClosureScript or Elm with time travel debugger.
+
+Every developer can use own compiler. It is not a global standard.
+So we are not afraid to make a mistake.
+
+We creates CoffeeScript with many crazy ideas.
+We got feedback from users.
+And then took best ideas to a standard.
+
+Even the next-next ES7 takes async-await
+after it was tested in IcedCoffeeScript.
 
 And we can get real world feedback before idea becomes a standard.
 
 ---
 
-I am very happy about JavaScript preprocessors.
-But do CSS preprocessors work as this kind of playground for ideas
-of next generations?
+So I am very happy about JavaScript preprocessors.
+For example, Elm with time travel debugger.
+
+But do CSS preprocessors is still this kind of playground?
 I didn’t think so.
 
 ---
 
-But let’s start from the beginning. How do CSS preprocessors work today?
+But let’s start from the beginning. Whhat is CSS preprocessor?
+
 They are like a template language.
 Like PHP, but you mix your code with CSS templates.
 
@@ -115,43 +148,46 @@ functions and variables.
 
 ---
 
-And it is a first big problem of preprocessors.
+And it is a first big problem.
 
 How we can add polyfill for units?
 
-Maybe mixins are enough for today’s simple tasks.
-But we have many new ideas and preprocessors are too limited for them.
 Could we create Autoprefixer with mixins?
 
 ---
 
-And there is reason why we did not have new features in preprocessors for years.
+And second problem is a source of the first one.
 
 Preprocessor codebase is big and very monolithic.
 
-Do you have any friend who did contribute something to preprocessors?
+Can *you* add something to preprocessor?
 
-Sass team went further. To get better performance, they rewrote project to C++
+Sass team even went further.
+To get better performance, they rewrote project to C++
 and now we have even less developers who can add something new.
 
 ---
 
 And a last but not least problem. Preprocessors are template language.
 
-But is it a good language? It is not some complicated function. This huge
-code is just a mixin for simple transition from Compass.
+But is it a good language?
+
+Can you read this code? Me neither.
+But it is just a transition mixin from Compass.
 
 Sass is nice for simple tasks.
-But you will have a problems if you want a better awesome tool.
+But is it easy to code some complicated stuff on Sass?
 
 ---
 
-And these are the ideas behind PostCSS. Create a playground for next generation
-of ideas without the limitations of current preprocessors.
+And these are the ideas behind PostCSS.
+
+Remove limitations of current preprocessors.
+Make a playground for crazy ideas.
 
 ---
 
-PostCSS was not the first.
+But PostCSS was not the first.
 
 3 years ago, TJ Holowaychuk, Stylus maintainer, saw the same problems.
 He understood that preprocessor — as an idea — was finished.
