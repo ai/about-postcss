@@ -304,29 +304,19 @@ $column: 200px;
 }
 ```
 
-## *Невозможно на Sass* [postcss-data-packer](https://github.com/Ser-Gen/postcss-data-packer)
+## *Невозможно на Sass* [CSS Modules](https://github.com/css-modules)
 !type with-2-sides
 
 ```mark_data
-/* style.css */
-.icon1 {
-    width: 100px;
-    background: url(data:…);
-}
-.icon2 {
-    background: url(data:…);
-}
+.title { }
+.list { }
+.item { }
 ```
 
 ```mark_data
-/* style.css */
-.icon1 {
-    width: 100px;
-}
-/* style.icons.css */
-.icon1, .icon2 {
-    background: url(data:…);
-}
+.__Component_title_dj45 { }
+.__Component_list_ha3l { }
+.__Component_item_5q67 { }
 ```
 
 ## *Невозможно на Sass* [postcss-colorblind](https://github.com/btholt/postcss-colorblind)

@@ -10,11 +10,11 @@ I am from Russia, Saint Petersburg.
 
 I am lead frontend developer in Evil Martians.
 
-Unfortunately, we have no robots and blaster yet.
-
 ---
 
-Right now only Rails and React.
+Unfortunately, right now we have no robots and blaster.
+
+Only Rails and React.
 
 ---
 
@@ -346,44 +346,41 @@ It coverts CSS 3 to CSS 2. Add adds many hacks for old IE.
 
 ---
 
-Next will be some magic. A PostCSS plugin, that adds a new selector.
+Have you read article “The End of Global CSS”?
+There is a idea how to isolate component selector.
+Like a BEM but with 100% guarantees.
 
-This selector will be applied only
-if there is only some count of items in a list.
-So, for example, we can set 25% width menu links only if menu contains 4 links.
+This idea was already implemented in webpack. And name has CSS Modules name.
 
-For 5 items menu we will use 20% width.
+They transform all you selectors. Add component name and random number.
+And, of course, they do it with PostCSS.
 
----
-
-We all know that fast loading sites do make more money.
-And we have two ways to optimize images.
-Base64 inline and sprites.
-
-Inline images are simpler, but they make our CSS bigger.
-And the user will see nothing until CSS finishes loading.
-
-Other problem is when you use one image for many classes
-in different CSS files.
-
-But in PostCSS we have a new way. It is called a CSS sprite.
-
-PostCSS plugin will find all inlined images and move them to another file.
-Also it will join selectors with same classes.
-
-As a result, main CSS with your site design will be small.
+It is a great example of that evolution.
+Crazy idea, PostCSS prototype, real feedback and now in webpack and special
+GitHub orgranization.
 
 ---
 
-But PostCSS is not only to add something to your styles. PostCSS working
-awesome as CS linter.
+Or other example. About 5% of users can’t see some colors. 5% is big number.
+It is more, that IE users for some projects.
+So we need to test colors combinations.
 
-For example, Twitter wrote PostCSS plugin to lint their CSS
-for Twitter guidelines. They use modification of awesome BEM methodology.
+This plugin replaces all colors to how colorblinds see.
+
+Of course, there are many other better way to test it.
+But it is a good example of PostCSS power.
+Maybe it will be more useful in your case.
 
 ---
 
-But PostCSS linters can be much smarter than jshint or csslint.
+But PostCSS is not only to add something to your styles.
+PostCSS working awesome as CSS linter.
+
+Twitter wrote PostCSS plugin to lint their CSS for Twitter BEM guidelines.
+
+---
+
+But PostCSS linters can be much smarter.
 
 Doiuse is a PostCSS plugin, like a Autoprefixer.
 But it works in a different way.
