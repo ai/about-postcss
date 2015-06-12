@@ -24,6 +24,10 @@
 
 !image attacks.jpg
 
+<a class="copyright" href="https://georgespigot.wordpress.com/2013/10/24/mars-attacks-yes-again/">
+© George Spigot
+</a>
+
 ##
 !type with-martians
 
@@ -73,7 +77,7 @@
       the freedom to make mistakes
     </p>
   </blockquote>
-  <figcaption>— Mahatma Gandhi</figcaption>
+  <figcaption>— “Mahatma Gandhi”</figcaption>
 </figure>
 
 ## 40% of ES6 comes from CoffeeScript
