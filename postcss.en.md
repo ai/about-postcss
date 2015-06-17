@@ -83,7 +83,7 @@
 ## 40% of ES6 comes from CoffeeScript
 !type shout
 
-## *Part 2* Preprocessors
+## *Part 2* CSS Preprocessors
 !cover sass.jpg
 
 ## CSS Templating

@@ -10,9 +10,9 @@ I am from Russia, Saint Petersburg.
 
 I am lead frontend developer in Evil Martians.
 
----
-
 Unfortunately, right now we have no robots and blaster.
+
+---
 
 Only Rails and React.
 
