@@ -1,6 +1,6 @@
 # PostCSS: the Future after Sass and Less
 
-[Andrey Sitnik](http://sitnik.ru/en/), [Evil Martians](https://evilmartians.com/)
+[Andrey Sitnik](http://sitnik.ru/en), [Evil Martians](https://evilmartians.com/)
 
 ## **PostCSS** the Future after Sass and Less
 !type is-title
