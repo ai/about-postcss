@@ -427,13 +427,13 @@ a {
 !cover present.jpg
 !type  is-bottom
 
-## 650 000 загрузок в месяц
+## 850 000 загрузок в месяц
 !type shout
 
 ## Используют PostCSS
 !type with-companies
 
-!image google.svg
+!image yandex.svg
 !image taobao.svg
 !image wordpress.svg
 !image twitter.svg
