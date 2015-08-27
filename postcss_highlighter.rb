@@ -100,7 +100,7 @@ class PostcssHighlighter < Highlighter
   end
 
   def mark_case3(code)
-    js(code).gsub(/postcss-(n|m|s)[\w-]+/, '<mark class="important">\0</mark>')
+    js(code).gsub(/precss/, '<mark class="important">\0</mark>')
   end
 
   def comment(code)
@@ -111,5 +111,18 @@ class PostcssHighlighter < Highlighter
     code.gsub(/^(\s*[^\s].*){/, '<mark>\1</mark>{')
         .gsub(/([^\s:]*):/,     '<mark>\1</mark>:')
         .gsub(/@context/,       '<mark class="important">\0</mark>')
+  end
+
+  def mark_font(code)
+    css(code).gsub(/Alice/, '<mark class="important">\0</mark>')
+  end
+
+  def mark_face(code)
+    css(code).gsub(/@font-face/, '<mark class="important">\0</mark>')
+  end
+
+  def mark_use(code)
+    css(code).gsub(/@use|responsive \d+px \d+px/,
+      '<mark class="important">\0</mark>')
   end
 end
